@@ -1617,10 +1617,10 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <type>LASER</type>
     <title>Plasma Emitter 'Prometheus'</title>
     <short>'Prometheus'</short>
-    <tip>tip_prometheus</tip>
+    <!--<tip>tip_prometheus</tip>-->
     <desc></desc>
 	<descriptionOverride>For some unknown reason, Ravagers' plasma emitters are highly prized by only one organization. Perhaps fortunately, this organization is dedicated to the pursuit, study, and extermination of Ravagers.
-Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire. Charges perk as it fires.
+Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire.
 
 		Stats:
 		Required Power: 2
@@ -1636,6 +1636,8 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
 		
 		Shield layer pop: 1
 		Super shield layer pop: 1
+		
+		Perk: Within each burst, each shot has a 10% increased chance to start a fire.
 
 		Default Price: 65~   -   Selling Price: 32~
 	</descriptionOverride>
@@ -1694,10 +1696,10 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
     <type>LASER</type>
     <title>Plasma Emitter 'Helios'</title>
     <short>'Helios'</short>
-    <tip>tip_helios</tip>
+    <!--<tip>tip_helios</tip>-->
     <desc></desc>
 	<descriptionOverride>... From the way this weapon "looks" at you, the purpose of extermination is more than obvious.
-Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire. Charges perk as it fires.
+Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire.
 
 		Stats:
 		Required Power: 2
@@ -1714,6 +1716,8 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
 		Shield layer pop: 1
 		Super shield layer pop: 1
 
+		Perk: Enemy's engines is dealt additional damage if all projectiles in a single burst hit the target.
+		
 		Default Price: 85~   -   Selling Price: 42~
 	</descriptionOverride>
     <tooltip>Enemy's engines is dealt additional damage if all projectiles in a single burst hit the target.</tooltip>
