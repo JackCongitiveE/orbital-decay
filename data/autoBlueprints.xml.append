@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprintList name="CO_LIST_WEAPONS_RAVAGER_LOW">
+	<!--<name>ZENITH_1</name>-->
+	<name>TRC_LASER_LIGHT_BURST</name>
+	<name>CO_RAIL_ADAPTER</name>
+	<name>CO_PLASMA_AURORA_ENEMY</name>
+	<name>CO_PLASMA_TRIGGER</name>
+</blueprintList>
+<blueprintList name="CO_LIST_WEAPONS_RAVAGER_MED">
+	<name>TRC_LASER_LIGHT_BURST</name>
+	<!--<name>CO_ZENITH_2</name>-->
+	<name>CO_RAIL_ADAPTER</name>
+	<name>CO_PLASMA_TRIGGER</name>
+	<name>CO_PLASMA_DESTRUCTOR</name>
+</blueprintList>
+<blueprintList name="CO_LIST_WEAPONS_RAVAGER_HARD">
+	<!--<name>CO_ZENITH_3</name>-->
+	<name>CO_RAIL_CHARON</name>
+	<name>CO_PLASMA_DESTRUCTOR</name>
+</blueprintList>
+
+<blueprintList name="CO_LIST_SHIPS_RAVAGER_MEETING">
+	<name>CO_RAVAGER_PREDATOR</name>
+	<name>CO_RAVAGER_DESTROYER</name>
+	<name>CO_RAVAGER_FRIGATE</name>
+</blueprintList>
+
+<blueprintList name="CO_LIST_SHIPS_RAVAGER_GENERIC">
+	<name>CO_RAVAGER_PREDATOR</name>
+	<name>CO_RAVAGER_DESTROYER</name>
+</blueprintList>
+<blueprintList name="CO_LIST_SHIPS_RAVAGER_SLIGHTLY_A_THREAT">
+	<name>CO_RAVAGER_FRIGATE</name>
+</blueprintList>
+<blueprintList name="CO_LIST_SHIPS_RAVAGER_ALL">
+	<name>CO_RAVAGER_PREDATOR</name>
+	<name>CO_RAVAGER_DESTROYER</name>
+	<name>CO_RAVAGER_FRIGATE</name>
+	
+	<name>CO_RAVAGER_MERCHANT</name>
+</blueprintList>
+
+
+
+<blueprintList name="CO_LIST_WEAPONS_SLAYER_LOW">
+	<name>CO_SLAYER_LIGHTMISS_1</name>
+	<name>CO_SLAYER_LIGHTMISS_1</name>
+	<name>CO_SLAYER_LIGHTMISS_1</name>
+	<name>CO_SLAYER_LIGHTMISS_2</name>
+</blueprintList>
+
+<blueprintList name="CO_LIST_SHIPS_SLAYERS_ALL">
+	<!--<name>CO_SLAYERS_DROPSHIP_SMOL_FIRST</name>-->
+	
+	<name>CO_SLAYERS_DROPSHIP_SMOL</name>
+	<name>CO_SLAYERS_SCOUT</name>
+	<name>CO_SLAYERS_HAULER</name>
+</blueprintList>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION SHIIIIIIPS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<shipBlueprint name="CO_LEGION_GUARD" layout="co_legionGuard" img="co_legion_guard">
+	<class>Legionnaire Guard</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="4" room="1" start="true" weapon="CO_ARTILLERY_LEGION_GUARD" />
+		<cloaking power="1" max="3" room="9" start="true" />
+		<doors power="2" max="3" room="4" start="true" />
+		<drones power="7" max="12" room="8" start="true" />
+		<engines power="3" max="8" room="19" start="true" />
+		<hacking power="2" max="3" room="5" start="true" />
+		<medbay power="2" max="3" room="3" start="true" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="15" start="true" />
+		<teleporter power="2" max="3" room="18" start="true" />
+		<weapons power="6" max="8" room="13" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="19" count="4">
+		<weapon name="CO_ZENITH_2" />
+		<weapon name="CO_ZENITH_2" />
+		<weapon name="ZENITH_1" />
+		<weapon name="ZENITH_1" />
+	</weaponList>
+	<droneList drones="15" count="2">
+		<drone name="CO_CLUSTERBOMB_DRONE" />
+		<drone name="CO_ZENITH_DRONE_2" />
+	</droneList>
+	<health amount="15" />
+	<maxPower amount="99" />
+	<crewCount amount="6" max="6" class="LIST_CREW_LEGION" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_RESPIRATOR" />
+	<aug name="UPG_TECH_EXTINGUISHERS" />
+</shipBlueprint>
+
+
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							RAVAGERS SHIIIIIIPS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<shipBlueprint name="CO_RAVAGER_PREDATOR" layout="co_ravager_predator" img="co_ravager_predator">
+	<class>Ravager Frigate</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="11" start="true" />
+		<drones power="3" max="8" room="5" start="true" />
+		<engines power="2" max="8" room="2" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="1" max="9" room="1" start="true" />
+		<weapons power="3" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="3" >
+		<weapon name="CO_LIST_WEAPONS_RAVAGER_LOW" />
+		<weapon name="CO_LIST_WEAPONS_RAVAGER_LOW" />
+	</weaponList>
+	<droneList drones="20" count="3" />
+	<health amount="9" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CO_RAVAGER_SYSOPER" />
+	<aug name="CO_RAVAGER_PLATING" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_RAVAGER_DESTROYER" layout="co_ravager_destroyer" img="co_ravager_destroyer">
+	<class>Ravager Assault Frigate</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<battery power="1" max="2" room="11" start="true" />
+		<cloaking power="1" max="3" room="7" start="true" />
+		<doors power="1" max="3" room="10" start="true" />
+		<engines power="2" max="8" room="0" start="true" />
+		<hacking power="2" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="1" max="10" room="3" start="true" />
+		<weapons power="4" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="CO_LIST_WEAPONS_RAVAGER_LOW" />
+		<weapon name="CO_LIST_WEAPONS_RAVAGER_LOW" />
+		<weapon name="CO_LIST_WEAPONS_RAVAGER_MED" />
+	</weaponList>
+	<droneList drones="20" count="2" />
+	<health amount="10" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CO_RAVAGER_SYSOPER" />
+	<aug name="CO_RAVAGER_PLATING" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_RAVAGER_FRIGATE" layout="co_ravager_frigate" img="co_ravager_frigate">
+	<class>Ravager Destroyer</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="1" max="4" room="11" start="true" weapon="CO_RAIL_THYRSUS" />
+		<doors power="2" max="3" room="6" start="true" />
+		<drones power="5" max="15" room="10" start="true" />
+		<engines power="3" max="8" room="1" start="true" />
+		<pilot power="2" max="3" room="9" start="true" />
+		<shields power="2" max="9" room="3" start="true" />
+		<weapons power="3" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="4" load="CO_LIST_WEAPONS_RAVAGER_MED" />
+	<droneList drones="14" count="1" />
+	<health amount="12" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CO_RAVAGER_SYSOPER" />
+	<aug name="CO_RAVAGER_PLATING" />
+	<aug name="CO_RAVAGER_PROTOCOL" />
+</shipBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+	👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+						SYLVAN GOVNA			SYLVAN GOVNA			SYLVAN GOVNA			SYLVAN GOVNA			SYLVAN GOVNA			
+	👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+	👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<shipBlueprint name="CO_RAVAGER_MERCHANT" layout="co_ravager_merchant" img="co_ravager_merchant">
+	<class>Straying Merchant</class>
+	<minSector>2</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="1" max="1" room="16" start="false" weapon="ARTILLERY_FED" />
+		<artillery power="1" max="1" room="17" start="false" weapon="ARTILLERY_FED" />
+		<cloaking power="2" max="3" room="10" start="true" />
+		<doors power="3" max="3" room="6" start="true" />
+		<drones power="15" max="15" room="12" start="true" />
+		<engines power="8" max="8" room="1" start="true" />
+		<hacking power="3" max="3" room="4" start="true" />
+		<mind power="3" max="3" room="8" start="true" />
+		<pilot power="3" max="3" room="0" start="true" />
+		<shields power="16" max="16" room="3" start="true" />
+		<teleporter power="3" max="3" room="15" start="true" />
+		<weapons power="14" max="14" room="2" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>6</droneSlots>
+	<weaponList missiles="100" count="6">
+		<weapon name="CO_RAIL_ADAPTER" />
+		<weapon name="CO_RAIL_ADAPTER" />
+		<weapon name="CO_RAIL_ADAPTER" />
+		<weapon name="CO_RAIL_ADAPTER" />
+		<weapon name="CO_PLASMA_DESTRUCTOR" />
+		<weapon name="CO_PLASMA_DESTRUCTOR" />
+	</weaponList>
+	<droneList drones="100" count="6" />
+	<health amount="45" />
+	<maxPower amount="99" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="CO_RAVAGER_SYSOPER" />
+	<aug name="CO_RAVAGER_PLATING" />
+	<aug name="CO_RAVAGER_PROTOCOL" />
+</shipBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							SLAYERS SHIIIIIIPS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<shipBlueprint name="CO_SLAYERS_DROPSHIP_SMOL_FIRST" layout="co_slayers_dropship_smol" img="co_slayers_dropship_smol">
+	<class>??? Shuttle</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="2" start="true" />
+		<drones power="1" max="8" room="5" start="true" />
+		<engines power="4" max="8" room="6" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="6" room="4" start="true" />
+		<teleporter power="2" max="3" room="1" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="12" count="2" />
+	<health amount="6" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="SYSTEM_CASING_NEW" />
+	<aug name="UPG_TECH_BYPASS" />
+</shipBlueprint>
+<shipBlueprint name="CO_SLAYERS_DROPSHIP_SMOL" layout="co_slayers_dropship_smol" img="co_slayers_dropship_smol">
+	<class>Slayers Shuttle</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="2" start="true" />
+		<drones power="3" max="8" room="5" start="true" />
+		<engines power="4" max="8" room="6" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="6" room="4" start="true" />
+		<teleporter power="2" max="3" room="1" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="12" count="2" >
+		<drone name="CO_SLAYER_DRONE" />
+	</droneList>
+	<health amount="6" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="SYSTEM_CASING_NEW" />
+	<aug name="UPG_TECH_BYPASS" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_SLAYERS_SCOUT" layout="co_slayers_scout" img="co_slayers_scout">
+	<class>Slayer Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="7" start="true" />
+		<doors power="1" max="3" room="10" start="true" />
+		<drones power="2" max="8" room="8" start="true" />
+		<engines power="2" max="8" room="1" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="7" room="6" start="true" />
+		<weapons power="2" max="4" room="5" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="16" count="2" >
+		<weapon name="CO_SLAYER_LIGHTMISS_1" />
+		<weapon name="CO_SLAYER_LIGHTMISS_1" />
+	</weaponList>
+	<droneList drones="6" count="2">
+		<drone name="CO_SLAYER_DRONE" />
+	</droneList>
+	<health amount="8" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="SYSTEM_CASING_NEW" />
+	<aug name="UPG_TECH_BYPASS" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_SLAYERS_HAULER" layout="co_slayers_hauler" img="co_slayers_hauler">
+	<class>Slayer Hauler</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="1" max="5" room="14" start="true" weapon="CO_ARTILLERY_LEGION_GUARD" />
+		<artillery power="1" max="5" room="17" start="true" weapon="CO_ARTILLERY_LEGION_GUARD" />
+		<doors power="2" max="3" room="15" start="true" />
+		<drones power="5" max="9" room="4" start="true" />
+		<engines power="3" max="6" room="1" start="true" />
+		<oxygen power="1" max="3" room="16" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="3" max="8" room="3" start="true" />
+		<teleporter power="1" max="3" room="2" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="18" count="0" />
+	<droneList drones="18" count="3">
+		<drone name="CO_SLAYER_DRONE" />
+	</droneList>
+	<health amount="11" />
+	<maxPower amount="99" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="SYSTEM_CASING_NEW" />
+	<aug name="UPG_TECH_BYPASS" />
+</shipBlueprint>
+
+
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 						SUPERPIRATE SHIIIIIIPS	(GOVNA)						-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<shipBlueprint name="CO_ANGEL_BATTLESHIP_PURE" layout="co_angel_battleship_pure" img="co_angel_battleship_pure">
+	<class>Angelic Battleship</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="5" room="2" start="true" weapon="ARTILLERY_COALITION_CEALAFORMER" />
+		<artillery power="2" max="5" room="3" start="true" weapon="ARTILLERY_COALITION_CEALAFORMER" />
+		<battery power="1" max="2" room="26" start="true" />
+		<cloaking power="1" max="3" room="13" start="true" />
+		<clonebay power="1" max="3" room="19" start="true" />
+		<doors power="2" max="3" room="17" start="true" />
+		<drones power="2" max="12" room="7" start="true" />
+		<engines power="2" max="8" room="12" start="true" />
+		<hacking power="1" max="3" room="22" start="true" />
+		<medbay power="1" max="3" room="10" start="true" />
+		<mind power="1" max="1" room="6" start="true" />
+		<oxygen power="1" max="3" room="18" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="8" max="15" room="21" start="true" />
+		<teleporter power="1" max="3" room="1" start="true" />
+		<weapons power="2" max="8" room="14" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="25" count="6">
+		<weapon name="ENERGY_STUN_PLAYER" />
+		<weapon name="SHOTGUN_FIRE" />
+		<weapon name="LANCE_1" />
+		<weapon name="CO_MISSILESTOG_EMP_1" />
+		<weapon name="CO_RAIL_CHARON" />
+		<weapon name="CO_RAIL_CHARON" />
+	</weaponList>
+	<droneList drones="69" count="3">
+		<drone name="DRONE_SHIELD_POWERLESS" />
+		<drone name="HELLRAISER_HULL_PLAYER" />
+		<drone name="HELLRAISER_FIRE_PLAYER" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="99" />
+	<crewCount amount="3" max="6" class="human_angel" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SYSTEM_CASING_NEW" />
+</shipBlueprint>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<mod:findName type="event" name="REROUTE_MENU">
+	<mod-append:choice req="CO_REQ_CITADEL_COORDS" lvl="1" blue="false" hidden="true">
+		<text>Jump to the Legion Citadel Sector.</text>
+		<event load="CO_LIGHTSPEED_SECTOR_WARP_LEGION"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
+	<mod-append:choice req="CO_REQ_CITADEL_COORDS" lvl="1" blue="false" hidden="true">
+		<text>Jump to the Legion Citadel Sector.</text>
+		<event load="CO_LIGHTSPEED_SECTOR_WARP_LEGION"/>
+	</mod-append:choice>
+</mod:findName>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+													LEGION CITADEL
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+
+<event name="CO_LIGHTSPEED_SECTOR_WARP_LEGION">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Legion Citadel
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Rebellion
+	Rebel Threat Level: !CRITICALLY HIGH!
+	
+	Most of the information on this distant sector is completely blank. All you come to know is that this is a TEST.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_co_legion" op="set" val="0"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="CO_JUMP_TO_LEGION"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+
+<event name="CO_JUMP_TO_LEGION">
+	<secretSector>SECTOR_CO_LEGION</secretSector>
+</event>

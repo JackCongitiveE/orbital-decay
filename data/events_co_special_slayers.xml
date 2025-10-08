@@ -1,0 +1,322 @@
+<ship name="CO_SLAYERS_ALL" auto_blueprint="CO_LIST_SHIPS_SLAYERS_ALL">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<!--<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>-->
+</ship>
+
+<ship name="CO_SLAYERS_DROPSHIP_SMOL_FIRST" auto_blueprint="CO_SLAYERS_DROPSHIP_SMOL_FIRST">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
+</ship>
+<ship name="CO_SLAYERS_DROPSHIP_SMOL" auto_blueprint="CO_SLAYERS_DROPSHIP_SMOL">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
+</ship>
+<ship name="CO_SLAYERS_SCOUT" auto_blueprint="CO_SLAYERS_SCOUT">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
+</ship>
+<ship name="CO_SLAYERS_HAULER" auto_blueprint="CO_SLAYERS_HAULER">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
+</ship>
+
+<event name="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT">
+	<text>"God damn it, that stupid Rene Dekart made everything go to hell... And let's keep it that way."</text>
+	<recallBoarders force="true"/>
+	<enemyDamage amount="999"/>
+	<autoReward level="HIGH">standard</autoReward>
+</event>
+<event name="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL">
+	<text>Seems like all the enemy crew is down. Time to take what they had and scrap the ship.</text>
+	<autoReward level="MED">standard</autoReward>
+	<choice>
+		<text>Continue.</text>
+		<event>
+			<text>You scrapped the ship.</text>
+			<autoReward level="MED">standard</autoReward>
+		</event>
+	</choice>
+</event>
+
+<event name="CO_MEET_SLAYERS_DROPSHIP_SMOL">
+	<text>Testing smol Slayer.</text>
+	<ship load="CO_SLAYERS_DROPSHIP_SMOL" hostile="false"/>
+	<choice>
+		<text>Continue.</text>
+		<event>
+			<text>Little guy.</text>
+			<choice>
+				<text>Kill the guy.</text>
+				<event>
+					<text>You decided to kill the guy. He's against it.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Combat check.</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+					<choice hidden="true">
+						<text>No combat check.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Let the guy be.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Do it later.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="LOAD_SLAYERS_TEST">
+	<text>Testing RANDOM Slayer.</text>
+	<ship load="CO_SLAYERS_ALL" hostile="false"/>
+	<choice>
+		<text>Continue.</text>
+		<event>
+			<text>Little guy.</text>
+			<choice>
+				<text>Kill the guy.</text>
+				<event>
+					<text>You decided to kill the guy. He's against it.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Combat check.</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+					<choice hidden="true">
+						<text>No combat check.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Let the guy be.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Do it later.</text>
+		<event/>
+	</choice>
+</event>
+
+<!--//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+								ACTUAL EVENTS
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////-->
+
+<textList name="CO_SLAYERS_EMPTY_TEXTS">
+	<text planet="NONE" back="BG_DARK">Your jump leads you to nothing but empty space. This Jump Beacon serves no purpose other than as a connection.</text>
+	<text planet="NONE">You jump into an unremarkable system. No life signs detected within scanning range.</text>
+	<text planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
+	<text planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
+</textList>
+
+<event name="CO_MEET_SLAYERS_SCOUT_FIRST">
+	<text load="CO_SLAYERS_EMPTY_TEXTS"/>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="CO_MEET_SLAYERS_SCOUT_FIRST_REAL"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event load="CO_MEET_SLAYERS_SCOUT_FIRST_REAL"/>
+	</choice>
+</event>
+
+<event name="CO_MEET_SLAYERS_SCOUT_FIRST_REAL">
+	<text>Expecting nothing unusual, you begin to charge your engines for the next jump, when suddenly a small, weirdly shaped ship emerges from cloaking. If it weren't moving, you might think it was a tiny station.</text>
+	<ship load="CO_SLAYERS_SCOUT" hostile="false"/>
+	<choice>
+		<text>Try to make contact.</text>
+		<event>
+			<text>To your surprise, you receive an almost instantaneous reply, and it doesn't sound like an autoresponder.
+"You are definitely not what we were instructed to find. However, the scan shows that you are directly related to the object of our operation. We are requesting your permission for a more detailed inspection and identification of details. This might take some time."</text>
+			<choice>
+				<text>Ask who you are talking to.</text>
+				<event>
+					<text>"Sooner or later, you would have found out without us, or at least begun to wonder. We are members of the intelligence corps of a corporation that deals with conflicts of particular importance, most of which are caused by Renegades. According to our information, you are one of them.
+We call ourselves the Slayers. Numerous flawlessly executed operations have proven once again that our designation is appropriate for our field of activity. This is not a taunt or a threat. More of a warning."</text>
+					<choice>
+						<text></text>
+						<event/>
+					</choice>
+					<choice>
+						<text>Ask what operation is being discussed.</text>
+						<event>
+							<text>...</text>
+							<choice>
+								<text>...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text></text>
+						<event/>
+					</choice>
+					<choice>
+						<text>Attack the ship without more questions.</text>
+						<event>
+							<text>"Did you find out everything you wanted? We guess someone else will tell you the rest."
+With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+							<playSound>mysteriousBeacon</playSound>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Prepare for combat.</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Ask what operation is being discussed.</text>
+					<event>
+						<text>...</text>
+						<choice>
+							<text>Ask who you are talking to.</text>
+							<event>
+								<text>"Sooner or later, you would have found out without us, or at least begun to wonder. We are members of the intelligence corps of a corporation that deals with conflicts of particular importance, most of which are caused by Renegades. According to our information, you are one of them.
+We call ourselves the Slayers. Numerous flawlessly executed operations have proven once again that our designation is appropriate for our field of activity. This is not a taunt or a threat. More of a warning."</text>
+								<choice>
+									<text></text>
+									<event/>
+								</choice>
+							</event>
+						</choice>
+					</event>
+			</choice>
+			<choice>
+				<text>Ask why the ship looks so odd.</text>
+				<event>
+					<text>"What's wrong with the shape of the ship? We are scientists, researchers, not designers. But it's a reasonable question, we'll pass it on to management if we ever see them again."</text>
+					<choice>
+						<text>Ask who you are talking to.</text>
+						<event>
+							<text>"Sooner or later, you would have found out without us, or at least begun to wonder. We are members of the intelligence corps of a corporation that deals with conflicts of particular importance, most of which are caused by Renegades. According to our information, you are one of them.
+We call ourselves the Slayers. Numerous flawlessly executed operations have proven once again that our designation is appropriate for our field of activity. This is not a taunt or a threat. More of a warning."</text>
+							<choice>
+								<text>Ask what operation is being discussed.</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Ask what operation is being discussed.</text>
+						<event/>
+					</choice>
+					<choice>
+						<text>Attack the ship without more questions.</text>
+						<event>
+							<text>"Did you find out everything you wanted? We guess someone else will tell you the rest."
+With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+							<playSound>mysteriousBeacon</playSound>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Prepare for combat.</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Sounds like it's better to take this diagnostic. Accept request.</text>
+				<event/>
+			</choice>
+			<choice>
+				<text>We don't have time for unscheduled diagnostics. Deny the request.</text>
+				<event/>
+			</choice>
+			<choice>
+				<text>Attack the ship without question.</text>
+				<event>
+					<text>"That’s pretty rude of you. Fortunately, we're not here to condemn the local altruists."
+With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+					<playSound>mysteriousBeacon</playSound>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Prepare for combat.</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Wait for them to contact you.</text>
+		<event>
+			<text>Surprisingly, waiting for the first move from the unknown turned out to be an effective solution, and you finally receive a message.
+"Time is finite for either of us, so whatever you are, let's be direct. We were instructed with finding an "object" in this area, and our scans show that you are directly related to one. We are requesting your permission for a detailed inspection. This will take time."</text>
+			<choice>
+				<text>Ask who you are talking to.</text>
+				<event/>
+			</choice>
+			<choice>
+				<text>Ask what "object" is being discussed.</text>
+				<event/>
+			</choice>
+			<choice>
+				<text>We don't have time for unscheduled diagnostics. Deny the request.</text>
+				<event>
+					<text>"It has already been said, none of us have. The fleet that you Renegades are running from is not covering just you, you know? We are ensuring the safety of civilians not just of the Federation, it's much bigger than that. And we mainly deal with what the Renegades leave behind. You're leaving a trail behind you. Our job is to find out if that trail is what we think it is."</text>
+					<choice>
+						<text>Listen to them.</text>
+						<event>
+							<text></text>
+						</event>
+					</choice>
+					<choice>
+						<text>Refuse.</text>
+						<event>
+							<text>"It's not like we have a choice, but you've already made yours. There will be consequences, Renegade, and you're not the only one who will suffer them. Thankfully, not by our own will."</text>
+							<playSound>mysteriousBeacon</playSound>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Prepare for combat.</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Attack the ship without question.</text>
+				<event>
+					<text>"Expected. Fortunately, we're not here to condemn the local altruists."
+With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+					<playSound>mysteriousBeacon</playSound>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Prepare for combat.</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Attack the ship before anything happens.</text>
+		<event>
+			<text>Apparently, the newly found enemy was ready for such a scenario, and at the same moment as you, they start to charge their weapons.</text>
+			<playSound>mysteriousBeacon</playSound>
+			<ship hostile="true"/>
+				<choice hidden="true">
+				<text>Prepare for combat.</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Don't get distracted and continue your journey.</text>
+		<event/>
+	</choice>
+</event>

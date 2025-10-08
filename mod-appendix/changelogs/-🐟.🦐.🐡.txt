@@ -1,0 +1,11 @@
+		{{8/10/2025}}
+Version:🐟.🦐.🦐 -> 🐟.🦐.🐡
+1) There is a guide now on this forum page on how to read the version, be careful with it;
+2) This addon now requires TRC and Fusion to work properly!!;
+3) Only ships from my addon now have that redish background;
+4) RAF type B 'Dragonfly' has its own missing description now as well as Artillery Target augment;
+5) RAF type C 'Rapture' gets new augment called 'Fading Cloaking';
+6) "Balance" changes:
+Type B: weapon slots (4 -> 2), Weapon Control (max lvl, 4 -> 6), Drone Control (max lvl, 8 - > 6), Shields (start lvl, 1 -> 2), Cloaking (max lvl, 3 -> 2), reactor power (start lvl, 5 ->6), HP (20 -> 15);
+Type C: Drone Control (start lvl, 2 -> 4), reactor power (6 -> 7), Mind Control (no more available from the start), Sensors (max lvl, 3 -> 1), Door System (max lvl, 3 -> 1), Cloaking (max lvl, 3 -> 1), HP (20 -> 15);
+7) Other minor changes.

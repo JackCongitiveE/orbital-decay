@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- PERKS -->
+
+<text name="tip_charon">Every third shot fires a special projectile which corrodes adjacent rooms and passively damages the crew for a short period of time.</text>
+<text name="tip_adapter">Every third projectile is capable of dealing damage.</text>
+<text name="tip_thyrsus">Every second projectile is capable of dealing damage.</text>
+<!--<text name="tip_thyrsus">The perk is charged for each projectile in a volley that hits an enemy. If it misses, the perk's charge is reset.
+A shot with a charged perk fires all the projectiles at once, each of which can deal damage.</text>-->
+<text name="tip_trigger">In the final moment of the shot the beam can set hit room on fire and deals 1 damage.</text>
+<text name="tip_destructor">In the final moment of the shot the beam inflicts more erosion and deals 2 damage.</text>
+<text name="tip_prometheus">Within each burst, each shot has a 10% increased chance to start a fire.</text>
+<text name="tip_helios">Enemy's engines is dealt additional damage if all projectiles in a single burst hit the target.</text>

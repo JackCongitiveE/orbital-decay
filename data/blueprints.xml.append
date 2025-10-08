@@ -1,0 +1,2668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 								TEST STUFF 									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<droneBlueprint name="CO_DEFENSE_BOMB">
+	<type>DEFENSE</type>
+	<level>1</level>
+	<target>LASERS</target>
+	<tip>tip_defense</tip>
+	<title>Defender Drone Mk. I</title>
+	<short>Defense I</short>
+	<desc>Defense drone capable of targeting lasers or solid projectiles.
+	Reload: 600 MS</desc>
+	<power>2</power>
+	<cooldown>100</cooldown>
+	<dodge>0</dodge>
+	<speed>5</speed>
+	<cost>55</cost>
+	<bp>2</bp>
+	<droneImage>drone_defense_1</droneImage>
+	<weaponBlueprint>CO_BOMB_CLUSTER_1</weaponBlueprint>
+	<iconImage>defense</iconImage>
+	<rarity>1</rarity>
+</droneBlueprint>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 								LEGENDARIES 								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+
+
+
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 									RELICS 									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<crewBlueprint name="co_ripper_disk">
+	<title>Disk</title>
+	<short>Disk</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Temporarily stuck in the hited room</power>
+		<power>Deal 1 system and 45 crew damage after a crew enters the room</power>
+	</powerList>
+</crewBlueprint>
+
+<weaponBlueprint name="CO_MINELAYER_RIPPER">
+	<type>BURST</type>
+	<title>Disk Launcher "Ripper"</title>
+	<short>Ripper</short>
+	<desc>Fires bursts of 3 disk projectiles that penetrate 1 shield layer each. The projectiles temporarily get stuck in hited rooms and deal 1 system and 15 crew damage after crew enters the room.</desc>
+	<cost>0</cost>
+	<power>6</power>
+	<cooldown>12</cooldown>
+	<damage>2</damage>
+	<sp>1</sp>
+	<speed>60</speed>
+	<shots>1</shots>
+	<radius>40</radius>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<rarity>0</rarity>
+	<fireTime>0</fireTime>
+	<spin>360</spin>
+	<projectiles>
+		<projectile count="3" fake="false">co_ripper_proj</projectile>
+	</projectiles>
+	<spawnCrew>
+		<race>co_ripper_disk</race>
+		<number>1</number>
+		<noSlot>true</noSlot>
+		<lifetime>10</lifetime>
+		<statBoosts>
+			<statBoost name="noClone">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				</statBoost>
+		</statBoosts>
+	</spawnCrew>
+	<launchSounds>
+		<sound>co_ripper_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_ripper</weaponArt>
+    <iconReplace></iconReplace>
+</weaponBlueprint>
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 								CREW DRONES									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<crewBlueprint name="co_drone_ballista">
+	<title>Ballista Drone</title>
+	<short>Ballista Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="co_drone_commit">
+	<title>Commit Drone</title>
+	<short>Commit Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+
+<blueprintList name="LIST_TOGGLE_BALLISTA">
+	<name>CO_BALLISTATOG_DEFEND</name>
+	<name>CO_BALLISTATOG_BOARDER</name>
+	<name>CO_COMMITTOG_DEFEND</name>
+	<name>CO_COMMITTOG_BOARDER</name>
+</blueprintList>
+
+<droneBlueprint name="CO_BALLISTATOG_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Ballista Drone [Anti-Pers]</title>
+	<short>Ballista [DEF]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] Manually controlled personnel drone that can be toggled to act as either a Defensive Anti-Personnel or Boarding drone.
+Whoever was the genius who decided to get the ballista onto a spaceship, encase it in armor, is probably really a genius for not giving this Greek-era wonder an AI.
+
+-100 HP, 0.9x combat damage taken, 10x combat damage, can't sabotage
+-0.7x movement speed, requires a friendly crew to be in the same room to move around
+-Requires a friendly crew to be in the same room to be able to shoot. While in the same room as the ballista, friendly crew loses the ability to fight or sabotage.
+-Operators don't lose the ability to fight or sabotage</desc>
+	<power>2</power>
+	<cost>70</cost>
+	<rarity>2</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="CO_BALLISTATOG_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Ballista Drone [Boarding]</title>
+	<short>Ballista [ATK]</short>
+	<desc>[CURRENT MODE: Boarding] Manually controlled personnel drone that can be toggled to act as either a Defensive Anti-Personnel or Boarding drone.
+Whoever was the genius who decided to get the ballista onto a spaceship, encase it in armor, is probably really a genius for not giving this Greek-era wonder an AI.
+
+-100 HP, 0.9x combat damage taken, 10x combat damage, can't sabotage
+-0.7x movement speed, requires a friendly crew to be in the same room to move around
+-Requires a friendly crew to be in the same room to be able to shoot. While in the same room as the ballista, friendly crew loses the ability to fight or sabotage.
+-Operators don't lose the ability to fight or sabotage</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>70</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+
+<droneBlueprint name="CO_COMMITTOG_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Commit Drone [Anti-Pers]</title>
+	<short>Commit [DEF]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] Manually controlled personnel drone that can be toggled to act as either a Defensive Anti-Personnel or Boarding drone.
+A special model of ballista drone invented by the Legion. With the use of aether technologies and larger bolts, the ballista's combat effectiveness has been significantly increased.
+
+-130 HP, 0.7x combat damage taken, 20x combat damage, can't sabotage
+-0.5x movement speed, doesn't require a friendly crew to be in the same room to move around
+-Requires a friendly crew to be in the same room to be able to shoot. While in the same room as the ballista, friendly crew loses the ability to fight or sabotage.
+-Operators don't lose the ability to fight or sabotage</desc>
+	<power>3</power>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="CO_COMMITTOG_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Commit Drone [Boarding]</title>
+	<short>Commit [ATK]</short>
+	<desc>[CURRENT MODE: Boarding] Manually controlled personnel drone that can be toggled to act as either a Defensive Anti-Personnel or Boarding drone.
+A special model of ballista drone invented by the Legion. With the use of aether technologies and larger bolts, the ballista's combat effectiveness has been significantly increased.
+
+-130 HP, 0.7x combat damage taken, 20x combat damage, can't sabotage
+-0.5x movement speed, doesn't require a friendly crew to be in the same room to move around
+-Requires a friendly crew to be in the same room to be able to shoot. While in the same room as the ballista, friendly crew loses the ability to fight or sabotage.
+-Operators don't lose the ability to fight or sabotage</desc>
+	<power>3</power>
+	<speed>12</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+
+<crewBlueprint name="co_human_legion_oper">
+	<desc>Trained in Universe 1 and hand-picked from the finest of the MFK ranks, the Legionnaires are the deadliest Rebels you'll ever meet.
+	
+	Inherited Human stat: minor suffocation resistance</desc>
+	<cost>195</cost>
+	<title>Legionnaire Operator</title>
+	<short>Operator</short>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Active Ability: Summons a temporary Commit drone ally which moves slowly, but can only fight if there is an allied crew in the same room.</power>
+		<power>Passively heals nearby allied drones for 2hp/s</power>
+		<power>Passively heals itself for 1.5hp/s when below 55hp</power>
+		<power>Inflicts 2.2x damage in crew combat, 0.8x combat damage taken</power>
+		<power>Repair speed is quadrupled, extinguishes fires five times faster</power>
+		<power>Greatly resistant to O2 and fire hazards</power>
+		<power>Trained in lvl2 skills, cannot be cloned</power>
+		<power>Carries a short range personal teleporter that allows it to teleport anywhere on the current ship
+		</power>
+		<power>You better not know what happens if it dies</power>
+	</powerList>
+</crewBlueprint>
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION ARTILLERIES								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<weaponBlueprint name="CO_ARTILLERY_LEGION_GUARD">
+	<type>BURST</type>
+	<title>New Gen Missiles</title>
+	<short>NG M.</short>
+	<desc>Artillery that fires 3 missiles that deal 2 damage and have aoe effect: HE-AP, HE-EMP, HE-Anti-Bio.</desc>
+	<tooltip>Fires 3 missiles; 2 damage each; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<shots>1</shots>
+	<radius>1</radius>
+	<sp>10</sp>
+	<cooldown>30</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<speed>50</speed>
+	<!--<fireTime>0.01</fireTime>-->
+    <projectiles>
+        <projectile count="3" fake="false" blueprint="CO_LEGION_MISSILE_ARTY_PROJS">co_legion_missile_burst</projectile>
+    </projectiles>
+	<explosion>explosion_random</explosion>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_guard_legion_missiles</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="CO_LEGION_MISSILE_ARTY_PROJS">
+	<name>CO_LEGION_MISSILE_ARTY_AP</name>
+	<name>CO_LEGION_MISSILE_ARTY_EMP</name>
+	<name>CO_LEGION_MISSILE_ARTY_BIO</name>
+</blueprintList>
+
+<weaponBlueprint name="CO_LEGION_MISSILE_ARTY_AP">
+	<type>LASER</type>
+	<flavorType>Missile</flavorType>
+	<title>New Gen Missile</title>
+	<short>NG M.</short>
+	<desc>Artillery 1. HE-AP, aoe system damage.</desc>
+	<tooltip>Fires 3 missiles; 2 damage each; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<damage>2</damage>
+	<sysDamage>1</sysDamage>
+	<shots>3</shots>
+	<sp>10</sp>
+	<fireChance>3</fireChance>
+	<breachChance>6</breachChance>
+	<cooldown>25</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<speed>50</speed>
+	<image>co_legion_missile_burst</image>
+	<explosion>explosion_random</explosion>
+	<mv-aoe>
+		<sysDamage>1</sysDamage>
+	</mv-aoe>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_guard_legion_missiles</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="CO_LEGION_MISSILE_ARTY_EMP">
+	<type>LASER</type>
+	<flavorType>Missile</flavorType>
+	<title>New Gen Missile</title>
+	<short>NG M.</short>
+	<desc>Artillery 2. HE-EMP, aoe ion damage.</desc>
+	<tooltip>Fires 3 missiles; 2 damage each; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<damage>2</damage>
+	<shots>3</shots>
+	<sp>10</sp>
+	<fireChance>6</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>25</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<speed>50</speed>
+	<image>co_legion_missile_burst</image>
+	<explosion>explosion_random</explosion>
+	<mv-aoe>
+		<ion>1</ion>
+		<stun>8</stun>
+	</mv-aoe>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_guard_legion_missiles</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="CO_LEGION_MISSILE_ARTY_BIO">
+	<type>LASER</type>
+	<flavorType>Missile</flavorType>
+	<title>New Gen Missile</title>
+	<short>NG M.</short>
+	<desc>Artillery 3. HE-Anti-Bio, aoe crew damage + afliction.</desc>
+	<tooltip>Fires 3 missiles; 2 damage each; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<damage>2</damage>
+	<shots>3</shots>
+	<sp>10</sp>
+	<fireChance>2</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>25</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<speed>50</speed>
+	<image>co_legion_missile_burst</image>
+	<explosion>explosion_random</explosion>
+	<mv-aoe>
+		<persDamage>2</persDamage>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+		<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+	</statBoosts>
+	</mv-aoe>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+		<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+	</statBoosts>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_guard_legion_missiles</weaponArt>
+</weaponBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION WEAPONS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<weaponBlueprint name="CO_ZENITH_2">
+	<type>LASER</type>
+	<title>Zenith Laser MK II</title>
+	<short>Zenith II</short>
+	<tip>tip_laser</tip>
+	<desc>A deadly Aether-powered Laser that deals massive damage even compared to standard heavy Lasers. This advanced model of Zenith Laser fires an additional projectile.</desc>
+	<tooltip>Big laser bla bla.</tooltip>
+	<damage>2147483644</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>8</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>19</cooldown>
+	<power>2</power>
+	<cost>75</cost>
+	<rarity>0</rarity>
+	<image>laser_ancient</image>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_zenith_2</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_ZENITH_3">
+	<type>LASER</type>
+	<title>Zenith Laser MK III</title>
+	<short>Zenith III</short>
+	<tip>tip_laser</tip>
+	<desc>A deadly Aether-powered Laser that deals massive damage even compared to standard heavy Lasers. This advanced model of Zenith Laser fires 3 high-damage projectiles.</desc>
+	<tooltip>Big laser bla bla.</tooltip>
+	<damage>4</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>8</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>24</cooldown>
+	<power>3</power>
+	<cost>75</cost>
+	<rarity>0</rarity>
+	<image>laser_ancient</image>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>co_zenith_3</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_BOMB_CLUSTER_1">
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Cluster Bomb MK I</title>
+	<short>Cluster B. I</short>
+	<locked>1</locked>
+	<desc>A powerful Aether-powered Bomb Launcher which replicates 2 warheads when targeting the enemy ship. For safety reasons, only fires 1 bomb when targeting your ship.</desc>
+	<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<missiles>1</missiles>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>14</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb1</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_cluster</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<!--<weaponBlueprint name="BOMB_CLUSTER">
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Cluster Bomb MK II</title>
+	<short>Cluster B. II</short>
+	<locked>1</locked>
+	<desc>A powerful Aether-powered Bomb Launcher which replicates 3 warheads when targeting the enemy ship. For safety reasons, only fires 1 bomb when targeting your ship.</desc>
+	<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<missiles>1</missiles>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>19</cooldown>
+	<power>2</power>
+	<cost>90</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb1</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_cluster</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>-->
+
+
+<weaponBlueprint name="CO_MISSILESTOG_AP_1">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Orcus' Missiles</title>
+    <short>'Orcus'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 3 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<speed>40</speed>
+	<damage>3</damage>
+	<sysDamage>1</sysDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>3</fireChance>
+	<breachChance>6</breachChance>
+	<cooldown>20</cooldown>
+	<power>3</power>
+    <cost>125</cost>
+    <rarity>0</rarity>
+	<mv-aoe>
+		<sysDamage>1</sysDamage>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_1</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_MISSILESTOG_EMP_1">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Orcus' Missiles</title>
+    <short>'Orcus'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 3 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<speed>40</speed>
+	<damage>3</damage>
+	<sysDamage>-1</sysDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>6</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>20</cooldown>
+	<power>3</power>
+    <cost>125</cost>
+    <rarity>0</rarity>
+	<mv-aoe>
+		<ion>1</ion>
+		<fireChance>4</fireChance>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_1</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_MISSILESTOG_BIO_1">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Orcus' Missiles</title>
+    <short>'Orcus'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 3 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<speed>40</speed>
+	<damage>3</damage>
+	<persDamage>1</persDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>20</cooldown>
+	<power>3</power>
+    <cost>125</cost>
+    <rarity>0</rarity>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+		<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+	</statBoosts>
+	<mv-aoe>
+		<persDamage>2</persDamage>
+		<fireChance>1</fireChance>
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+		</statBoosts>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_1</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+
+
+
+<weaponBlueprint name="CO_MISSILESTOG_AP_2">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Mars' Heavy Missiles</title>
+    <short>'Mars'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 5 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<missiles>1</missiles>
+	<speed>40</speed>
+	<damage>5</damage>
+	<sysDamage>1</sysDamage>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>2</fireChance>
+	<breachChance>10</breachChance>
+	<cooldown>27</cooldown>
+	<power>4</power>
+    <cost>180</cost>
+    <rarity>0</rarity>
+	<mv-aoe>
+		<sysDamage>2</sysDamage>
+		<fireChance>1</fireChance>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_2</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_MISSILESTOG_EMP_2">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Mars' Heavy Missiles</title>
+    <short>'Mars'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 5 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<missiles>1</missiles>
+	<speed>40</speed>
+	<damage>5</damage>
+	<ion>1</ion>
+	<sysDamage>-2</sysDamage>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>10</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>27</cooldown>
+	<power>4</power>
+    <cost>180</cost>
+    <rarity>0</rarity>
+	<mv-aoe>
+		<ion>2</ion>
+		<fireChance>6</fireChance>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_2</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_MISSILESTOG_BIO_2">
+    <type>MISSILES</type>
+    <tip>tip_missiles</tip>
+    <title>'Mars' Heavy Missiles</title>
+    <short>'Mars'</short>
+	<flavorType>Aether Missiles</flavorType>
+    <desc>These Missiles are designed to cause maximum destruction to ship hull armor.</desc>
+    <tooltip>Fires 1 missile; 5 damage; pierces all shields; aoe toggle effect.</tooltip>
+	<missiles>1</missiles>
+	<speed>40</speed>
+	<damage>5</damage>
+	<sysDamage>-1</sysDamage>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<sp>10</sp>
+	<hullBust>1</hullBust>
+	<fireChance>10</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>27</cooldown>
+	<power>4</power>
+    <cost>180</cost>
+    <rarity>0</rarity>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+		<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+	</statBoosts>
+	<mv-aoe>
+		<persDamage>3</persDamage>
+		<fireChance>2</fireChance>
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+		</statBoosts>
+	</mv-aoe>
+	<explosion>explosion_random</explosion>
+    <image>co_legion_missile</image>
+    <launchSounds>
+        <sound>smallMissile1</sound>
+        <sound>smallMissile2</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>explosion_heavy</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_missilestog_2</weaponArt>
+    <iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION DRONES									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<weaponBlueprint name="CO_ZENITH_DRONE_LASER_1">
+	<type>LASER</type>
+	<flavorType>Aether Tech</flavorType>
+	<title>Aether Laser</title>
+	<short>A. Laser</short>
+	<tip>tip_laser</tip>
+	<desc>DRONE WEAPON</desc>
+	<tooltip>DRONE WEAPON</tooltip>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>8</breachChance>
+	<stunChance>4</stunChance>
+	<cost>100</cost>
+	<rarity>0</rarity>
+	<image>laser_ancient</image>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ancient_laser</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+<droneBlueprint name="CO_ZENITH_DRONE_1">
+	<type>COMBAT</type>
+	<tip>tip_ancient</tip>
+	<title>Zenith Drone Mk. I</title>
+	<short>Zenith I</short>
+	<desc>A drone that equipped with deadly Aether-powered Laser that deals massive damage even compared to standard heavy Lasers.</desc>
+	<power>2</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>8</speed>
+	<cost>70</cost>
+	<droneImage>co_zenith_drone_1</droneImage>
+	<weaponBlueprint>CO_ZENITH_DRONE_LASER_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+<droneBlueprint name="CO_ZENITH_DRONE_2">
+    <type>COMBAT</type>
+    <tip>tip_ancient</tip>
+    <title>Zenith Drone Mk. II</title>
+    <short>Zenith II</short>
+    <desc>A drone that equipped with deadly Aether-powered Laser that deals massive damage even compared to standard heavy Lasers. Deals 1 more damage, moves and shoots faster than Mark I.</desc>
+    <power>4</power>
+    <cooldown>1000</cooldown>
+    <dodge>0</dodge>
+    <speed>20</speed>
+    <cost>100</cost>
+    <droneImage>co_zenith_drone_2</droneImage>
+    <weaponBlueprint>ZENITH_1</weaponBlueprint>
+    <rarity>0</rarity>
+    <iconImage>combat</iconImage>
+</droneBlueprint>
+
+
+<![CDATA[
+<weaponBlueprint name="CO_BEAM_BOMB_CLUSTER_1">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Drone Beam</title>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<color> <!-- Color only works for beams -->
+		<r>0</r>
+		<g>0</g>
+		<b>0</b>
+		<a>0</a>
+	</color>
+	<speed>1</speed>
+	<rarity>0</rarity>
+	<image>aea_invisible</image>
+	<length>20</length>
+	<weaponArt>beam_1</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="CO_BEAM_BOMB_CLUSTER_2">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Drone Beam</title>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<color> <!-- Color only works for beams -->
+		<r>0</r>
+		<g>0</g>
+		<b>0</b>
+		<a>0</a>
+	</color>
+	<speed>1</speed>
+	<rarity>0</rarity>
+	<image>aea_invisible</image>
+	<length>20</length>
+	<weaponArt>beam_1</weaponArt>
+</weaponBlueprint>]]>
+<droneBlueprint name="CO_CLUSTERBOMB_DRONE">
+    <type>COMBAT</type>
+    <tip>tip_ancient</tip>
+    <title>Cluster Bomb Drone</title>
+    <short>Cluster B.</short>
+    <desc>A drone that equipped with a powerful Aether-powered Bomb Launcher which replicates warheads when targeting the enemy ship.</desc>
+    <power>3</power>
+    <cooldown>3000</cooldown>
+    <dodge>0</dodge>
+    <speed>7</speed>
+    <cost>100</cost>
+    <droneImage>co_clusterbomb_drone</droneImage>
+    <weaponBlueprint>CO_BOMB_CLUSTER_1</weaponBlueprint>
+    <rarity>0</rarity>
+    <iconImage>combat</iconImage>
+</droneBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							RAVAGER WEAPONS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<weaponBlueprint name="CO_RAIL_CHARON">
+    <type>LASER</type>
+    <title>Pulse Accelerator 'Charon'</title>
+    <short>'Charon'</short>
+    <tip>tip_charon</tip>
+    <desc>A young technology of the Ravagers, based on the not yet obsolete but already quite ancient 'Scorpion'. Fires a high velocity projectile with high pierce capability. Charges perk as it fires.</desc>
+    <tooltip>Every third shot fires a special projectile which corrodes adjacent rooms and passively damages the crew for a short period of time.</tooltip>
+    <damage>2</damage>
+    <shots>1</shots>
+    <sp>3</sp>
+    <fireChance>0</fireChance>
+    <breachChance>8</breachChance>
+	<accuracyMod>20</accuracyMod>
+    <cooldown>15</cooldown>
+    <power>3</power>
+    <cost>85</cost>
+    <speed>180</speed>
+    <rarity>3</rarity>
+	<shotLimit>12</shotLimit>
+    <image>co_charon_proj</image>
+    <launchSounds>
+        <sound>co_charon_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_charon</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_RAIL_CHARON_CHAOS">
+    <type>LASER</type>
+    <title>Chaotic Pulse Accelerator 'Charon'</title>
+    <short>'Charon'™</short>
+    <tip>tip_charon</tip>
+    <desc>A young technology of the Ravagers, based on the not yet obsolete but already quite ancient 'Scorpion'. Fires a high velocity projectile with high pierce capability. Charges perk as it fires.
+Chaotic variant has decreased amount of ammo but fires bursts of 3 projectiles.</desc>
+    <tooltip>Every third shot fires a special projectile which corrodes adjacent rooms and passively damages the crew for a short period of time.</tooltip>
+    <damage>2</damage>
+    <shots>3</shots>
+    <sp>3</sp>
+    <fireChance>0</fireChance>
+    <breachChance>8</breachChance>
+	<accuracyMod>20</accuracyMod>
+    <cooldown>15</cooldown>
+    <power>3</power>
+    <cost>85</cost>
+    <speed>180</speed>
+    <rarity>0</rarity>
+	<shotLimit>3</shotLimit>
+    <image>co_charon_proj</image>
+    <launchSounds>
+        <sound>co_charon_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_charon_chaos</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_RAIL_CHARON_PERK">
+    <type>LASER</type>
+    <title>Pulse Accelerator 'Charon'</title>
+    <short>'Charon'</short>
+    <tip>tip_charon</tip>
+    <desc>UOY T'NDLUOHD EES SHIT</desc>
+    <tooltip>Every third shot fires a special projectile which corrodes adjacent rooms and passively damages the crew for a short period of time.</tooltip>
+    <damage>2</damage>
+    <shots>1</shots>
+    <sp>3</sp>
+    <fireChance>0</fireChance>
+    <breachChance>8</breachChance>
+	<accuracyMod>20</accuracyMod>
+    <cooldown>12</cooldown>
+    <power>3</power>
+    <cost>95</cost>
+    <speed>180</speed>
+    <rarity>0</rarity>
+	<shotLimit>9</shotLimit>
+    <image>co_charon_proj</image>
+	<erosion>
+		<speed>1.3</speed>
+		<maxSpeed>6</maxSpeed>
+		<time>5.0</time>
+		<maxTime>10.0</maxTime>
+		<systemRepairMultiplier>0.75</systemRepairMultiplier>
+	</erosion>
+	<mv-aoe>
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+		</statBoosts>
+		<erosion>
+			<speed>1.0</speed>
+			<maxSpeed>4</maxSpeed>
+			<time>5.0</time>
+			<maxTime>10.0</maxTime>
+			<systemRepairMultiplier>0.75</systemRepairMultiplier>
+			<roomAnim renderLayer="1">
+				<anim animType="default" animBorder="2">invisible</anim>
+			</roomAnim>
+		</erosion>
+	</mv-aoe>
+    <launchSounds>
+        <sound>co_charon_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_charon</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_RAIL_ADAPTER">
+    <type>LASER</type>
+    <title>Pulse Rifle 'Adapter'</title>
+    <short>'Adapter'</short>
+    <tip>tip_adapter</tip>
+    <desc>A pulse rifle desinged by the Ravagers based on a light burst laser. It has a much higher rate of fire compared to its forefather, which compensates for the reduced damage. Charges perk as it fires.</desc>
+    <tooltip>Every third projectile is capable of dealing damage.</tooltip>
+    <damage>0</damage>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+    <shots>3</shots>
+    <fireChance>0</fireChance>
+    <breachChance>0</breachChance>
+	<accuracyMod>0</accuracyMod>
+    <cooldown>3.5</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <speed>180</speed>
+    <rarity>2</rarity>
+	<fireTime>0.08</fireTime>
+    <image>co_adapter_proj</image>
+    <launchSounds>
+        <sound>co_adapter_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_adapter</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_RAIL_ADAPTER_PERK">
+    <type>LASER</type>
+    <title>Pulse Rifle 'Adapter'</title>
+    <short>'Adapter'</short>
+    <tip>tip_adapter</tip>
+    <desc>UOY T'NDLUOHD EES SHIT</desc>
+    <tooltip>Every third projectile is capable of dealing damage.</tooltip>
+    <damage>1</damage>
+    <shots>1</shots>
+    <fireChance>0</fireChance>
+    <breachChance>2</breachChance>
+	<accuracyMod>10</accuracyMod>
+    <cooldown>3.5</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <speed>180</speed>
+    <rarity>0</rarity>
+    <image>co_adapter_proj</image>
+    <launchSounds>
+        <sound>co_adapter_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_adapter</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_RAIL_THYRSUS">
+    <type>LASER</type>
+    <title>Rail Accelerator 'Thyrsus'</title>
+    <short>'Thyrsus'</short>
+    <tip>tip_thyrsus</tip>
+    <desc>It's quite natural that the technologies of the Ravagers give their owner an advantage on the battlefield. But how exactly this happens still remains a mystery of many. The main things is that it works.
+Every second projectile it fires is capable of dealing damage. Charges perk as it fires.</desc>
+    <tooltip>Every second projectile is capable of dealing damage.</tooltip>
+    <damage>0</damage>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+    <shots>4</shots>
+    <fireChance>0</fireChance>
+    <breachChance>0</breachChance>
+	<accuracyMod>0</accuracyMod>
+    <cooldown>4.5</cooldown>
+    <power>6</power>
+    <cost>130</cost>
+    <speed>180</speed>
+    <rarity>4</rarity>
+	<fireTime>0.125</fireTime>
+    <image>co_adapter_proj</image>
+    <launchSounds>
+        <sound>co_thyrsus_shot</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>co_rail_thyrsus</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_PLASMA_AURORA">
+    <type>BURST</type>
+    <title>Laser Minigun 'Aurora'</title>
+    <short>'Aurora'</short>
+    <desc>A combat laser used by the Ravagers to weaken enemy hull plating, slowly building up erosion in the affected rooms. Despite being a laser, it has some spread when firing.</desc>
+    <tooltip>Every third projectile is capable of dealing damage.</tooltip>
+    <radius>40</radius>
+    <damage>0</damage>
+    <projectiles>
+        <projectile count="1" fake="false">co_adapter_proj</projectile> 
+    </projectiles>
+    <shots>35</shots>
+	<sp>10</sp>
+    <fireChance>0</fireChance>
+    <cooldown>15</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <speed>180</speed>
+    <rarity>2</rarity>
+	<fireTime>0.1</fireTime>
+    <launchSounds>
+        <sound>co_aurora_shot</sound>
+    </launchSounds>
+    <weaponArt>co_plasma_aurora</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_AURORA_BEAM">
+	<type>BEAM</type>
+	<tip>tip_focus</tip>
+	<title>Burst Beam Projectile</title>
+	<short>Burst Beam Projectile</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<damage>0</damage>
+    <fireChance>0</fireChance> 
+	<sp>10</sp>
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>45</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>66</g>
+		<b>66</b>
+	</color>
+	<erosion>
+		<speed>0.015</speed>
+		<maxSpeed>10</maxSpeed>
+		<time>2.0</time>
+		<maxTime>40.0</maxTime>
+		<systemRepairMultiplier>0.85</systemRepairMultiplier>
+	</erosion>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>co_aurora_shot</sound>
+	</launchSounds>
+	<weaponArt>co_plasma_aurora</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_PLASMA_AURORA_ENEMY">
+    <type>BURST</type>
+    <title>Laser Minigun 'Aurora'</title>
+    <short>'Aurora'</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+    <radius>40</radius> 
+    <damage>0</damage>
+    <projectiles>
+        <projectile count="1" fake="false">co_adapter_proj</projectile> 
+    </projectiles>
+	<sp>10</sp>
+    <shots>35</shots>
+    <fireChance>0</fireChance>
+    <cooldown>15</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <speed>180</speed>
+    <rarity>0</rarity>
+	<fireTime>0.1</fireTime>
+    <launchSounds>
+        <sound>co_aurora_shot</sound>
+    </launchSounds>
+    <weaponArt>co_plasma_aurora</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_AURORA_BEAM_ENEMY">
+	<type>BEAM</type>
+	<tip>tip_focus</tip>
+	<title>Burst Beam Projectile</title>
+	<short>Burst Beam Projectile</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<sp>10</sp>
+	<damage>0</damage>
+    <fireChance>0</fireChance> 
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>45</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>66</g>
+		<b>66</b>
+	</color>
+	<erosion>
+		<speed>0.2</speed>
+		<maxSpeed>10</maxSpeed>
+		<time>2.0</time>
+		<maxTime>50.0</maxTime>
+		<systemRepairMultiplier>0.5</systemRepairMultiplier>
+	</erosion>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>co_aurora_shot</sound>
+	</launchSounds>
+	<weaponArt>co_plasma_aurora</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_PLASMA_TRIGGER">
+    <type>LASER</type>
+    <title>Laser Drill 'Trigger'</title>
+    <short>'Trigger'</short>
+    <tip>tip_trigger</tip>
+    <desc></desc>
+	<descriptionOverride>Industrial mining laser drill adapted for combat conditions. This technology is now primarily used by the Ravagers, despite its astonishing targeting difficulties.
+For 1 second releases a beam that stacks erosion on the system hit dealing no other damage.
+
+		Stats:
+		Required Power: 2
+		Charge Time: 14 seconds
+		
+		Shots per charge: 1
+		
+		Shield Piercing: 1
+
+		Perk: In the final moment of the shot the beam can set hit room on fire and deals 1 damage.
+		
+		Default Price: 65~   -   Selling Price: 32~
+	</descriptionOverride>
+    <tooltip>In the final moment of the shot the beam can set hit room on fire and deals 1 damage.</tooltip>
+    <damage>0</damage>
+    <shots>50</shots>
+    <fireChance>0</fireChance>
+    <cooldown>14</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <speed>180</speed>
+    <rarity>2</rarity>
+	<fireTime>0.02</fireTime>
+	<sp>1</sp>
+    <weaponArt>co_plasma_trigger</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_TRIGGER_BEAM">
+	<type>BEAM</type>
+    <tip>tip_trigger</tip>
+    <title>Laser Drill 'Trigger'</title>
+    <short>'Trigger'</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<mv-pop>
+		<countSuper>1</countSuper>
+	</mv-pop>
+	<damage>0</damage>
+    <fireChance>0</fireChance> 
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>45</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>66</g>
+		<b>66</b>
+	</color>
+	<erosion>
+		<speed>0.01</speed>
+		<maxSpeed>10</maxSpeed>
+		<time>0.5</time>
+		<maxTime>20.0</maxTime>
+		<systemRepairMultiplier>0.85</systemRepairMultiplier>
+	</erosion>
+	<image>beam_contact</image>
+	<weaponArt>co_plasma_trigger</weaponArt> 
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_TRIGGER_BOOM">
+	<type>BEAM</type>
+    <tip>tip_trigger</tip>
+    <title>Laser Drill 'Trigger'</title>
+    <short>'Trigger'</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<damage>1</damage>
+    <fireChance>5</fireChance> 
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>45</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>66</g>
+		<b>66</b>
+	</color>
+	<image>beam_contact</image>
+	<sp>1</sp>
+	<weaponArt>co_plasma_trigger</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_PLASMA_DESTRUCTOR">
+    <type>LASER</type>
+    <title>Laser Drill 'Destructor'</title>
+    <short>'Destructor'</short>
+    <tip>tip_destructor</tip>
+    <desc></desc>
+	<descriptionOverride>Industrial mining laser drill adapted for combat conditions. This technology is now primarily used by the Ravagers, despite its astonishing targeting difficulties.
+For 1 second releases a beam that stacks erosion on the system hit dealing no other damage. Stacks erosion faster and more than 'Trigger'.
+
+		Stats:
+		Required Power: 2
+		Charge Time: 16 seconds
+		
+		Shots per charge: 1
+		
+		Shield Piercing: 1
+
+		Perk: In the final moment of the shot the beam inflicts more erosion and deals 2 damage.
+		
+		Default Price: 85~   -   Selling Price: 42~
+	</descriptionOverride>
+    <tooltip>In the final moment of the shot the beam inflicts more erosion and deals 2 damage.</tooltip>
+    <damage>0</damage>
+    <shots>50</shots>
+    <fireChance>0</fireChance>
+    <cooldown>16</cooldown>
+    <power>2</power>
+    <cost>85</cost>
+    <speed>180</speed>
+    <rarity>3</rarity>
+	<fireTime>0.02</fireTime>
+	<sp>1</sp>
+    <weaponArt>co_plasma_destructor</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_DESTRUCTOR_BEAM">
+	<type>BEAM</type>
+    <tip>tip_destructor</tip>
+    <title>Laser Drill 'Destructor'</title>
+    <short>'Destructor'</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<mv-pop>
+		<countSuper>1</countSuper>
+	</mv-pop>
+	<damage>0</damage>
+    <fireChance>0</fireChance> 
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>85</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>225</g>
+		<b>150</b>
+	</color>
+	<erosion>
+		<speed>0.015</speed>
+		<maxSpeed>10</maxSpeed>
+		<time>0.5</time>
+		<maxTime>20.0</maxTime>
+		<systemRepairMultiplier>0.85</systemRepairMultiplier>
+	</erosion>
+	<image>beam_contact</image>
+	<weaponArt>co_plasma_destructor</weaponArt> 
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_DESTRUCTOR_BOOM">
+	<type>BEAM</type>
+    <tip>tip_trigger</tip>
+    <title>Laser Drill 'Destructor'</title>
+    <short>'tip_destructor'</short>
+	<desc>YOU SOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<damage>2</damage>
+    <fireChance>0</fireChance> 
+	<cooldown>14</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>2</power>
+	<cost>85</cost>
+	<rarity>0</rarity>
+	<color>
+		<r>255</r>
+		<g>225</g>
+		<b>150</b>
+	</color>
+		<erosion>
+			<speed>1</speed>
+			<maxSpeed>10</maxSpeed>
+			<time>5</time>
+			<maxTime>20.0</maxTime>
+			<systemRepairMultiplier>0.85</systemRepairMultiplier>
+		</erosion>
+	<mv-aoe>
+		<erosion>
+			<speed>1</speed>
+			<maxSpeed>10</maxSpeed>
+			<time>5</time>
+			<maxTime>20.0</maxTime>
+			<systemRepairMultiplier>0.85</systemRepairMultiplier>
+		</erosion>
+	</mv-aoe>
+	<image>beam_contact</image>
+	<weaponArt>co_plasma_destructor</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="CO_PLASMA_PROMETHEUS">
+    <type>LASER</type>
+    <title>Plasma Emitter 'Prometheus'</title>
+    <short>'Prometheus'</short>
+    <tip>tip_prometheus</tip>
+    <desc></desc>
+	<descriptionOverride>For some unknown reason, Ravagers' plasma emitters are highly prized by only one organization. Perhaps fortunately, this organization is dedicated to the pursuit, study, and extermination of Ravagers.
+Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire. Charges perk as it fires.
+
+		Stats:
+		Required Power: 2
+		Charge Time: 13 seconds
+		Accuracy Bonus: +5%
+		
+		Shots per charge: 5
+		
+		Total System Damage: 0.4
+		Total Crew Damage: 5
+		
+		Fire Chance 10/20/30/40/50%
+		
+		Shield layer pop: 1
+		Super shield layer pop: 1
+
+		Default Price: 65~   -   Selling Price: 32~
+	</descriptionOverride>
+    <tooltip>Within each burst, each shot has a 10% increased chance to start a fire.</tooltip>
+	<accuracyMod>5</accuracyMod>
+    <damage>0</damage>
+    <shots>5</shots>
+    <fireChance>1</fireChance>
+    <cooldown>13</cooldown>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+    <power>2</power>
+    <image>ion_heavy</image>
+    <cost>65</cost>
+    <speed>160</speed>
+    <rarity>2</rarity>
+	<fireTime>0.1</fireTime>
+	<erosion>
+		<speed>50</speed>
+		<maxSpeed>50</maxSpeed>
+		<time>0.05</time>
+		<maxTime>0.25</maxTime>
+	</erosion>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<explosion>explosion_big1_ion</explosion>
+	<launchSounds>
+		<sound>co_prometheus_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_plasma_prometheus</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="CO_PLASMA_HELIOS">
+    <type>LASER</type>
+    <title>Plasma Emitter 'Helios'</title>
+    <short>'Helios'</short>
+    <tip>tip_helios</tip>
+    <desc></desc>
+	<descriptionOverride>... From the way this weapon "looks" at you, the purpose of extermination is more than obvious.
+Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire. Charges perk as it fires.
+
+		Stats:
+		Required Power: 2
+		Charge Time: 15 seconds
+		Accuracy Bonus: +5%
+		
+		Shots per charge: 5
+		
+		Total System Damage: 0.4
+		Total Crew Damage: 5
+		
+		Fire Chance: 20%
+
+		Shield layer pop: 1
+		Super shield layer pop: 1
+
+		Default Price: 85~   -   Selling Price: 42~
+	</descriptionOverride>
+    <tooltip>Enemy's engines is dealt additional damage if all projectiles in a single burst hit the target.</tooltip>
+	<accuracyMod>5</accuracyMod>
+    <damage>0</damage>
+    <shots>5</shots>
+    <fireChance>2</fireChance>
+    <cooldown>15</cooldown>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+    <power>2</power>
+    <image>ion_heavy</image>
+    <cost>85</cost>
+    <speed>160</speed>
+    <rarity>3</rarity>
+	<fireTime>0.1</fireTime>
+	<erosion>
+		<speed>50</speed>
+		<maxSpeed>50</maxSpeed>
+		<time>0.05</time>
+		<maxTime>0.25</maxTime>
+	</erosion>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<explosion>explosion_big1_ion</explosion>
+	<launchSounds>
+		<sound>co_helios_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_plasma_helios</weaponArt>
+</weaponBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							RAVAGER AUGMENTSSSS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<augBlueprint name="CO_RAVAGER_SYSOPER">
+	<title>Ravager's Operating System</title>
+	<desc>The "mind" of this machine can control systems at level 1 and detect life forms even with sensors disabled.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_RAVAGER_PLATING">
+	<title>Ravager Plating</title>
+	<desc>This hull plating automatically patches breaches and put out fires very fast, also absorbs 10% of scrap into the hull, repairing it. It will not take scrap when your hull is at full capacity.
+Ravagers became memorable not so much for their endurance, but for their ability to assimilate.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_RAVAGER_PROTOCOL">
+	<title>Devastating Protocols</title>
+	<desc>"They're just machines... soulless, cruel, without any feelings or desires, just machines. Aren't they?"
+All enemy crew become susceptible to suffocation, while all onboard drones are devoured by the ship's hull, offering no resistance.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_RAVAGER_ENERSHIELD">
+	<title>Ravager Shielding</title>
+	<desc>Energy Shield technology improved by Ravagers. It has 36 hit points, replaces shields generated by the shield system.
+This Energy Shield regenerates over time while the shield system is active. Enemy crew can no longer return to their ship if they teleport to a ship with this shielding installed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_RAVAGER_FADING_CLOAK">
+	<title>Fading Cloaking</title>
+	<desc>Legends say that the Fading Ravagers were those who renounced the ideas of their own artificial mind, thus separating themselves from the Foothold. Such "separatists" suffered a fate worse than their usual prey had ever experienced.
+When installed, shortens Cloaking cooldown by 15 second.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<value>3</value>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							RAVAGER DRONESSSSSS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<droneBlueprint name="CO_AURORA_DRONE">
+    <type>COMBAT</type>
+    <tip>tip_ancient</tip>
+    <title>'Aurora' Drone</title>
+    <short>'Aurora'</short>
+    <desc></desc>
+    <power>2</power>
+    <cooldown>1000</cooldown>
+    <dodge>0</dodge>
+    <speed>20</speed>
+    <cost>70</cost>
+    <droneImage>co_aurora_drone</droneImage>
+    <weaponBlueprint>CO_PLASMA_AURORA</weaponBlueprint>
+    <rarity>0</rarity>
+    <iconImage>combat</iconImage>
+</droneBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							SLAYERS STUFF								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<blueprintList name="CO_LIST_CREW_SLAYERS_POWERARMOR">
+	<name>co_drone_slayersuit_melee</name>
+	<name>co_drone_slayersuit_range</name>
+</blueprintList>
+
+<crewBlueprint name="co_drone_slayersuit_melee">
+	<title>Autonomous Power Armor</title>
+	<short>'A.P.A.M.'</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="co_drone_slayersuit_range">
+	<title>Autonomous Power Armor</title>
+	<short>'A.P.A.R.'</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+
+<droneBlueprint name="CO_DRONE_SLAYERSUIT_MELEE_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Cutthroat Drone [Anti-Pers]</title>
+	<short>Cutthroat [DEF]</short>
+	<desc>[CURRENT MODE: Anti-Personnel]
+
+-110 HP, 0.7x damage taken, 0.9x movement speed
+-2x melee damage, 0.33 ranged damage
+-
+-Can be equipped by humans, which will radically increase their combat characteristics in exchange for the ability to repair and man anything.</desc>
+	<power>1</power>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="CO_DRONE_SLAYERSUIT_MELEE_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Cutthroat Drone [Boarding]</title>
+	<short>Cutthroat [ATK]</short>
+	<desc>[CURRENT MODE: Boarding]
+
+-110 HP, 0.7x damage taken, 0.9x movement speed
+-2x melee damage, 0.33 ranged damage
+-
+-Can be equipped by humans, which will radically increase their combat characteristics in exchange for the ability to repair and man anything.</desc>
+	<power>1</power>
+	<speed>18</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+
+<droneBlueprint name="CO_SLAYER_DRONE">
+    <type>COMBAT</type>
+    <title>Dismay Emitter Drone</title>
+    <short>Dismay Emi.</short>
+    <desc>A drone created using the essence of the [REDACTED]. Equipped with a powerful '0!5#|2Y' Emitter, the shots of which pierce 2 shields layers and make irreparable adjustments to the lives of those who are in the drone's field of vision.</desc>
+    <power>2</power>
+    <cooldown>1000</cooldown>
+    <dodge>0</dodge>
+    <speed>15</speed>
+	<dodge>80</dodge>
+    <cost>70</cost>
+    <droneImage>co_slayers_drone</droneImage>
+    <weaponBlueprint>CO_SLAYER_DRONE_LASER</weaponBlueprint>
+    <rarity>0</rarity>
+    <iconImage>combat</iconImage>
+</droneBlueprint>
+<weaponBlueprint name="CO_SLAYER_DRONE_LASER">
+    <type>LASER</type>
+    <title>Dismay Emitter</title>
+    <short>Dismay Emi.</short>
+    <desc>YOU SHOULD NOT SEE THIS.</desc>
+    <sysDamage>1</sysDamage>
+	<persDamage>1</persDamage>
+    <shots>1</shots>
+    <fireChance>1</fireChance>
+	<sp>2</sp>
+	<roomStatBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<duration>5</duration>
+			<dangerRating>9</dangerRating>
+			<boostAnim>captivity</boostAnim>
+		</statBoost>
+		<statBoost name="controllable"> <!--for player crew-->
+			<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<duration>5</duration>
+		</statBoost>
+	</roomStatBoosts>
+	<statBoosts>
+		<statBoost name="maxHealth">
+			<boostType>MULT</boostType>
+			<amount>0.98</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+		</statBoost>
+		<statBoost name="damageTakenMultiplier">
+			<boostType>MULT</boostType>
+			<amount>1.02</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+		</statBoost>
+		<statBoost name="moveSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>0.98</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+		</statBoost>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.98</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+		</statBoost>
+		<statBoost name="damageMultiplier">
+			<boostType>MULT</boostType>
+			<amount>0.98</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+		</statBoost>
+	</statBoosts>
+    <cooldown>12</cooldown>
+    <power>2</power>
+    <image>ion_fire</image>
+    <cost>65</cost>
+    <speed>160</speed>
+    <rarity>0</rarity>
+	<fireTime>0.1</fireTime>
+	<launchSounds>
+		<sound>co_terra_wulf_pinp</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>co_terra_flame_laser</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_rail_charon</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_SLAYER_LIGHTMISS_1">
+    <type>BURST</type>
+    <title>MLRS 'Echelon' I</title>
+    <short>'Echelon' I</short>
+    <desc>A massive burst of missiles that pierce shields and destroy systems, while the enemy's hull remains intact - an ideal choice for tactical strikes. Despite mass production, 'Echelon's are popular only within their manufacturing organization.</desc>
+	<drone_targetable>1</drone_targetable>
+    <shots>1</shots>
+    <sysDamage>1</sysDamage>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>2</countSuper>
+	</mv-pop>
+	<radius>40</radius>
+    <cooldown>8</cooldown>
+	<accuracyMod>5</accuracyMod>
+	<missiles>1</missiles>
+	<freeMissileChance>60</freeMissileChance>
+    <power>1</power>
+    <projectiles>
+        <projectile count="2" fake="false">co_slayers_lightmiss_proj</projectile>
+    </projectiles>
+    <cost>55</cost>
+    <speed>40</speed>
+    <rarity>2</rarity>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<launchSounds>
+		<sound>co_rs_missile_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_slayers_lightmiss_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_SLAYER_LIGHTMISS_2">
+    <type>BURST</type>
+    <title>MLRS 'Echelon' II</title>
+    <short>'Echelon' II</short>
+    <desc>A massive burst of missiles that pierce shields and destroy systems, while the enemy's hull remains intact - an ideal choice for tactical strikes. Despite mass production, 'Echelon's are popular only within their manufacturing organization.
+Fires twice as many projectiles as MK I.</desc>
+	<drone_targetable>1</drone_targetable>
+    <shots>2</shots>
+    <sysDamage>1</sysDamage>
+	<mv-pop>
+		<count>1</count>
+		<countSuper>2</countSuper>
+	</mv-pop>
+	<radius>40</radius>
+    <cooldown>14</cooldown>
+	<accuracyMod>5</accuracyMod>
+	<!--<missiles>1</missiles>
+	<freeMissileChance>50</freeMissileChance>-->
+    <power>2</power>
+    <projectiles>
+        <projectile count="2" fake="false">co_slayers_lightmiss_proj</projectile>
+    </projectiles>
+    <cost>75</cost>
+    <speed>40</speed>
+    <rarity>4</rarity>
+	<fireTime>0.7</fireTime>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<launchSounds>
+		<sound>co_rs_missile_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_slayers_lightmiss_2</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="CO_SLAYER_LIGHTMISS_1_ARTI">
+    <type>BURST</type>
+    <title>MLRS 'Echelon' I</title>
+    <short>'Echelon' I</short>
+    <desc>YOU SHOULD NOT SEE THIS.</desc>
+    <shots>1</shots>
+	<drone_targetable>1</drone_targetable>
+	<radius>40</radius>
+    <sysDamage>1</sysDamage>
+	<accuracyMod>5</accuracyMod>
+    <cooldown>10</cooldown>
+    <power>1</power>
+    <cost>55</cost>
+    <rarity>0</rarity>
+    <speed>40</speed>
+    <projectiles>
+        <projectile count="2" fake="false">co_slayers_lightmiss_proj</projectile>
+    </projectiles>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<launchSounds>
+		<sound>co_rs_missile_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_slayers_lightmiss_1</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="CO_SLAYER_LIGHTMISS_2_ARTI">
+    <type>BURST</type>
+    <title>MLRS 'Echelon' II</title>
+    <short>'Echelon' II</short>
+    <desc>YOU SHOULD NOT SEE THIS.</desc>
+    <shots>2</shots>
+	<drone_targetable>1</drone_targetable>
+	<radius>40</radius>
+    <sysDamage>1</sysDamage>
+	<accuracyMod>5</accuracyMod>
+    <cooldown>10</cooldown>
+    <power>1</power>
+    <cost>75</cost>
+    <rarity>0</rarity>
+    <speed>40</speed>
+    <projectiles>
+        <projectile count="2" fake="false">co_slayers_lightmiss_proj</projectile>
+    </projectiles>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-500</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<duration>0.01</duration>
+		</statBoost>
+	</statBoosts>
+	<launchSounds>
+		<sound>co_rs_missile_shot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+    <weaponArt>co_slayers_lightmiss_2</weaponArt>
+</weaponBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							PLAYER SHIIIIPS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<shipBlueprint name="CO_PLAYER_RAVAGER_DESTROYER" layout="co_player_ravager_destroyer_a" img="co_player_ravager_destroyer_a">
+	<mv-mapImage>map_icon_co_player_ravager_destroyer_a</mv-mapImage>
+	<class>Ravager Assault Frigate</class>
+	<name>Apocriton</name>
+	<desc>The Ravagers' invasion has not gone unnoticed by anyone, including the Federation. Even though, the "mind" of this machine can still man systems at 1 lvl and reveal lifeforms even when sensors are down.</desc>
+	<systemList>
+		<sensors power="1" room="10" start="true" img="co_room_sensors_smol">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<temporal power="1" room="7" start="false" img="co_room_temporal_smol" />
+		<battery power="1" room="5" start="false" img="co_room_battery_smol" />
+		<cloaking power="1" room="2" start="true" img="co_room_cloaking_tall" />
+		<doors power="1" room="4" start="true" img="co_room_doors_smol">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="9" start="false" img="co_room_drones_wide" />
+		<engines power="2" room="1" start="true" img="co_room_engines_wide">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="co_room_hacking_wide" />
+		<mind power="1" room="6" start="false" img="co_room_mind_wide" />
+		<pilot power="1" room="0" start="true" img="co_room_pilot_smol">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<shields power="1" max="8" room="8" start="false" img="co_room_shields_verywide">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<weapons power="2" room="11" start="true" img="co_room_weapons_verywide">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="3">
+		<weapon name="CO_RAIL_ADAPTER" />
+	</weaponList>
+	<droneList drones="3" count="2" />
+	<health amount="15" />
+	<maxPower amount="5" />
+	<aug name="CO_RAVAGER_PLATING" />
+	<aug name="CO_RAVAGER_PROTOCOL" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_PLAYER_RAVAGER_DESTROYER_2" layout="co_player_ravager_destroyer_b" img="co_player_ravager_destroyer_b">
+	<mv-mapImage>map_icon_co_player_ravager_destroyer_a</mv-mapImage>
+	<class>Brillianced Assault Frigate</class>
+	<name>Dragonfly</name>
+	<desc>The Brilliance Fleet isn't exactly in the best shape right now, but getting involved with the Ravagers... It seems like too much of a last resort.</desc>
+	<systemList>
+		<artillery power="1" max="4" room="5" start="true" weapon="CO_RAIL_CHARON" img="co_room_artillery_verytall" />
+		<battery power="1" room="12" start="false" img="co_room_battery_wide" />
+		<cloaking power="1" max="2" room="11" start="false" img="co_room_cloaking_verywide" />
+		<doors power="1" room="10" start="true" img="co_room_doors_wide">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="6" room="9" start="false" img="co_room_drones_wide_1" />
+		<engines power="2" room="8" start="true" img="co_room_engines_wide">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="co_room_hacking_wide_1" />
+		<mind power="1" room="0" start="false" img="co_room_mind_wide" />
+		<pilot power="1" room="6" start="true" img="co_room_pilot_smol_1">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="1" start="true" img="co_room_sensors_wide">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="6" room="2" start="true" img="co_room_shields_verywide_1">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<weapons power="2" max="6" room="4" start="true" img="co_room_weapons_verywide">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="CO_PLASMA_AURORA" />
+	</weaponList>
+	<droneList drones="3" count="1" />
+	<health amount="15" />
+	<maxPower amount="6" />
+	<aug name="CO_RAVAGER_PLATING" />
+	<aug name="CO_RAVAGER_PROTOCOL" />
+</shipBlueprint>
+
+<shipBlueprint name="CO_PLAYER_RAVAGER_DESTROYER_3" layout="co_player_ravager_destroyer_c" img="co_player_ravager_destroyer_c">
+	<mv-mapImage>map_icon_co_player_ravager_destroyer_a</mv-mapImage>
+	<class>Fading Frigate</class>
+	<name>Rapture</name>
+	<desc>Ravagers technologies are both fearsome and impressive. A striking example is this ship, literally restored from its own shadow.</desc>
+	<systemList>
+		<cloaking power="1" max="1" room="2" start="true" img="co_room_cloaking_tall" />
+		<doors power="1" max="1" room="7" start="true" img="co_room_doors_smol_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="4" max="10" room="4" start="true" img="co_room_drones_wide" />
+		<engines power="2" max="8" room="1" start="true" img="co_room_engines_wide">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="3" room="11" start="false" img="co_room_hacking_tall" />
+		<mind power="1" room="5" start="false" img="co_room_mind_wide" />
+		<pilot power="1" max="3" room="0" start="true" img="co_room_pilot_smol">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="1" room="6" start="true" img="co_room_sensors_smol_2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" max="4" room="9" start="true" img="co_room_shields_verywide">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="3" start="false" />
+		<temporal power="1" max="3" room="8" start="true" img="co_room_temporal_tall" />
+		<weapons power="1" max="4" room="13" start="false" img="co_room_weapons_verywide">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2" />
+	<droneList drones="9" count="4">
+		<drone name="CO_SLAYER_DRONE" />
+		<drone name="HELLRAISER_HULL_PLAYER" />
+	</droneList>
+	<health amount="15" />
+	<maxPower amount="7" />
+	<aug name="CO_RAVAGER_FADING_CLOAK" />
+	<aug name="CO_RAVAGER_PLATING" />
+	<aug name="CO_RAVAGER_PROTOCOL" />
+</shipBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							SIGILS OF CAPRA									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<blueprintList name="CO_LIST_SIGIL_LR">
+	<name>CO_SIGIL_SCRAP_LR</name>
+	<name>CO_SIGIL_SHIELD_LR</name>
+	<name>CO_SIGIL_WEAPON_LR</name>
+	<name>CO_SIGIL_SENSOR_LR</name>
+	<name>CO_SIGIL_HEALING_LR</name>
+</blueprintList>
+<blueprintList name="CO_LIST_SIGIL_MR">
+	<name>CO_SIGIL_SCRAP_MR</name>
+	<name>CO_SIGIL_SHIELD_MR</name>
+	<name>CO_SIGIL_WEAPON_MR</name>
+	<name>CO_SIGIL_SENSOR_MR</name>
+	<name>CO_SIGIL_HEALING_MR</name>
+</blueprintList>
+<blueprintList name="CO_LIST_SIGIL_HR">
+	<name>CO_SIGIL_SCRAP_HR</name>
+	<name>CO_SIGIL_SHIELD_HR</name>
+	<name>CO_SIGIL_WEAPON_HR</name>
+	<name>CO_SIGIL_SENSOR_HR</name>
+	<name>CO_SIGIL_HEALING_HR</name>
+</blueprintList>
+<blueprintList name="CO_LIST_SIGIL_CURSES">
+	<name>CO_SIGIL_SCRAP_CURSE</name>
+	<name>CO_SIGIL_SHIELD_CURSE</name>
+	<name>CO_SIGIL_WEAPON_CURSE</name>
+	<name>CO_SIGIL_SENSOR_CURSE</name>
+	<name>CO_SIGIL_HEALING_CURSE</name>
+</blueprintList>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--							LOW RISK SIGILS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<augBlueprint name="CO_SIGIL_SCRAP_LR">
+	<title>Sigil of Stinginess</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's profit as a toll for a "quiet" life.
+Effect: -15% to scrap income.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SHIELD_LR">
+	<title>Sigil of Ease</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excuses".
+Effect: -15% to shield recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_WEAPON_LR">
+	<title>Sigil of Ease</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excessiveness".
+Effect: -15% to weapon recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SENSOR_LR">
+	<title>Sigil of Retina</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "peeking".
+Effect: -15% to shield recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_HEALING_LR">
+	<title>Sigil of Vitality</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for indulgent attitude to life.
+Effect: While Medbay is powered, crew will take damage anywhere on the ship at 25% speed of your current Medbay level. Cloning speed is always set to 15 second for all crew.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--							MEDIUM RISK SIGILS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<augBlueprint name="CO_SIGIL_SCRAP_MR">
+	<title>Sigil of Poverty</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's profit as a toll for a "quiet" life.
+Effect: -25% to scrap income.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SHIELD_MR">
+	<title>Sigil of Serenity</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excuses".
+Effect: -25% to shield recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_WEAPON_MR">
+	<title>Sigil of Poverty</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excessiveness".
+Effect: -25% to weapon recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SENSOR_MR">
+	<title>Sigil of Stigma</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "peeking".
+Effect: Telepathic abilities no longer work in any form.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_HEALING_MR">
+	<title>Sigil of Purity</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for indulgent attitude to life.
+Effect: Onboard lab can no longer be used.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--							HIGH RISK SIGILS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<augBlueprint name="CO_SIGIL_SCRAP_HR">
+	<title>Sigil of Greed</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's profit as a toll for a "quiet" life.
+Effect: -40% to scrap income.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SHIELD_HR">
+	<title>Sigil of Frailty</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excuses".
+Effect: -40% to shield recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_WEAPON_HR">
+	<title>Sigil of Helplessness</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "excessiveness".
+Effect: -40% to weapon recharge speed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SENSOR_HR">
+	<title>Sigil of Blindness</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for "peeking".
+Effect: Your sensors are always zero-powered.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_HEALING_HR">
+	<title>Sigil of Mortality</title>
+	<desc>A pirate Sigil that absorbs part of its bearer's energy as a toll for indulgent attitude to life.
+Effect: Medbay and Clonebay upgrades can no longer be installed. All crew suffers from a 20% decrease in following parameters: maximum HP, movement speed, repair speed, healing speed, cloning speed, damage dealt.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--						LIFE INCOMPATIBLE SIGILS (CURSES)					-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<augBlueprint name="CO_SIGIL_SCRAP_CURSE">
+	<title>Curse of Deprivation</title>
+	<desc>"You think money solves everything. But try to solve everything yourself..."
+Effect: -45% to scrap income. Arms cannot be installed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_SHIELD_CURSE">
+	<title>Curse of Defenselessness</title>
+	<desc>"They say heroes don't wear capes. And you... aren't even a hero."
+Effect: -40% to shield recharge speed. Internal shield upgrades cannot be installed. </desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_WEAPON_CURSE">
+	<title>Curse of Unarmedness</title>
+	<desc>"Ever found yourself "David in the face of Goliath"? But they did."
+Effect: -40% to weapons recharge speed. Internal weapons upgrades cannot be installed. All weapons now require 1 more power.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<locked>true</locked>
+</augBlueprint>
+
+<augBlueprint name="CO_SIGIL_HEALING_CURSE">
+	<title>Curse of Lifelessness</title>
+	<desc>"Big man in a suit of armor. Take that off, what are you? ...A mortal."
+Effect: Medbay/Clonebay upgrades and the onboard lab cannot be installed. All crew are no longer able to use active abilities.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<locked>true</locked>
+</augBlueprint>

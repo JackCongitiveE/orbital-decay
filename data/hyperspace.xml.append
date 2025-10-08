@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<customChoiceColors enabled="true">
+	<syncResourceBoxColor>true</syncResourceBoxColor>
+</customChoiceColors>
+
+<customChoiceColors enabled="true">
+	<syncResourceBoxColor>true</syncResourceBoxColor>
+	<choiceColor name="co_black">
+		<normal r="25" g="0" b="65"/>
+		<hover r="22" g="22" b="22"/>
+		<disabled r="0" g="0" b="0"/>
+		<blue_option r="20" g="100" b="50"/>
+	</choiceColor>
+	<choiceColor name="co_ravager_red">
+		<normal r="103" g="11" b="11"/>
+		<hover r="203" g="11" b="11"/>
+		<disabled r="103" g="11" b="11"/>
+		<blue_option r="103" g="11" b="11"/>
+	</choiceColor>
+</customChoiceColors>
+
+
+<mod:findLike type="scripts">
+    <mod-append:script>data/co_scripts/co_functions.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_smartgunners.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_emitters.lua</mod-append:script>
+</mod:findLike>
+
+<discord enabled="true">
+	<miniships>
+		<miniship>miniship_co_player_ravager_destroyer</miniship>
+	</miniships>
+	<appId>737088144931029032</appId>
+	<icon>logo_50_big</icon>
+</discord>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							BOSSSS MOLOKOSOSSS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+
+<drones>
+	<drone name="CO_BALLISTATOG_DEFEND">
+		<crewBlueprint>co_drone_ballista</crewBlueprint>
+		<tooltipName>Ballista Drone</tooltipName>
+	</drone>
+	<drone name="CO_BALLISTATOG_BOARDER">
+		<crewBlueprint>co_drone_ballista</crewBlueprint>
+		<tooltipName>Ballista Drone</tooltipName>
+	</drone>
+	
+	<drone name="CO_COMMITTOG_DEFEND">
+		<crewBlueprint>co_drone_commit</crewBlueprint>
+		<tooltipName>Commit Drone</tooltipName>
+	</drone>
+	<drone name="CO_COMMITTOG_BOARDER">
+		<crewBlueprint>co_drone_commit</crewBlueprint>
+		<tooltipName>Commit Drone</tooltipName>
+	</drone>
+	
+	<drone name="CO_DRONE_SLAYERSUIT_MELEE_DEFEND">
+		<crewBlueprint>co_drone_slayersuit_melee</crewBlueprint>
+		<tooltipName>Cutthroat Drone</tooltipName>
+	</drone>
+	<drone name="CO_DRONE_SLAYERSUIT_MELEE_BOARDER">
+		<crewBlueprint>co_drone_slayersuit_melee</crewBlueprint>
+		<tooltipName>Cutthroat Drone</tooltipName>
+	</drone>
+	<drone name="CO_DRONE_SLAYERSUIT_RANGE_DEFEND">
+		<crewBlueprint>co_drone_slayersuit_range</crewBlueprint>
+		<tooltipName>Cutthroat Drone</tooltipName>
+	</drone>
+	<drone name="CO_DRONE_SLAYERSUIT_RANGE_BOARDER">
+		<crewBlueprint>co_drone_slayersuit_range</crewBlueprint>
+		<tooltipName>Cutthroat Drone</tooltipName>
+	</drone>
+</drones>
+
+<!--TOGGLE EQUIPMENT CHECK-->
+<req name="LIST_CHECK_TOGGLES_AND_AMPS" type="any">
+	<req type="all">
+		<req lvl="1">
+			<name>drones</name>
+		</req>
+		<req type="any">
+<!--///////////////////////////-DRONES-/////////////////////////-->
+			<name>CO_BALLISTATOG_DEFEND</name>
+			<name>CO_BALLISTATOG_BOARDER</name>
+			<name>CO_COMMITTOG_DEFEND</name>
+			<name>CO_COMMITTOG_BOARDER</name>
+			
+			<name>CO_SLAYERSUIT_MELEE_DEFEND</name>
+			<name>CO_SLAYERSUIT_MELEE_BOARDER</name>
+			<name>CO_SLAYERSUIT_RANGE_DEFEND</name>
+			<name>CO_SLAYERSUIT_RANGE_BOARDER</name>
+<!--///////////////////////////-WEAPONS-/////////////////////////-->
+			<name>CO_MISSILESTOG_AP_1</name>
+			<name>CO_MISSILESTOG_EMP_1</name>
+			<name>CO_MISSILESTOG_BIO_1</name>
+			<name>CO_MISSILESTOG_AP_2</name>
+			<name>CO_MISSILESTOG_EMP_2</name>
+			<name>CO_MISSILESTOG_BIO_2</name>
+		</req>
+	</req>
+</req>
+
+
+<mod:findLike type="crew">
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							(S)CREWWWWWWWWWWWWW								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+	<mod-append:race name="co_ripper_disk">
+		<maxHealth>45</maxHealth>
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<noWarning>true</noWarning>
+		<repairSpeed>0</repairSpeed>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<resistsMindControl>true</resistsMindControl>
+		<canTeleport>false</canTeleport>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<noSlot>true</noSlot>
+		<noAI>false</noAI>
+		<controllable>false</controllable>
+		<selectable>false</selectable>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<canMove>false</canMove>
+		<snapToSlot>true</snapToSlot>
+		<damageTakenMultiplier>0.5</damageTakenMultiplier>
+		<animSheet>co_ripper_crewproj</animSheet>
+		<powerEffect>
+			<cooldown>0</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<activateWhenReady>true</activateWhenReady>
+			<friendlyFire>false</friendlyFire>
+			<persDamage>3</persDamage>
+			<selfHealth>-999999</selfHealth>
+		</powerEffect>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<droneAI>
+			<fightAI/>
+		</droneAI>
+	</mod-append:race>
+	
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							DRONESSSSSSSSSSSSSS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+	<mod-append:race name="co_drone_ballista">
+		<selectable>true</selectable>
+		<animSheet>co_drone_ballista</animSheet>
+		<canMove>false</canMove>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<canMan>false</canMan>
+		<maxHealth>100</maxHealth>
+		<damageTakenMultiplier>0.9</damageTakenMultiplier>
+		<stunMultiplier>0</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>	<!-- salvage event -->
+		<noClone>true</noClone>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>10</damageMultiplier>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<animBase>mantis</animBase>
+		<shootingSounds>
+			<shootingSound>co_ballista_shot</shootingSound>
+		</shootingSounds>
+		<passiveStatBoosts>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>true</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+				</blackList>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>true</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+				</blackList>
+			</statBoost>
+			<statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+					<co_human_legion_oper/>
+				</blackList>
+			</statBoost>
+			<statBoost name="canSabotage">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+					<co_human_legion_oper/>
+				</blackList>
+			</statBoost>
+		</passiveStatBoosts>
+	</mod-append:race>
+	
+	<mod-append:race name="co_drone_commit">
+		<selectable>true</selectable>
+		<animSheet>co_drone_commit</animSheet>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<canMan>false</canMan>
+		<maxHealth>130</maxHealth>
+		<damageTakenMultiplier>0.7</damageTakenMultiplier>
+		<stunMultiplier>0</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>	<!-- salvage event -->
+		<noClone>true</noClone>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>20</damageMultiplier>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<animBase>mantis</animBase>
+		<shootingSounds>
+			<shootingSound>co_ballista_shot</shootingSound>
+		</shootingSounds>
+		<passiveStatBoosts>
+			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>true</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+				</blackList>
+			</statBoost>
+			<statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+					<co_human_legion_oper/>
+				</blackList>
+			</statBoost>
+			<statBoost name="canSabotage">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<blackList>
+					<co_drone_ballista/>
+					<co_human_legion_oper/>
+				</blackList>
+			</statBoost>
+		</passiveStatBoosts>
+	</mod-append:race>
+
+
+
+	<mod-append:race name="co_human_legion_oper">
+		<animSheet>co_human_legion_oper</animSheet>
+		<teleportMove>true</teleportMove>
+		<damageMultiplier>2.2</damageMultiplier>
+		<damageTakenMultiplier>0.8</damageTakenMultiplier>
+		<fireDamageMultiplier>0.2</fireDamageMultiplier>
+		<suffocationModifier>0.2</suffocationModifier>
+		<repairSpeed>4.0</repairSpeed>
+		<fireRepairMultiplier>5</fireRepairMultiplier>
+		<animBase>mantis</animBase>
+		<defaultSkillLevel>2</defaultSkillLevel>
+		<noClone>true</noClone>
+		<cloneLoseSkills>false</cloneLoseSkills>
+		<powerEffect>
+			<cooldown>1</cooldown>
+			<cooldownColor r="249" g="180" b="8"/>
+			<jumpCooldown>continue</jumpCooldown>
+			<buttonText>T1T#N'S R3C0VER7</buttonText>
+			<tooltip>Heals itself for 1.5hp/s when below 55hp</tooltip>
+			<req>
+				<maxHealth>55</maxHealth>
+			</req>
+			<temporaryEffect>
+				<duration>1</duration>
+				<cooldownColor r="249" g="180" b="8"/>
+				<trueHealAmount>3</trueHealAmount>
+			</temporaryEffect>
+			<activateWhenReady>true</activateWhenReady>
+		</powerEffect>
+		<passiveStatBoosts>
+			<!--<statBoost name="trueHealAmount">
+				<req>
+					<maxHealth>55</maxHealth>
+				</req>
+				<boostType>FLAT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>SELF</crewTarget>
+				<priority>0</priority>
+			</statBoost> -->
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>2</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+			</statBoost> 
+			<statBoost name="repairSpeed">
+				<boostType>FLAT</boostType>
+				<amount>1</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>2</maxStacks>
+				<whiteList>
+					<human_technician/>
+					<human_legion/>
+					<human_legion_pyro/>
+					<unique_cyra/>
+					<co_unique_human_legion_oper/>
+				</whiteList>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemList>
+					<engines/>
+					<pilot/>
+					<shields/>
+					<weapons/>
+					<drones/>
+				</systemList>
+				<priority>0</priority>
+			</statBoost>
+		</passiveStatBoosts>
+		<powerEffect>
+			<cooldown>25</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>droneLaunch</powerSound>
+			</powerSounds>
+			<req type="enemy">
+				<enemyInRoom/>
+			</req>
+			<buttonText>DRONE</buttonText>
+			<tooltip>[COOLDOWN:25s]
+				Spawns a temporary Commit drone ally which moves slowly, but can only fight if there is an allied crew in the same room, but not sabotage, repair or man systems. Lasts 30 seconds.</tooltip>
+			<cooldownColor r="185" g="185" b="185"/>
+			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
+			<powerCharges>2</powerCharges>
+			<initialCharges>2</initialCharges>
+			<chargesPerJump>1</chargesPerJump>
+			<spawnCrew>
+				<number>1</number>
+				<race>co_drone_commit</race>
+				<lifetime>30</lifetime>
+				<statBoosts>
+					<statBoost name="noClone">
+						<boostType>SET</boostType>
+						<value>true</value>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALL</crewTarget>
+						<priority>999999</priority>
+					</statBoost>
+				</statBoosts>
+			</spawnCrew>
+		</powerEffect>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+	</mod-append:race>
+
+
+		<!--<controllable>true</controllable>
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canPunch>true</canPunch>
+		<canSabotage>true</canSabotage>
+		<canRepair>true</canRepair>
+		<canMan>true</canMan>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<defaultSkillLevel>2</defaultSkillLevel>
+		<damageMultiplier>2</damageMultiplier>
+		<healSpeed>2.0</healSpeed>
+		<moveSpeedMultiplier>1.75</moveSpeedMultiplier>
+		<stunMultiplier>0</stunMultiplier>-->
+
+	<mod-append:race name="co_drone_slayersuit_melee">
+		<controllable>true</controllable>
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canPunch>true</canPunch>
+		<punchTimer min="333" max="500"/>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<maxHealth>110</maxHealth>
+		<damageMultiplier>2.0</damageMultiplier>
+		<rangedDamageMultiplier>0.33</rangedDamageMultiplier>   
+		<allDamageTakenMultiplier>0.7</allDamageTakenMultiplier>
+		<stunMultiplier>0.25</stunMultiplier>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<passiveStatBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>SELF</crewTarget>
+				<droneTarget>SELF</droneTarget>
+				<amount>1</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<drones/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1.25</onePwr>
+					<twoPwr>1.5</twoPwr>
+					<threePwr>1.75</threePwr>
+					<fourPwr>2</fourPwr>
+					<_5Pwr>2.25</_5Pwr>
+					<_6Pwr>2.5</_6Pwr>
+					<_7Pwr>2.75</_7Pwr>
+					<_8Pwr>3</_8Pwr>
+					<_9Pwr>3.25</_9Pwr>
+					<_10Pwr>3.5</_10Pwr>
+					<_11Pwr>3.75</_11Pwr>
+					<_12Pwr>4</_12Pwr>
+					<_13Pwr>4.25</_13Pwr>
+					<_14Pwr>4.5</_14Pwr>
+					<_15Pwr>4.75</_15Pwr>
+					<_16Pwr>5</_16Pwr>
+				</systemPowerScaling>
+			</statBoost>
+		</passiveStatBoosts>
+	</mod-append:race>
+	
+	<mod-append:race name="co_drone_slayersuit_range">
+		<controllable>true</controllable>
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<maxHealth>110</maxHealth>
+		<damageMultiplier>0.33</damageMultiplier>
+		<rangedDamageMultiplier>2</rangedDamageMultiplier>   
+		<allDamageTakenMultiplier>0.7</allDamageTakenMultiplier>
+		<stunMultiplier>0.25</stunMultiplier>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<passiveStatBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>SELF</crewTarget>
+				<droneTarget>SELF</droneTarget>
+				<amount>1</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<drones/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1.25</onePwr>
+					<twoPwr>1.5</twoPwr>
+					<threePwr>1.75</threePwr>
+					<fourPwr>2</fourPwr>
+					<_5Pwr>2.25</_5Pwr>
+					<_6Pwr>2.5</_6Pwr>
+					<_7Pwr>2.75</_7Pwr>
+					<_8Pwr>3</_8Pwr>
+					<_9Pwr>3.25</_9Pwr>
+					<_10Pwr>3.5</_10Pwr>
+					<_11Pwr>3.75</_11Pwr>
+					<_12Pwr>4</_12Pwr>
+					<_13Pwr>4.25</_13Pwr>
+					<_14Pwr>4.5</_14Pwr>
+					<_15Pwr>4.75</_15Pwr>
+					<_16Pwr>5</_16Pwr>
+				</systemPowerScaling>
+			</statBoost>
+		</passiveStatBoosts>
+	</mod-append:race>
+	
+</mod:findLike>
+
+
+
+
+
+<mod:findName type="req" name="COORDS">
+	<mod-append:name>CO_REQ_CITADEL_COORDS</mod-append:name>
+</mod:findName>
+
+<mod:findName type="req" name="COORDS_BOSS">
+  <mod:findLike type="req" limit="1">
+	<mod-append:name>CO_REQ_CITADEL_COORDS</mod-append:name>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="req" name="COORDS_BOSS_TOOLATE">
+  <mod:findLike type="req" limit="1">
+	<mod-append:name>CO_REQ_CITADEL_COORDS</mod-append:name>
+  </mod:findLike>
+</mod:findName>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							AUGMENTS								AUGMENTS								AUGMENTS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<mod:findLike type="augments" limit="1">
+	<mod-append:aug name="CO_RAVAGER_SYSOPER">
+		<function name="AUTOMATED_SHIP" value="1" useForReqs="false" warning="false"/>
+		<function name="AUTOMATED_REPAIR" value="3" useForReqs="false"/>
+    	<function name="LIFE_SCANNER" value="1.0" useForReqs="true"/>
+		<icon>icon_co_ravager_auto</icon>
+		<locked/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_RAVAGER_PLATING">
+    	<function name="REPAIR_ARM" value="0.1" useForReqs="false"/>
+    	<function name="SLUG_GEL" value="1.5" useForReqs="false"/>
+    	<function name="FIRE_EXTINGUISHERS" value="4.5" useForReqs="true"/>
+		<locked/>
+    	<statBoosts>
+			<statBoost name="oxygenChangeSpeed">
+				<boostType>SET</boostType>
+				<amount>-10</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>0</priority>
+			</statBoost>
+		</statBoosts>
+		<icon>icon_co_ravager_plating</icon>
+	</mod-append:aug>
+	<mod-append:aug name="CO_RAVAGER_PROTOCOL">
+    	<statBoosts>
+			<statBoost name="canSuffocate">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="suffocationModifier">
+				<boostType>SET</boostType>
+				<amount>2.0</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="canSabotage">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="canMove">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="trueHealAmount"> <!--same thing but for drones-->
+				<boostType>FLAT</boostType>
+				<amount>-10</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+				<boostAnim>co_ravager_shock</boostAnim>
+			</statBoost>
+		</statBoosts>
+		<icon>icon_co_ravager_protocol</icon>
+	</mod-append:aug>
+	<mod-append:aug name="CO_RAVAGER_ENERSHIELD">
+    	<function name="ENERGY_SHIELD" value="0" useForReqs="true" stackable="false"/>
+		<superShield>
+			<value>36</value>
+			<color r="105" g="10" b="10" a="1"/>
+			<!--<shieldImage>ship/enemy_shields_chaos_b.png</shieldImage>-->
+		</superShield>
+    	<statBoosts>
+			<statBoost name="canTeleport">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>9999999</priority>
+			</statBoost> 
+		</statBoosts>
+		<locked/>
+		<icon>icon_co_ravager_shield</icon>
+	</mod-append:aug>
+	<mod-append:aug name="CO_RAVAGER_FADING_CLOAK">
+		<function name="FAST_CLOAK" value="3" useForReqs="false" warning="false"/>
+		<icon>icon_co_ravager_auto</icon>
+		<locked/>
+	</mod-append:aug>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							SIGILS							SIGILS							SIGILS							SIGILS						-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+	<mod-append:aug name="CO_SIGIL_SCRAP_LR">
+		<function name="SCRAP_COLLECTOR" value="-0.15" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SCRAP_MR">
+		<function name="SCRAP_COLLECTOR" value="-0.25" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SCRAP_HR">
+		<function name="SCRAP_COLLECTOR" value="-0.4" useForReqs="false"/>
+	</mod-append:aug>
+	
+	
+	<mod-append:aug name="CO_SIGIL_SHIELD_LR">
+		<function name="SHIELD_RECHARGE" value="-0.15" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SHIELD_MR">
+		<function name="SHIELD_RECHARGE" value="-0.25" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SHIELD_HR">
+		<function name="SHIELD_RECHARGE" value="-0.4" useForReqs="false"/>
+	</mod-append:aug>
+	
+	
+	<mod-append:aug name="CO_SIGIL_WEAPON_LR">
+		<function name="AUTO_COOLDOWN" value="-0.15" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_WEAPON_MR">
+		<function name="AUTO_COOLDOWN" value="-0.25" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_WEAPON_HR">
+		<function name="AUTO_COOLDOWN" value="-0.4" useForReqs="false"/>
+	</mod-append:aug>
+	
+
+	<mod-append:aug name="CO_SIGIL_SENSOR_LR">
+		<function name="ADV_SCANNERS" value="0" useForReqs="false"/>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SENSOR_MR">
+		<function name="ADV_SCANNERS" value="0" useForReqs="false"/>
+    	<statBoosts>
+			<statBoost name="isTelepathic">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="isTelepathic">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>DRONES</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+		</statBoosts>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_SENSOR_HR">
+		<function name="ADV_SCANNERS" value="0" useForReqs="false"/>
+	</mod-append:aug>
+	
+	
+	<mod-append:aug name="CO_SIGIL_HEALING_LR">
+		<function name="NANO_MEDBAY" value="0" useForReqs="true" warning="false"/>
+		<statBoosts>
+			<statBoost name="healAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>-1.6</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<medbay/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>1.5</twoPwr>
+					<threePwr>3</threePwr>
+					<fourPwr>6</fourPwr>
+				</systemPowerScaling>
+				<systemRoomTarget>NONE</systemRoomTarget>
+				<systemList>
+					<medbay/>
+				</systemList>
+			</statBoost>
+			<statBoost name="cloneSpeedMultiplier">
+				<boostType>SET</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<clonebay/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>0.867</onePwr>
+					<twoPwr>0.667</twoPwr>
+					<threePwr>0.534</threePwr>
+					<fourPwr>0.1</fourPwr>
+				</systemPowerScaling>
+				<systemRoomTarget>NONE</systemRoomTarget>
+				<systemList>
+					<clonebay/>
+				</systemList>
+			</statBoost>
+		</statBoosts>
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_HEALING_MR">
+	</mod-append:aug>
+	<mod-append:aug name="CO_SIGIL_HEALING_HR">
+	</mod-append:aug>
+
+
+</mod:findLike>
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							PLAYER SHIIIIPS																PLAYER SHIIIIPS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+
+<mod:findLike type="ships" limit="1">
+
+	<mod:findLike type="shipOrder" limit="1">
+		<!-- -->
+		<mod-append:ship>CO_PLAYER_RAVAGER_DESTROYER</mod-append:ship>
+        <mod-append:empty/>
+		<!-- -->
+        <mod-append:empty/>
+        <mod-append:empty/>
+		<!-- -->
+        <mod-append:empty/>
+        <mod-append:empty/>
+        <mod-append:empty/>
+        <mod-append:empty/>
+		<!-- -->
+        <mod-append:empty/>
+        <mod-append:empty/>
+	</mod:findLike>
+	
+	<mod-append:ship name="CO_PLAYER_RAVAGER_DESTROYER" a="true" b="true" c="true" super="luminal" />
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER">
+		<crewLimit>3</crewLimit>
+		<systemLimit>8</systemLimit>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER_2">
+		<crewLimit>3</crewLimit>
+		<systemLimit>8</systemLimit>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
+		<hiddenAug>UPG_ARTILLERY_TARGETING</hiddenAug>
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER_3">
+		<crewLimit>0</crewLimit>
+		<systemLimit>8</systemLimit>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
+	</mod-append:customShip>
+</mod:findLike>
+
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+								SHIP ICONS
+👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<mod:findLike type="ships" limit="1">
+	<mod:findLike type="shipIcons" limit="1">
+		<mod-append:shipIcon>
+			<name>icon_co_ravager_auto</name>
+			<tooltip>RAVAGER'S OPERATING SYSTEM:
+This enemy is automated, meaning it can't be crew-killed. This machine's "mind" forces its systems act as though the are manned by crew with 1 lvl skills, and repaires will be made automatically. Breaches will prevent repairs in the affected room. Not for long.</tooltip>
+		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+			<name>icon_co_ravager_plating</name>
+			<tooltip>RAVAGER PLATING:
+This enemy's hull plating automatically patches breaches and puts out fires very fast.</tooltip>
+		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+			<name>icon_co_ravager_protocol</name>
+			<tooltip>RAVAGER'S DEVASTETING PROTOCOLS:
+"They're just machines... soulless, cruel, without any feelings or desires, just machines. Aren't they?"
+All enemy crew become susceptible to suffocation, while all onboard drones are absorbed by the ship's hull, offering no resistance.</tooltip>
+		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+			<name>icon_co_ravager_shield</name>
+			<tooltip>RAVAGER SHIELDING:
+This enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.
+This Energy Shield regenerates over time while the shield system is active. Enemy crew can no longer return to their ship if they teleport to a ship with this shielding installed.</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+</mod:findLike>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							EMINEM SHIIIIIIIIPS								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<mod:findLike type="ships">
+
+	<mod-append:customShip name="CO_LEGION_GUARD">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+		<noJump/>
+	</mod-append:customShip>
+	
+	<mod-append:customShip name="CO_RAVAGER_PREDATOR"> <!-- frigate-->
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_DESTROYER"> <!-- cooler frigate-->
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_FRIGATE"> <!-- destroyer-->
+	</mod-append:customShip>
+	
+	
+
+	<mod-append:customShip name="CO_RAVAGER_MERCHANT"> <!-- strayvan-->
+		<shipIcons>
+			<shipIcon>icon_majorthreat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
+		</shipIcons>
+		<hiddenAug>CO_RAVAGER_ENERSHIELD</hiddenAug>
+		<hiddenAug>UPG_TECH_BYPASS</hiddenAug>
+		<hiddenAug>NO_GHOST</hiddenAug>
+		<rooms>
+			<room id="2"> <!--	weapons -->
+				<!--<roomAnim renderLayer="0">resist_2x3</roomAnim>
+				<roomAnim renderLayer="3">resist_icon</roomAnim>-->
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+			<room id="3"> <!--	shields -->
+				<!--<roomAnim renderLayer="0">resist_2x3</roomAnim>
+				<roomAnim renderLayer="3">resist_icon</roomAnim>-->
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+			<room id="12"> <!--	engines -->
+				<!--<roomAnim renderLayer="0">resist_1x4</roomAnim>
+				<roomAnim renderLayer="3">resist_icon</roomAnim>-->
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+		</rooms>
+	</mod-append:customShip>
+	
+	
+	
+	<mod-append:customShip name="CO_SLAYERS_DROPSHIP_SMOL_FIRST"> <!-- shuttle, smol dropship, whatever | first meet-->
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_SLAYERS_DROPSHIP_SMOL"> <!-- shuttle, smol dropship, whatever | regular-->
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_SLAYERS_SCOUT"> <!-- scout, pbly smol variant | regular-->
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_SLAYERS_HAULER"> <!-- hauler, pbly smol variant | regular-->
+	</mod-append:customShip>
+	
+	
+	
+	
+	
+	<mod-append:customShip name="CO_ANGEL_BATTLESHIP_PURE">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+	</mod-append:customShip>
+	
+</mod:findLike>
+
+
+
+
+<events>
+
+	<bossShip yOffset="0">CO_RAVAGER_MERCHANT</bossShip>
+	
+	<bossShip yOffset="100">CO_ANGEL_BATTLESHIP_PURE</bossShip>
+
+
+
+	<!-- 				stoopid ass files						-->
+	<eventFile>co_special_angel</eventFile>
+	<eventFile>co_special_slayers</eventFile>
+	
+	<!-- 					sector files						-->
+	<eventFile>co_sector_legion</eventFile>
+
+	<!--					sector music						-->
+
+	<metaVariable name="co_juke_legion" op="set" val="0"/>
+	<metaVariable name="co_juke_strays" op="set" val="0"/>
+
+	<!--					legion sector						-->
+	<variable name="coords_co_legion" op="set" val="0"/>
+
+	<req name="CO_REQ_CITADEL_COORDS" type="any">
+		<name>coords_co_legion</name>
+	</req>
+	<!-- -->
+	<!--					ravager sector						-->
+	<variable name="coords_co_strays" op="set" val="0"/>
+
+	<req name="CO_REQ_STRAYS_COORDS" type="any">
+		<name>coords_co_strays</name>
+	</req>
+
+
+	<!--					SIGIL/CURSE REQS					-->
+
+	<req name="CO_CHECK_NO_SIGIL_HEALING_MR_AND_NO_LAB_INSTALLED" type="any">
+		<name>CO_SIGIL_HEALING_MR</name>
+		<name>LAB_INSTALLED</name>
+	</req>
+	<req name="CO_CHECK_NO_SIGIL_HEALING_MR_AND_LAB_INSTALLED" type="all">
+		<req lvl="0" max_lvl="0" >
+			<name>CO_SIGIL_HEALING_MR</name>
+		</req>
+		<req lvl="1" >
+			<name>LAB_INSTALLED</name>
+		</req>
+	</req>
+	
+	<req name="CO_CHECK_NO_SIGIL_HEALING_HR_AND_MEDBAY" type="all">
+		<req lvl="0" max_lvl="0" >
+			<name>CO_SIGIL_HEALING_HR</name>
+		</req>
+		<req lvl="1" >
+			<name>medbay</name>
+		</req>
+	</req>
+	<req name="CO_CHECK_SIGIL_HEALING_HR_AND_MEDBAY" type="all">
+		<name>CO_SIGIL_HEALING_HR</name>
+		<name>medbay</name>
+	</req>
+	<req name="CO_CHECK_NO_SIGIL_HEALING_HR_AND_CLONEBAY" type="all">
+		<req lvl="0" max_lvl="0" >
+			<name>CO_SIGIL_HEALING_HR</name>
+		</req>
+		<req lvl="1" >
+			<name>clonebay</name>
+		</req>
+	</req>
+	<req name="CO_CHECK_SIGIL_HEALING_HR_AND_CLONEBAY" type="all">
+		<name>CO_SIGIL_HEALING_HR</name>
+		<name>clonebay</name>
+	</req>
+
+</events>

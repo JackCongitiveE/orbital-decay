@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Install the onboard lab.</mod:selector>
+		<mod-overwrite:text>Install the onboard lab. [TESTTTTT]</mod-overwrite:text>
+	</mod:findLike>
+	
+	CO_CHECK_NO_SIGIL_HEALING_MR_AND_NO_LAB_INSTALLED
+	
+	CO_CHECK_NO_SIGIL_HEALING_MR_AND_LAB_INSTALLED
+	
+	
+	-->
+<![CDATA[
+
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+	<!-- MR HEALING SIGIL EFFECT-->
+	<mod:findLike type="choice">
+		<mod:selector req="LAB_INSTALLED" lvl="0" hidden="true" blue="false" />
+		<mod:setAttributes req="CO_CHECK_NO_SIGIL_HEALING_MR_AND_NO_LAB_INSTALLED" hidden="true" blue="false" />
+		<mod-overwrite:text>Install the onboard lab. [TESTTTTT]</mod-overwrite:text>
+	</mod:findLike>
+	<mod:findLike type="choice">
+		<mod:selector req="LAB_INSTALLED" lvl="1" hidden="true" blue="false" />
+		<mod:setAttributes req="CO_CHECK_NO_SIGIL_HEALING_MR_AND_LAB_INSTALLED" lvl="1" hidden="true" blue="false" />
+		<mod-overwrite:text>Check the onboard lab. [TESTTTTT]</mod-overwrite:text>
+	</mod:findLike>
+	<mod-append:choice req="CO_SIGIL_HEALING_MR" hidden="true" blue="false">	
+		<text color="co_ravager_red">Something doesn't allow you to use the onboard lab.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_SYSTEM">
+	<!-- HR HEALING SIGIL EFFECT-->
+	<mod:findLike type="choice">
+		<mod:selector req="medbay" hidden="true" blue="false" />
+		<mod:setAttributes req="CO_CHECK_NO_SIGIL_HEALING_HR_AND_MEDBAY" hidden="true" blue="false" />
+		<mod-overwrite:text>Medbay. [TESTTTTT]</mod-overwrite:text>
+	</mod:findLike>
+	<mod-append:choice req="CO_CHECK_SIGIL_HEALING_HR_AND_MEDBAY" hidden="true" blue="false">	
+		<text color="co_ravager_red">Something doesn't allow you to upgrade the Medbay.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod:findLike type="choice">
+		<mod:selector req="clonebay" hidden="true" blue="false" />
+		<mod:setAttributes req="CO_CHECK_NO_SIGIL_HEALING_HR_AND_CLONEBAY" hidden="true" blue="false" />
+		<mod-overwrite:text>Clonebay. [TESTTTTT]</mod-overwrite:text>
+	</mod:findLike>
+	<mod-append:choice req="CO_CHECK_SIGIL_HEALING_HR_AND_CLONEBAY" hidden="true" blue="false">	
+		<text color="co_ravager_red">Something doesn't allow you to upgrade the Clonebay.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
+
+
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+														SIGIL MENU
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+	<mod-append:choice blue="false">	
+		<text>Check active sigils.</text>
+		<event load="CO_LOAD_ACTIVE_SIGIL_CHECK"/>
+	</mod-append:choice>
+</mod:findName>
+]]>
+
+<event name="CO_LOAD_ACTIVE_SIGIL_CHECK">
+	<loadEvent>CO_EVENT_ACTIVE_SIGIL_CHECK</loadEvent>
+</event>
+
+<event name="CO_EVENT_ACTIVE_SIGIL_CHECK">
+	<text>In this menu you can get information about the Sigils that are currently active. Only the one who put these Sigils on you can destroy them.</text>
+	<choice hidden="true">
+		<text>Low Risk Sigils.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Medium Risk Sigils.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>High Risk Sigils.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text color="co_black">Curses.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	
+	<choice req="PLAYER_SHIP_FLAGSHIP_UNLOCKED" lvl="1" hidden="true">
+		<text>Flagship</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="PLAYER_SHIP_FLAGSHIP_UNLOCKED" lvl="0" max_lvl="0" hidden="true">
+		<text>No Flagship</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="PLAYER_SHIP_FLAGSHIP_2_UNLOCKED" lvl="1" hidden="true">
+		<text>Flagship 2</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="PLAYER_SHIP_FLAGSHIP_2_UNLOCKED" lvl="0" max_lvl="0" hidden="true">
+		<text>No Flagsip 2</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event>
+
+
+
+
+
+
+
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					DRONASSSSSSSSSSSSSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE"> <!-- Finding Toggle Menu event -->
+	<mod-append:choice req="CO_BALLISTATOG_DEFEND" blue="false"> <!-- Appending new choice option to event -->
+		 <text>(Ballista Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		 <event load="COMBAT_CHECK_CO_BALLISTATOG_DEFEND"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_BALLISTATOG_BOARDER" blue="false"> <!-- Appending new choice option to event -->
+		 <text>(Ballista Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		 <event load="COMBAT_CHECK_CO_BALLISTATOG_BOARDER"/>
+	</mod-append:choice>
+	
+	<mod-append:choice req="CO_COMMITTOG_DEFEND" blue="false"> <!-- Appending new choice option to event -->
+		 <text>(Commit Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		 <event load="COMBAT_CHECK_CO_COMMITTOG_DEFEND"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_COMMITTOG_BOARDER" blue="false"> <!-- Appending new choice option to event -->
+		 <text>(Commit Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		 <event load="COMBAT_CHECK_CO_COMMITTOG_BOARDER"/>
+	</mod-append:choice>
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					WEAPONSSSSSSSSSSSSSSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+	<mod-append:choice req="CO_MISSILESTOG_AP_1" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Orcus' Missiles) Set the state of the weapon. [Current mode: Armor Pierce]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_AP_1"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_MISSILESTOG_EMP_1" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Orcus' Missiles) Set the state of the weapon. [Current mode: EMP]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_EMP_1"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_MISSILESTOG_BIO_1" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Orcus' Missiles) Set the state of the weapon. [Current mode: Anti-Bio]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_BIO_1"/>
+	</mod-append:choice>
+
+	<mod-append:choice req="CO_MISSILESTOG_AP_2" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Mars' Heavy Missiles) Set the state of the weapon. [Current mode: Armor Pierce]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_AP_2"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_MISSILESTOG_EMP_2" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Mars' Heavy Missiles) Set the state of the weapon. [Current mode: EMP]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_EMP_2"/>
+	</mod-append:choice>
+	<mod-append:choice req="CO_MISSILESTOG_BIO_2" blue="false"> <!-- Appending new choice option to event -->
+		 <text>('Mars' Heavy Missiles) Set the state of the weapon. [Current mode: Anti-Bio]</text>
+		 <event load="COMBAT_CHECK_CO_MISSILESTOG_BIO_2"/>
+	</mod-append:choice>
+
+</mod:findName>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					WEAPONSSSSSSSSSSSSSSS 			[AP__EMP__Anti_Bio]
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+								'ORCUS' MISSILES
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="COMBAT_CHECK_CO_MISSILESTOG_AP_1">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Orcus' to EMP mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_AP_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_EMP_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Orcus' to Anti-Bio mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_AP_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_BIO_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+<!--////////////////////////////////////////////////////////////////////////-->
+<event name="COMBAT_CHECK_CO_MISSILESTOG_EMP_1">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Orcus' to Armor Piercing mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_EMP_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_AP_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Orcus' to Anti-Bio mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_EMP_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_BIO_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+<!--////////////////////////////////////////////////////////////////////////-->
+<event name="COMBAT_CHECK_CO_MISSILESTOG_BIO_1">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Orcus' to EMP mode..</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_BIO_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_EMP_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Orcus' to Armor Piercing mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_BIO_1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_AP_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+								'MORS' MISSILES
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="COMBAT_CHECK_CO_MISSILESTOG_AP_2">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Mars' to EMP mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_AP_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_EMP_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Mars' to Anti-Bio mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_AP_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_BIO_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+<!--////////////////////////////////////////////////////////////////////////-->
+<event name="COMBAT_CHECK_CO_MISSILESTOG_EMP_2">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Mars' to Armor Piercing mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_EMP_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_AP_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Mars' to Anti-Bio mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_EMP_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_BIO_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+<!--////////////////////////////////////////////////////////////////////////-->
+<event name="COMBAT_CHECK_CO_MISSILESTOG_BIO_2">
+<text>Are you sure you want to change the weapons's settings?</text>
+<choice hidden="true">
+	<text>Set 'Mars' to EMP mode..</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_BIO_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_EMP_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Set 'Mars' to Armor Piercing mode.</text>
+	<event>
+		<text>You start calibrating the weapon...</text>
+		<remove name="CO_MISSILESTOG_BIO_2"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You finish calibrating the weapon successfully.</text>
+				<weapon name="CO_MISSILESTOG_AP_2"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</choice>
+<choice hidden="true">
+	<text>Return to the toggle menu.</text>
+	<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+</choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					ANTIPERSON/BOARDER
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="COMBAT_CHECK_CO_BALLISTATOG_DEFEND">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="CO_BALLISTATOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="CO_BALLISTATOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_CO_BALLISTATOG_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="CO_BALLISTATOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="CO_BALLISTATOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_CO_COMMITTOG_DEFEND">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="CO_COMMITTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="CO_COMMITTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_CO_COMMITTOG_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="CO_COMMITTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="CO_COMMITTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>

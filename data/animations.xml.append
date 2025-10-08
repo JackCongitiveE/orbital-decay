@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 									RELICS 									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="oc_minelayer_ripper" w="714" h="164" fw="51" fh="164">weapons/oc_minelayer_ripper.png</animSheet>
+<weaponAnim name="oc_minelayer_ripper">
+	<sheet>oc_minelayer_ripper</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="37" y="15"/>
+	<mountPoint x="15" y="115"/>
+</weaponAnim>
+
+<animSheet name="co_ripper_proj" w="35" h="35" fw="35" fh="35">projectiles/co_ripper_proj.png</animSheet>
+<anim name="co_ripper_proj">
+	<sheet>co_ripper_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="co_ripper_crewproj_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_ripper_crewproj_death_right">
+	<sheet>co_ripper_crewproj_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_death_left">
+	<sheet>co_ripper_crewproj_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_walk_down">
+	<sheet>co_ripper_crewproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_walk_right">
+	<sheet>co_ripper_crewproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_walk_up">
+	<sheet>co_ripper_crewproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_walk_left">
+	<sheet>co_ripper_crewproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ripper_crewproj_portrait">
+	<sheet>co_ripper_crewproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 								ПАСХАЛКО									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_drone_ballista" w="945" h="245" fw="35" fh="35">people/co_drone_ballista_base.png</animSheet>
+<animSheet name="co_drone_ballista_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_drone_ballista_death_right">
+	<sheet>co_drone_ballista_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_death_left">
+	<sheet>co_drone_ballista_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_walk_down">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_walk_right">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_walk_up">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_walk_left">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_shoot_down">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="24" x="0" y="4"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_ballista_shoot_right">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="24" x="0" y="1"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_ballista_shoot_up">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="24" x="0" y="3"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_ballista_shoot_left">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="24" x="0" y="2"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_ballista_power_down">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="7" x="8" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_power_up">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="7" x="8" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_ballista_fly">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_ballista_portrait">
+	<sheet>co_drone_ballista</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!-- elite var-->
+
+<animSheet name="co_drone_commit" w="945" h="245" fw="35" fh="35">people/co_drone_commit_base.png</animSheet>
+<animSheet name="co_drone_commit_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_drone_commit_death_right">
+	<sheet>co_drone_commit_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_death_left">
+	<sheet>co_drone_commit_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_walk_down">
+	<sheet>co_drone_commit</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_walk_right">
+	<sheet>co_drone_commit</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_walk_up">
+	<sheet>co_drone_commit</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_walk_left">
+	<sheet>co_drone_commit</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_shoot_down">
+	<sheet>co_drone_commit</sheet>
+	<desc length="24" x="0" y="4"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_commit_shoot_right">
+	<sheet>co_drone_commit</sheet>
+	<desc length="24" x="0" y="1"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_commit_shoot_up">
+	<sheet>co_drone_commit</sheet>
+	<desc length="24" x="0" y="3"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_commit_shoot_left">
+	<sheet>co_drone_commit</sheet>
+	<desc length="24" x="0" y="2"/>
+	<time>9</time>
+</anim>
+<anim name="co_drone_commit_power_down">
+	<sheet>co_drone_commit</sheet>
+	<desc length="7" x="8" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_power_up">
+	<sheet>co_drone_commit</sheet>
+	<desc length="7" x="8" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_commit_fly">
+	<sheet>co_drone_commit</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_commit_portrait">
+	<sheet>co_drone_commit</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							(S)CREEEEEEEEEW									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<!-- 
+*********************************************************************************************************
+                   SLAYERS CREW DRONE MELEE
+*********************************************************************************************************
+-->
+<animSheet name="co_drone_slayersuit_melee" w="560" h="210" fw="35" fh="35">people/co_drone_slayersuit_melee_base.png</animSheet>
+<animSheet name="co_drone_slayersuit_melee_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_drone_slayersuit_melee_death_right">
+	<sheet>co_drone_slayersuit_melee_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_death_left">
+	<sheet>co_drone_slayersuit_melee_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_walk_down">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_walk_right">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="4" x="8" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_walk_up">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_walk_left">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="4" x="12" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_shoot_down">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="3" x="4" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_shoot_right">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="3" x="10" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_shoot_up">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="3" x="7" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_shoot_left">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="3" x="13" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_power_down">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="16" x="0" y="4"/>
+	<time>1.5</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_power_up">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="16" x="0" y="1"/>
+	<time>1.5</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_punch_up">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="12" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_punch_down">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="12" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_fly">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="1" x="4" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_drone_slayersuit_melee_portrait">
+	<sheet>co_drone_slayersuit_melee</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+*********************************************************************************************************
+                   LEGION OPER
+*********************************************************************************************************
+-->
+
+<animSheet name="co_human_legion_oper" w="560" h="385" fw="35" fh="35">people/co_human_legion_oper_base.png</animSheet>
+<anim name="co_human_legion_oper_death_right">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="14" x="0" y="5"/>
+	<time>3.6</time>
+</anim>
+<anim name="co_human_legion_oper_death_left">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="14" x="0" y="5"/>
+	<time>3.6</time>
+</anim>
+<anim name="co_human_legion_oper_walk_down">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_human_legion_oper_walk_right">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_human_legion_oper_walk_up">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_human_legion_oper_walk_left">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_human_legion_oper_shoot_down">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>2</time>
+</anim>
+<anim name="co_human_legion_oper_shoot_right">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="7" x="7" y="7"/>
+	<time>2</time>
+</anim>
+<anim name="co_human_legion_oper_shoot_up">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="7" x="7" y="2"/>
+	<time>2</time>
+</anim>
+<anim name="co_human_legion_oper_shoot_left">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="7" x="0" y="7"/>
+	<time>2</time>
+</anim>
+<anim name="co_human_legion_oper_fire_down">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_fire_right">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="8" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_fire_up">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_fire_left">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="8" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_repair">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="9" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_punch_up">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="6" x="6" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_punch_down">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="6" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_human_legion_oper_teleport">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="16" x="0" y="1"/>
+	<time>1</time>
+</anim>
+<anim name="co_human_legion_oper_type_right">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="12" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="co_human_legion_oper_type_left">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="8" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="co_human_legion_oper_type_up">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="co_human_legion_oper_type_down">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="4" x="0" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="co_human_legion_oper_portrait">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION ARTILLERIES								-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_guard_legion_missiles" w="273" h="125" fw="91" fh="125">artillery_eminem/co_guard_legion_missiles.png</animSheet>
+<weaponAnim name="co_guard_legion_missiles">
+	<sheet>co_guard_legion_missiles</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="45" y="15"/>
+	<mountPoint x="0" y="0"/>
+    <chargeImage>artillery_eminem/co_guard_legion_missiles_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="co_legion_missile" w="32" h="80" fw="32" fh="80">projectiles/co_legion_missile.png</animSheet>
+<anim name="co_legion_missile">
+	<sheet>co_legion_missile</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_legion_missile_burst" w="80" h="32" fw="80" fh="32">projectiles/co_legion_missile_burst.png</animSheet>
+<anim name="co_legion_missile_burst">
+	<sheet>co_legion_missile_burst</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							LEGION WEAPONS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_zenith_2" w="390" h="89" fw="39" fh="89">newgen_weapon/co_zenith_2.png</animSheet>
+<weaponAnim name="co_zenith_2">
+	<sheet>co_zenith_2</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="24" y="7"/>
+	<mountPoint x="7" y="60"/>
+	<chargeImage>weapon_newgen/co_zenith_2_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="co_zenith_3" w="460" h="107" fw="46" fh="107">newgen_weapon/co_zenith_3.png</animSheet>
+<weaponAnim name="co_zenith_3">
+	<sheet>co_zenith_3</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="29" y="7"/>
+	<mountPoint x="10" y="73"/>
+	<chargeImage>weapon_newgen/co_zenith_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="co_missilestog_1" w="190" h="80" fw="38" fh="80">newgen_weapon/co_missiles_ng_1.png</animSheet>
+<weaponAnim name="co_missilestog_1">
+	<sheet>co_missilestog_1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="23" y="17"/>
+	<mountPoint x="6" y="60"/>
+</weaponAnim>
+<animSheet name="co_missilestog_2" w="264" h="96" fw="44" fh="96">newgen_weapon/co_missiles_ng_2.png</animSheet>
+<weaponAnim name="co_missilestog_2">
+	<sheet>co_missilestog_2</sheet>
+	<desc length="6" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="27" y="20"/>
+	<mountPoint x="8" y="75"/>
+</weaponAnim>
+
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							RAVAGER WEAPONS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_adapter_proj" w="80" h="5" fw="80" fh="5">ravager_weapon/co_adapter_proj.png</animSheet>
+<anim name="co_adapter_proj">
+	<sheet>co_adapter_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_charon_proj" w="80" h="5" fw="80" fh="5">ravager_weapon/co_charon_proj.png</animSheet>
+<anim name="co_charon_proj">
+	<sheet>co_charon_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="co_plasma_trigger" w="114" h="76" fw="38" fh="76">ravager_weapon/co_plasma_trigger.png</animSheet>
+<weaponAnim name="co_plasma_trigger">
+	<sheet>co_plasma_trigger</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="26" y="26"/>
+	<mountPoint x="2" y="48"/>
+</weaponAnim>
+<animSheet name="co_plasma_destructor" w="255" h="90" fw="51" fh="90">ravager_weapon/co_plasma_destructor.png</animSheet>
+<weaponAnim name="co_plasma_destructor">
+	<sheet>co_plasma_destructor</sheet>
+	<desc length="5" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="35" y="25"/>
+	<mountPoint x="4" y="49"/>
+	<chargeImage>ravager_weapon/co_plasma_destructor_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="co_plasma_aurora" w="304" h="70" fw="38" fh="70">ravager_weapon/co_plasma_aurora.png</animSheet>
+<weaponAnim name="co_plasma_aurora">
+	<sheet>co_plasma_aurora</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="28" y="5"/>
+	<mountPoint x="3" y="45"/>
+</weaponAnim>
+
+<animSheet name="co_rail_adapter" w="288" h="100" fw="36" fh="100">ravager_weapon/co_rail_adapter.png</animSheet>
+<weaponAnim name="co_rail_adapter">
+	<sheet>co_rail_adapter</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>2</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint  x="26" y="35"/>
+	<mountPoint x="3" y="62"/>
+</weaponAnim>
+
+<animSheet name="co_rail_charon" w="780" h="109" fw="60" fh="109">ravager_weapon/co_rail_charon.png</animSheet>
+<weaponAnim name="co_rail_charon">
+	<sheet>co_rail_charon</sheet>
+	<desc length="13" x="0" y="0"/>
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="46" y="36"/>
+	<mountPoint x="13" y="65"/>
+</weaponAnim>
+<animSheet name="co_rail_charon_chaos" w="780" h="109" fw="60" fh="109">ravager_weapon/co_rail_charon_chaos.png</animSheet>
+<weaponAnim name="co_rail_charon_chaos">
+	<sheet>co_rail_charon_chaos</sheet>
+	<desc length="13" x="0" y="0"/>
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="46" y="36"/>
+	<mountPoint x="13" y="65"/>
+</weaponAnim>
+
+<animSheet name="co_rail_thyrsus" w="780" h="150" fw="65" fh="150">ravager_weapon/co_rail_thyrsus.png</animSheet>
+<weaponAnim name="co_rail_thyrsus">
+	<sheet>co_rail_thyrsus</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="44" y="33"/>
+	<mountPoint x="2" y="105"/>
+</weaponAnim>
+
+<animSheet name="co_plasma_prometheus" w="792" h="130" fw="44" fh="130">ravager_weapon/co_plasma_prometheus.png</animSheet>
+<weaponAnim name="co_plasma_prometheus">
+	<sheet>co_plasma_prometheus</sheet>
+	<desc length="18" x="0" y="0"/>
+	<chargedFrame>7</chargedFrame>
+	<fireFrame>15</fireFrame>
+	<firePoint  x="29" y="33"/>
+	<mountPoint x="3" y="99"/>
+</weaponAnim>
+
+<animSheet name="co_plasma_helios" w="594" h="138" fw="54" fh="138">ravager_weapon/co_plasma_helios.png</animSheet>
+<weaponAnim name="co_plasma_helios">
+	<sheet>co_plasma_helios</sheet>
+	<desc length="11" x="0" y="0"/>
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="37" y="30"/>
+	<mountPoint x="4" y="92"/>
+</weaponAnim>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!-- 							SLAYERS WEAPONS									-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_slayers_lightmiss_proj" w="25" h="7" fw="25" fh="7">slayer_weapon/co_slayers_lightmiss_proj.png</animSheet>
+<anim name="co_slayers_lightmiss_proj">
+	<sheet>co_slayers_lightmiss_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="co_slayers_lightmiss_1" w="240" h="53" fw="30" fh="53">slayer_weapon/co_slayers_lightmiss_1.png</animSheet>
+<weaponAnim name="co_slayers_lightmiss_1">
+	<sheet>co_slayers_lightmiss_1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="20" y="22"/>
+	<mountPoint x="3" y="22"/>
+</weaponAnim>
+
+<animSheet name="co_slayers_lightmiss_2" w="370" h="71" fw="37" fh="71">slayer_weapon/co_slayers_lightmiss_2.png</animSheet>
+<weaponAnim name="co_slayers_lightmiss_2">
+	<sheet>co_slayers_lightmiss_2</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="22" y="41"/>
+	<mountPoint x="3" y="41"/>
+</weaponAnim>
+
+<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+								EFFECTS
+👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<animSheet name="co_ravager_shock" w="352" h="32" fw="32" fh="32">people/co_ravager_shock.png</animSheet>
+<anim name="co_ravager_shock">
+	<sheet>co_ravager_shock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.7</time>
+</anim>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					LEGION SECTOR
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					EXIT BEACON
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="FINISH_BEACON_RAD_SCIENCE">
+	<text id="finish_beacon" />
+	<choice hidden="true">
+		<text>Explore.</text>
+		<event load="EXIT_FILLER_LIST" />
+	</choice>
+	<choice hidden="true">
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+	<choice hidden="true">
+		<text>Do nothing.</text>
+		<event />
+	</choice>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					START BEACON
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="CO_START_LEGION">
+	<!--<metaVariable name="fr_juke_tartarus" op="set" val="1"/>-->
+	<modifyPursuit amount="2"/>
+	<text load="CO_TEXT_START_LEGION"/>
+	<img back="CO_SECTOR_START_LEGION" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="CO_LEGION_GUARD_START"/>
+	</choice>
+</event>
+
+
+<textList name="CO_TEXT_START_LEGION">
+	<text>TEST.</text>
+</textList>
+
+
+<event name="CO_RAVAGER_ALLTEST">
+	<loadEventList seeded="false"> <!--first="true"-->
+		<!--<event name="FR_TARTARUS_BOUNTIES_CHAOS" req="FR_REQUIREMENT_COMPLETED_TARTARUS_AND_IS_CHAOS" lvl="1"/>
+		<event name="FR_TARTARUS_BOUNTIES" req="FR_REQUIREMENT_COMPLETED_TARTARUS_AND_IS_CHAOS" lvl="0" max_lvl="0"/>-->
+		<event load="CO_STRAYING_RAVAGER"/>
+	</loadEventList>
+</event>
+
+
+<event name="CO_RAVAGER_MERCHANT_LOAD">
+	<text>There's a straying ravager ship.</text>
+	<ship load="CO_RAVAGER_MERCHANT" hostile="false"/>
+	<choice>
+		<text>Hello.</text>
+		<event>
+			<text>...</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Beat the crap out of it.</text>
+		<event>
+			<text>Let it go.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<event name="CO_STRAYING_RAVAGER">
+	<text>There's a straying ravager ship.</text>
+	<ship load="CO_RAVAGER_ALL" hostile="false"/>
+	<choice>
+		<text>Hello.</text>
+		<event>
+			<text>...</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Beat the crap out of it.</text>
+		<event>
+			<text>Let it go.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="CO_RAVAGER_PREDATOR" auto_blueprint="CO_RAVAGER_PREDATOR">
+	<destroyed load="CO_RAVAGER_GENERIC_DEFEAT"/>
+</ship>
+<ship name="CO_RAVAGER_DESTROYER" auto_blueprint="CO_RAVAGER_DESTROYER">
+	<destroyed load="CO_RAVAGER_GENERIC_DEFEAT"/>
+</ship>
+<ship name="CO_RAVAGER_FRIGATE" auto_blueprint="CO_RAVAGER_FRIGATE">
+	<destroyed load="CO_RAVAGER_GENERIC_DEFEAT"/>
+</ship>
+
+<ship name="CO_RAVAGER_MERCHANT" auto_blueprint="CO_RAVAGER_MERCHANT">
+	<destroyed load="CO_RAVAGER_GENERIC_DEFEAT"/>
+</ship>
+
+
+<ship name="CO_RAVAGER_ALL" auto_blueprint="CO_LIST_SHIPS_RAVAGER_ALL">
+	<destroyed load="CO_RAVAGER_GENERIC_DEFEAT"/>
+</ship>
+
+
+
+<event name="CO_RAVAGER_GENERIC_DEFEAT">
+	<text>Splendid.</text>
+	<autoReward level="MED">standard</autoReward>
+</event>
+
+
+
+
+<event name="CO_LEGION_GUARD_START">
+	<text>Test.</text>
+	<choice hidden="true">
+        <text>Test.</text>
+		<event>
+			<text>Test?</text>
+			<ship load="CO_LEGION_GUARD" hostile="false"/>
+			<choice hidden="true">
+				<text>Test.</text>
+				<event>
+					<text>Test.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<ship name="CO_LEGION_GUARD" auto_blueprint="CO_LEGION_GUARD">
+	<!--<triggeredEvent event="ESTATE_LEGION_SUICIDE" enemyHull="2" enemyCrew="1" thisFight="true" clearOnJump="true"/>-->
+	<destroyed load="CO_GUARD_LEGION_DEFEAT"/>
+	<deadCrew load="CO_GUARD_LEGION_DEFEAT"/>
+	<crew>
+		<crewMember type="LIST_CREW_MALFORM_RANDOM" prop="0.5"/>
+		<crewMember type="LIST_CREW_LEGION" prop="0.5"/>
+	</crew>
+</ship>
+
+
+<event name="CO_GUARD_LEGION_DEFEAT">
+	<text>"God damn it, that stupid Rene Dekart made everything go to hell... And let's keep it that way."</text>
+	<recallBoarders force="true"/>
+	<enemyDamage amount="999"/>
+	<autoReward level="HIGH">standard</autoReward>
+</event>
+
+
+</FTL>

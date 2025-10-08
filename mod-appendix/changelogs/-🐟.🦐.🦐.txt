@@ -1,0 +1,7 @@
+		{{7/10/2025}}
+Version: 🐟.🦐.🐟 -> 🐟.🦐.🦐
+1) All ships in the hangar menu have red background. This is supposed to be so, don't panic;
+2) 'Adapter's and 'Charon's perk indicators were removed for safety purposes;
+3) The "Devastating Protocols" augment has been added to playable Ravagers' ships to avoid softlocks with Lanius or other anaerobes;
+4) Type C + map icon for the Ravager Frigate were added;
+5) Minor fixes.

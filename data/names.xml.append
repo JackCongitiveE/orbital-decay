@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nameList race="human" sex="male">
+	<name short="Bolt">Lizzard Ballistaboltovich</name>
+	<name short="CognitiveE">Jack CognitiveE</name>
+	
+	<name short="Dronbl">Dronbl Aleevich</name>
+	<name short="Ukn">Ukn Transletormasterovich</name>
+	<name short="Shewhartt">Dima Shewharttovich</name>
+	<name short="Dzet">Dzet Ohuyennogrivovich</name>
+	
+	<name short="Gosudar'">Gosudar' Purpur Yablokov</name>
+	<name short="Consul">Consul Zelén Apel'sinov</name>
+	<name short="Him">The Great Grey</name>
+	<name short="Gosudarenok">Stellar Gosudarenok</name>
+	<name short="Purple Apple">Purple Apple</name>
+	<name short="Green Orange">Green Orange</name>
+	
+	<name short="Mif">Mif Nelopardonovich</name>
+	<name short="Lopardon">Lopardon Nemifovihovich</name>
+	<name short="Agave">Agave Occultistovich</name>
+	
+	<name short="Should Have Been">Captain 'It Should Have Been'</name>
+	
+</nameList> 
+
+<nameList race="human" sex="female">
+	<name short="Winters">Fenrys Winters</name>
+</nameList> 
