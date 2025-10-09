@@ -22,9 +22,11 @@
 
 
 <mod:findLike type="scripts">
-    <mod-append:script>data/co_scripts/co_functions.lua</mod-append:script>
-    <mod-append:script>data/co_scripts/co_smartgunners.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_plasma.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_rail.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_emitters.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_smartgunners.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_augments.lua</mod-append:script>
 </mod:findLike>
 
 <discord enabled="true">

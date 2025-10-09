@@ -14,7 +14,7 @@
 	<desc>Defense drone capable of targeting lasers or solid projectiles.
 	Reload: 600 MS</desc>
 	<power>2</power>
-	<cooldown>100</cooldown>
+	<cooldown>10</cooldown>
 	<dodge>0</dodge>
 	<speed>5</speed>
 	<cost>55</cost>
@@ -1170,8 +1170,25 @@ Chaotic variant has decreased amount of ammo but fires bursts of 3 projectiles.<
     <title>Pulse Rifle 'Adapter'</title>
     <short>'Adapter'</short>
     <tip>tip_adapter</tip>
-    <desc>A pulse rifle desinged by the Ravagers based on a light burst laser. It has a much higher rate of fire compared to its forefather, which compensates for the reduced damage. Charges perk as it fires.</desc>
+    <desc>A pulse rifle desinged by the Ravagers based on a light burst laser. It has a much higher rate of fire compared to its forefather, which compensates for the reduced damage.</desc>
+	<descriptionOverride>A pulse rifle desinged by the Ravagers based on a light burst laser. It has a much higher rate of fire compared to its forefather, which compensates for the reduced damage.
+
+		Stats:
+		Required Power: 2
+		Charge Time: 3.5 seconds
+		Accuracy Bonus: +5%
+		
+		Shots per charge: 3
+		
+		Shield layer pop: 1
+		Super shield layer pop: 1
+
+		Perk: Every third projectile is capable of dealing damage.
+		
+		Default Price: 65~   -   Selling Price: 32~
+	</descriptionOverride>
     <tooltip>Every third projectile is capable of dealing damage.</tooltip>
+	<accuracyMod>5</accuracyMod>
     <damage>0</damage>
 	<mv-pop>
 		<count>1</count>
@@ -1213,6 +1230,7 @@ Chaotic variant has decreased amount of ammo but fires bursts of 3 projectiles.<
     <tip>tip_adapter</tip>
     <desc>UOY T'NDLUOHD EES SHIT</desc>
     <tooltip>Every third projectile is capable of dealing damage.</tooltip>
+	<accuracyMod>5</accuracyMod>
     <damage>1</damage>
     <shots>1</shots>
     <fireChance>0</fireChance>
@@ -1248,9 +1266,25 @@ Chaotic variant has decreased amount of ammo but fires bursts of 3 projectiles.<
     <title>Rail Accelerator 'Thyrsus'</title>
     <short>'Thyrsus'</short>
     <tip>tip_thyrsus</tip>
-    <desc>It's quite natural that the technologies of the Ravagers give their owner an advantage on the battlefield. But how exactly this happens still remains a mystery of many. The main things is that it works.
-Every second projectile it fires is capable of dealing damage. Charges perk as it fires.</desc>
+    <desc></desc>
+	<descriptionOverride>It's quite natural that the technologies of the Ravagers give their owner an advantage on the battlefield. But how exactly this happens still remains a mystery of many. The main things is that it works.
+Every second projectile it fires is capable of dealing damage.
+		Stats:
+		Required Power: 6
+		Charge Time: 4.5 seconds
+		Accuracy Bonus: +5%
+		
+		Shots per charge: 4
+		
+		Shield layer pop: 1
+		Super shield layer pop: 1
+
+		Perk: If all projectiles in a single burst hit the target (hull), in the next burst all projectiles will be fired at the same time and will deal damage. Firing with the perk active doesn't charge the perk
+		
+		Default Price: 130~   -   Selling Price: 65~
+	</descriptionOverride>
     <tooltip>Every second projectile is capable of dealing damage.</tooltip>
+	<accuracyMod>5</accuracyMod>
     <damage>0</damage>
 	<mv-pop>
 		<count>1</count>
@@ -1292,7 +1326,6 @@ Every second projectile it fires is capable of dealing damage. Charges perk as i
     <title>Laser Minigun 'Aurora'</title>
     <short>'Aurora'</short>
     <desc>A combat laser used by the Ravagers to weaken enemy hull plating, slowly building up erosion in the affected rooms. Despite being a laser, it has some spread when firing.</desc>
-    <tooltip>Every third projectile is capable of dealing damage.</tooltip>
     <radius>40</radius>
     <damage>0</damage>
     <projectiles>
@@ -1335,7 +1368,7 @@ Every second projectile it fires is capable of dealing damage. Charges perk as i
 		<b>66</b>
 	</color>
 	<erosion>
-		<speed>0.015</speed>
+		<speed>0.025</speed>
 		<maxSpeed>10</maxSpeed>
 		<time>2.0</time>
 		<maxTime>40.0</maxTime>
@@ -1452,9 +1485,7 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <short>'Trigger'</short>
 	<desc>YOU SOULD NEVER SEE THIS</desc>
 	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
-	<mv-pop>
-		<countSuper>1</countSuper>
-	</mv-pop>
+	<sp>2</sp>
 	<damage>0</damage>
     <fireChance>0</fireChance> 
 	<cooldown>14</cooldown>
@@ -1485,6 +1516,7 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <short>'Trigger'</short>
 	<desc>YOU SOULD NEVER SEE THIS</desc>
 	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<sp>1</sp>
 	<damage>1</damage>
     <fireChance>5</fireChance> 
 	<cooldown>14</cooldown>
@@ -1546,9 +1578,7 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <short>'Destructor'</short>
 	<desc>YOU SOULD NEVER SEE THIS</desc>
 	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
-	<mv-pop>
-		<countSuper>1</countSuper>
-	</mv-pop>
+	<sp>2</sp>
 	<damage>0</damage>
     <fireChance>0</fireChance> 
 	<cooldown>14</cooldown>
@@ -1579,6 +1609,7 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <short>'tip_destructor'</short>
 	<desc>YOU SOULD NEVER SEE THIS</desc>
 	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<sp>1</sp>
 	<damage>2</damage>
     <fireChance>0</fireChance> 
 	<cooldown>14</cooldown>
@@ -1617,7 +1648,7 @@ For 1 second releases a beam that stacks erosion on the system hit dealing no ot
     <type>LASER</type>
     <title>Plasma Emitter 'Prometheus'</title>
     <short>'Prometheus'</short>
-    <!--<tip>tip_prometheus</tip>-->
+    <tip>tip_prometheus</tip>
     <desc></desc>
 	<descriptionOverride>For some unknown reason, Ravagers' plasma emitters are highly prized by only one organization. Perhaps fortunately, this organization is dedicated to the pursuit, study, and extermination of Ravagers.
 Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire.
@@ -1646,7 +1677,7 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
     <damage>0</damage>
     <shots>5</shots>
     <fireChance>1</fireChance>
-    <cooldown>13</cooldown>
+    <cooldown>13.5</cooldown>
 	<mv-pop>
 		<count>1</count>
 		<countSuper>1</countSuper>
@@ -1696,7 +1727,7 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
     <type>LASER</type>
     <title>Plasma Emitter 'Helios'</title>
     <short>'Helios'</short>
-    <!--<tip>tip_helios</tip>-->
+    <tip>tip_helios</tip>
     <desc></desc>
 	<descriptionOverride>... From the way this weapon "looks" at you, the purpose of extermination is more than obvious.
 Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can't damage the hull. Highly effective against systems that are on fire.
@@ -1725,7 +1756,7 @@ Fires bursts of 5 projectiles made of overheated plasma that pop shields yet can
     <damage>0</damage>
     <shots>5</shots>
     <fireChance>2</fireChance>
-    <cooldown>15</cooldown>
+    <cooldown>13.5</cooldown>
 	<mv-pop>
 		<count>1</count>
 		<countSuper>1</countSuper>
