@@ -23,12 +23,10 @@ sillysandvich for making 'Prometheus'' and 'Helios'' perks work🧡
 the other the-shipyard people for being such cutie pies🧡
 
 
+# Le Guide on How To Read These Versions
 
 *"Version numbering shouldn't need a guide to read..."* they said.
 But here goes my addon, dear people.
-
-
-# Le Guide on How To Read These Versions
 
 This is how the numbers work, so no one ever again gets confused by fish:
 
