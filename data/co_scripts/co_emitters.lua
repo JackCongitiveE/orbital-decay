@@ -23,9 +23,9 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, 
   if projectile.extend.name == "CO_PLASMA_HELIOS" then
     local ship_volley_table = userdata_table(ship, "mods.co.volley")
     local identifier = userdata_table(projectile, "mods.co.volley").identifier
-    --print("identifier on hit", identifier)
+    print("identifier on hit", identifier)
     ship_volley_table[identifier] = (ship_volley_table[identifier] or 0) + 1
-    --print("hits in volley", ship_volley_table[identifier])
+    print("hits in volley", ship_volley_table[identifier])
     if ship_volley_table[identifier] == 5 then
       ship:GetSystem(1):AddDamage(1)
     end 

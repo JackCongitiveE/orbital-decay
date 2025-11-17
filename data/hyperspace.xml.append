@@ -25,6 +25,7 @@
     <mod-append:script>data/co_scripts/co_plasma.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_rail.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_emitters.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_rockets.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_smartgunners.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_augments.lua</mod-append:script>
 </mod:findLike>
@@ -589,7 +590,69 @@
 			</statBoost>
 		</passiveStatBoosts>
 	</mod-append:race>
-	
+
+	<mod-append:race name="co_ravager_fatum_aurora">
+		<animSheet>co_ravager_fatum_aurora</animSheet>
+		<maxHealth>125</maxHealth>
+		<healSpeed>0</healSpeed>
+		<truePassiveHealAmount>3.0</truePassiveHealAmount>
+		<passiveHealDelay>10</passiveHealDelay>
+		<lowHealthThresholdPercentage>0</lowHealthThresholdPercentage>
+		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+		<damageMultiplier>0.1</damageMultiplier>
+		<allDamageTakenMultiplier>0.9</allDamageTakenMultiplier>
+		<fireDamageMultiplier>1.1</fireDamageMultiplier>
+		<canRepair>false</canRepair>
+		<canTeleport>true</canTeleport>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<resistsMindControl>true</resistsMindControl>
+		<defaultSkillLevel>0</defaultSkillLevel>
+		<skills>
+			<piloting req="999999"/>
+			<engines req="999999"/>
+			<shields req="999999"/>
+			<weapons req="999999"/>
+			<repair req="999999"/>
+			<combat req="999999"/>
+		</skills>
+		<shootTimer min="100" max="100"/>
+		<canFight>true</canFight>
+		<canPunch>false</canPunch>
+		<shootingSounds>
+			<shootingSound>co_aurora_shot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>0.1</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>HEAT</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="203" g="11" b="11"/>
+			<activateWhenReady>true</activateWhenReady>
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<duration>15</duration>
+					<boostType>MULT</boostType>
+					<amount>1.01</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+					<boostAnim>unique_dessius_health</boostAnim>
+					<maxStacks>110</maxStacks>
+				</statBoost>
+			</statBoosts>
+		</powerEffect>
+	</mod-append:race>
+
 </mod:findLike>
 
 
@@ -656,7 +719,7 @@
 				<priority>0</priority>
 			</statBoost>
 			<statBoost name="suffocationModifier">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>2.0</amount>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
@@ -1054,6 +1117,20 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 		<name>coords_co_strays</name>
 	</req>
 
+	
+	<!--				RAVAGER CONTAINERS REQS					-->
+
+	<req name="CO_CHECK_ANY_RAVAGER_CONTAINER" type="any">
+		<name>CO_RAVAGER_CONTAINER_EPIC</name>
+		<name>CO_RAVAGER_CONTAINER_LEGEND</name>
+	</req>
+	<req name="CO_CHECK_CO_RAVAGER_SYSOPER_AND_ANY_RAVAGER_CONTAINER" type="all">
+		<name>CO_RAVAGER_SYSOPER</name>
+		<req type="any">
+			<name>CO_RAVAGER_CONTAINER_EPIC</name>
+			<name>CO_RAVAGER_CONTAINER_LEGEND</name>
+		</req>
+	</req>
 
 	<!--					SIGIL/CURSE REQS					-->
 

@@ -113,10 +113,24 @@
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!-- 							RAVAGERS SHIIIIIIPS								-->
+<!-- 						RAVAGERS SHIIIIIIPS	and STUFF						-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+
+<mod:findName type="blueprintList" name="LIST_CREW_MADNESS_IMMUNE">
+	<mod-append:name>co_ravager_fatum_aurora</mod-append:name>
+	<mod-append:name>co_ravager_fatum_blockchain</mod-append:name>
+	<mod-append:name>co_ravager_fatum_flash</mod-append:name>
+</mod:findName>
+
+
+<blueprintList name="CO_LIST_CREW_RAVAGER_FATUM">
+	<name>co_ravager_fatum_aurora</name>
+	<name>co_ravager_fatum_blockchain</name>
+	<name>co_ravager_fatum_flash</name>
+</blueprintList>
+
 
 
 <shipBlueprint name="CO_RAVAGER_PREDATOR" layout="co_ravager_predator" img="co_ravager_predator">

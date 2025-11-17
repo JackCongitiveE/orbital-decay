@@ -448,6 +448,78 @@
 </anim>
 
 
+
+<!-- 
+*********************************************************************************************************
+                   RAVAGERS ARE REEAAAAAAAAAAAAAL
+*********************************************************************************************************
+-->
+
+
+<animSheet name="co_ravager_fatum_aurora" w="140" h="315" fw="35" fh="35">people/co_ravager_fatum_aurora_base.png</animSheet>
+<animSheet name="co_ravager_fatum_aurora_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_ravager_fatum_aurora_death_right">
+	<sheet>co_ravager_fatum_aurora_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_death_left">
+	<sheet>co_ravager_fatum_aurora_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_down">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_right">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="0" y="7"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_left">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_up">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_shoot_down">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="3" x="0" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_shoot_right">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_shoot_left">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="3" x="0" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_shoot_up">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_fly">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_portrait">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
@@ -537,6 +609,33 @@
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
 
+<animSheet name="co_ravager_container_epic" w="56" h="23" fw="56" fh="23">ravager_weapon/co_ravager_container_epic.png</animSheet>
+<anim name="co_ravager_container_epic">
+	<sheet>co_ravager_container_epic</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_ravager_container_legend" w="56" h="23" fw="56" fh="23">ravager_weapon/co_ravager_container_legend.png</animSheet>
+<anim name="co_ravager_container_legend">
+	<sheet>co_ravager_container_legend</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="co_ravager_container_epic" w="113" h="45" fw="113" fh="45">ravager_weapon/co_ravager_container_epic_new.png</animSheet>
+<anim name="co_ravager_container_epic">
+	<sheet>co_ravager_container_epic</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_ravager_container_legend" w="113" h="45" fw="113" fh="45">ravager_weapon/co_ravager_container_legend_new.png</animSheet>
+<anim name="co_ravager_container_legend">
+	<sheet>co_ravager_container_legend</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
 <animSheet name="co_adapter_proj" w="80" h="5" fw="80" fh="5">ravager_weapon/co_adapter_proj.png</animSheet>
 <anim name="co_adapter_proj">
 	<sheet>co_adapter_proj</sheet>
@@ -546,6 +645,18 @@
 <animSheet name="co_charon_proj" w="80" h="5" fw="80" fh="5">ravager_weapon/co_charon_proj.png</animSheet>
 <anim name="co_charon_proj">
 	<sheet>co_charon_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_kaiju_proj" w="51" h="7" fw="51" fh="7">ravager_weapon/co_kaiju_proj.png</animSheet>
+<anim name="co_kaiju_proj">
+	<sheet>co_kaiju_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="co_lucifer_proj" w="28" h="7" fw="28" fh="7">ravager_weapon/co_lucifer_proj.png</animSheet>
+<anim name="co_lucifer_proj">
+	<sheet>co_lucifer_proj</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
@@ -619,9 +730,9 @@
 	<mountPoint x="2" y="105"/>
 </weaponAnim>
 
-<animSheet name="co_plasma_prometheus" w="792" h="130" fw="44" fh="130">ravager_weapon/co_plasma_prometheus.png</animSheet>
-<weaponAnim name="co_plasma_prometheus">
-	<sheet>co_plasma_prometheus</sheet>
+<animSheet name="co_emitter_prometheus" w="792" h="130" fw="44" fh="130">ravager_weapon/co_emitter_prometheus.png</animSheet>
+<weaponAnim name="co_emitter_prometheus">
+	<sheet>co_emitter_prometheus</sheet>
 	<desc length="18" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>15</fireFrame>
@@ -629,14 +740,34 @@
 	<mountPoint x="3" y="99"/>
 </weaponAnim>
 
-<animSheet name="co_plasma_helios" w="594" h="138" fw="54" fh="138">ravager_weapon/co_plasma_helios.png</animSheet>
-<weaponAnim name="co_plasma_helios">
-	<sheet>co_plasma_helios</sheet>
+<animSheet name="co_emitter_helios" w="594" h="138" fw="54" fh="138">ravager_weapon/co_emitter_helios.png</animSheet>
+<weaponAnim name="co_emitter_helios">
+	<sheet>co_emitter_helios</sheet>
 	<desc length="11" x="0" y="0"/>
 	<chargedFrame>6</chargedFrame>
 	<fireFrame>7</fireFrame>
 	<firePoint  x="37" y="30"/>
 	<mountPoint x="4" y="92"/>
+</weaponAnim>
+
+<animSheet name="co_rail_kaiju_wth" w="11700" h="180" fw="65" fh="180">ravager_weapon/co_rail_kaiju_wth.png</animSheet>
+<weaponAnim name="co_rail_kaiju_wth">
+	<sheet>co_rail_kaiju_wth</sheet>
+	<desc length="180" x="0" y="0"/>
+	<chargedFrame>173</chargedFrame>
+	<fireFrame>174</fireFrame>
+	<firePoint  x="47" y="40"/>
+	<mountPoint x="9" y="121"/>
+</weaponAnim>
+
+<animSheet name="co_rocket_lucifer" w="8832" h="112" fw="64" fh="112">ravager_weapon/co_rocket_lucifer.png</animSheet>
+<weaponAnim name="co_rocket_lucifer">
+	<sheet>co_rocket_lucifer</sheet>
+	<desc length="138" x="0" y="0"/>
+	<chargedFrame>133</chargedFrame>
+	<fireFrame>134</fireFrame>
+	<firePoint  x="42" y="32"/>
+	<mountPoint x="7" y="60"/>
 </weaponAnim>
 
 <!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->

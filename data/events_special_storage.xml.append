@@ -1,16 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	<mod:findWithChildLike type="choice" child-type="text">
+
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+	<mod-append:choice req="CO_CHECK_ANY_RAVAGER_CONTAINER" blue="true">
+		<text>Check your containers.</text>
+		<event load="CO_LOAD_RAVAGER_CONTAINER_CHOICE"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="CO_LOAD_RAVAGER_CONTAINER_CHOICE">
+    <loadEvent>CO_RAVAGER_CONTAINER_CHOICE</loadEvent>
+</event>
+<event name="CO_RAVAGER_CONTAINER_CHOICE">
+	<text>Which container do you want to interact with?</text>
+	<choice req="CO_RAVAGER_CONTAINER_EPIC" hidden="true" blue="false">
+		<text>Dark green container.</text>
+		<event load="CO_LOAD_RAVAGER_CONTAINER_EPIC_SELFOPEN"/>
+	</choice>
+	<!--<choice req="CO_RAVAGER_CONTAINER_LEGEND" hidden="true" blue="false">
+		<text>Golden container.</text>
+		<event load="CO_LOAD_RAVAGER_CONTAINER_LEGEND_SELFOPEN"/>
+		<event/>
+	</choice>
+	<choice req="CO_RAVAGER_CONTAINER_RELIC" hidden="true" blue="true">
+		<text>Сontainer of Relics.</text>
+		<event/>
+	</choice>-->
+	<choice hidden="true">
+		<text>Do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+
+<event name="CO_LOAD_RAVAGER_CONTAINER_EPIC_SELFOPEN">
+	<text>You stand in front of a dark green container. It seems to notice this because immediately all its eyes turn directly toward you, and the wires start to twitch faintly. Maybe it's not a container at all, but some strange living creature? Or perhaps something alive, once trapped inside, managed to grow out through the tiniest cracks in it, but couldn't quite break free completely? Or is it just an oddly decorated gift box?</text>
+	<choice req="CO_RAVAGER_SYSOPER" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Open the container.</text>
+		<event>
+			<text>You are approaching the container to open it. Its wires begin to jerk with greater amplitude, and its eyes seem to pulse.
+As soon as you try to move the wires aside to clear your path, strange sounds emerge from inside, like a... Like a weapon charging or a bomb activating!</text>
+			<choice hidden="true">
+				<text>Leave this box alone before it blows up the whole ship!</text>
+				<event>
+					<text>You decide not to risk the safety of either the ship or the crew and step away from the container.
+It's hard to tell if this thing senses anything, but its wires cease their movement, and its eyes stop shining as if they intended to burn through yours.</text>
+					<choice hidden="true">
+						<text>Do something else.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Ignore containers response and continue opening.</text>
+				<event>
+					<text>You keep trying to open the container, but it fights back fiercely, repelling you and your tools with its wires. Suddenly, either by accident or on purpose, you sever one of the wires. Immediately, all activity and noise stop.
+Briefly. Before you can celebrate your success, the sounds resume, and the wires on the container’s surface detonate, releasing smoke and damaging the hull.</text>
+					<damage amount="2" effect="breach" system="random"/>
+					<choice>
+						<text>Continue...</text>
+						<event>
+							<text>As the smoke clears, you stare at the spot where the container stood and, either in horror or amazement, witness not only that this thing survived the explosion, but also how its wires, growing from somewhere inside, once again wrap around the surface of the container.
+And like the cherry on top, intact and unharmed red eyes emerge, fixing their gaze straight into your soul.</text>
+							<choice>
+								<text>Enough for today, do something else...</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="CO_RAVAGER_SYSOPER" lvl="1" hidden="true" blue="true">
+		<text>(Ravager Ship) Open the container.</text>
+		<event>
+			<text>You notice some similarities between the wires on the container and the wires that crisscross the interior of your ship. The eyes, both here and there, seem to stare straight into your soul, as if expecting some decisive action from you.
+This kind of scene would get under anyone’s skin, so you consider moving the container closer to the reactor, from where that “living machine” essence emits, an essence the container seems to share. Perhaps it’s best to leave the box alone with the ship.</text>
+			<choice>
+				<text>Move the container to the reactor room.</text>
+				<event>
+					<text>Once you relocated the container — without any resistance, only intermittently observing with all its eyes in every direction — closer to the ship’s reactor and left it there, abnormal sounds typical for such a situation began to emerge.
+Among them, you catch the scraping of metal, hints of decompression, and something else resembling... weapon charging? That thing is trying to blow up our goddamn reactor!</text>
+					<choice>
+						<text>Bring the container back right now before it's too late!</text>
+						<event>
+							<text>Like a scalded cat, you rush into the reactor room to prevent some box from ruining your mission in your place. Inside, you encounter the same wires, eyes, and container; however, you notice that the mass of wires, which once covered it, has disappeared, and the strange sounds have ceased.
+Upon closer inspection, you finally find the missing, Venom-like mass, which is already slithering away somewhere. Following it, you observe how, through minor damage to the ship's hull, it is partially seeping outward, as if trying to fill the gaps with itself.</text>
+							<damage amount="-2"/>
+							<choice hidden="true">
+								<text>Head back to the reactor and check the container.</text>
+								<event>
+									<text>When you return, you realize that, surprisingly, you haven't exploded yet. Perhaps the explosion was never actually meant to happen, but the situation was close to, if not outright, an emergency.
+Celebrating the fact that you will live a little longer, you finally open the container. Inside, you find what was likely the source of the sounds describing an "inevitable and extremely dull end" — an unusual weapon, moving on its own and intensely examining its new surroundings, including you.
+It's unclear whether it will be safe to install this on your ship, though it could probably be sold for a considerable amount of money.</text>
+									<remove name="CO_RAVAGER_CONTAINER_EPIC"/>
+									<weapon name="CO_RAVAGER_CONTAINER_EPIC_POOL"/>
+									<event load="CO_LOAD_RAVAGER_CONTAINER_CHOICE"/>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Newermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Whatever it really is, leave it until better times.</text>
+		<event load="CO_LOAD_RAVAGER_CONTAINER_CHOICE"/>
+	</choice>
+</event>
+
+
+	<!--<mod:findWithChildLike type="choice" child-type="text">
 		<mod:selector>Install the onboard lab.</mod:selector>
 		<mod-overwrite:text>Install the onboard lab. [TESTTTTT]</mod-overwrite:text>
 	</mod:findLike>
 	
 	CO_CHECK_NO_SIGIL_HEALING_MR_AND_NO_LAB_INSTALLED
 	
-	CO_CHECK_NO_SIGIL_HEALING_MR_AND_LAB_INSTALLED
+	CO_CHECK_NO_SIGIL_HEALING_MR_AND_LAB_INSTALLED-->
 	
 	
-	-->
+	
 <![CDATA[
 
 <mod:findName type="event" name="STORAGE_CHECK_BUTTON">
@@ -68,7 +183,7 @@
 	</mod-append:choice>
 </mod:findName>
 ]]>
-
+<![CDATA[
 <event name="CO_LOAD_ACTIVE_SIGIL_CHECK">
 	<loadEvent>CO_EVENT_ACTIVE_SIGIL_CHECK</loadEvent>
 </event>
@@ -112,8 +227,9 @@
 		<text>No Flagsip 2</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-</event>
 
+</event>
+]]>
 
 
 

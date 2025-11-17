@@ -5,12 +5,19 @@
 <co_trigger_shot volume="8">weapons/co_trigger_shot.ogg</co_trigger_shot>
 <co_destructor_long volume="7">weapons/co_destructor_long.ogg</co_destructor_long>
 <co_destructor_shot volume="10">weapons/co_destructor_shot.ogg</co_destructor_shot>
-<co_aurora_shot volume="5">weapons/co_aurora_shot.ogg</co_aurora_shot>
+<co_aurora_shot volume="3">weapons/co_aurora_shot.ogg</co_aurora_shot>
+
 <co_charon_shot volume="5">weapons/co_charon_shot.ogg</co_charon_shot>
 <co_adapter_shot volume="5">weapons/co_adapter_shot.ogg</co_adapter_shot>
 <co_thyrsus_shot volume="5">weapons/co_thyrsus_shot.ogg</co_thyrsus_shot>
+<co_kaiju_shot volume="6">weapons/co_kaiju_shot.ogg</co_kaiju_shot>
+
 <co_prometheus_shot volume="12">weapons/co_prometheus_shot.ogg</co_prometheus_shot>
 <co_helios_shot volume="12">weapons/co_helios_shot.ogg</co_helios_shot>
+
+<co_lucifer_shot_1 volume="12">weapons/co_lucifer_shot_1.ogg</co_lucifer_shot_1>
+<co_lucifer_shot_2 volume="12">weapons/co_lucifer_shot_2.ogg</co_lucifer_shot_2>
+<co_lucifer_shot_3 volume="12">weapons/co_lucifer_shot_3.ogg</co_lucifer_shot_3>
 
 <co_ripper_shot volume="20">weapons/co_ripper_shot.ogg</co_ripper_shot>
 
