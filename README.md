@@ -1,4 +1,4 @@
-# REQUIRES BOTH TRC 2.6+ AND FUSION 0.1.6+ TO WORK PROPERLY
+# REQUIRES FUSION 0.1.6+ TO WORK PROPERLY
 
 The game of current versions is... Crossout - a post-apocalyptic MMO action game, the devs of which didn't pay me for promoting da thing:(
 
