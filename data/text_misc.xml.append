@@ -5,12 +5,21 @@
 
 <text name="co_tip_astreaus">When this weapon reaches maximum charge, it will automatically fire at a random enemy system, dealing 1 damage to your weapon system and hull.</text>
 <text name="co_tip_charon">Every third shot fires a special projectile which corrodes adjacent rooms and passively damages the crew for a short period of time.</text>
-<text name="co_tip_adapter">If the first two projectiles in a single burst hit the target, the last projectile in the next burst will deal 1 hull damage.</text>
-<text name="co_tip_thyrsus">If all projectiles in a single burst hit the target, in the next burst all projectiles will be fired at once and will deal full damage. Firing with the perk active doesn't charge the perk.</text>
-<text name="co_tip_kaiju">If all projectiles in a single burst hit the target, every third projectile in the next burst gets 1 additional hull, system and crew damage. Firing with the perk active doesn't charge the perk.</text>
+<text name="co_tip_adapter">If the first two projectiles in a single burst hit the hull, the last projectile will deal 1 damage.</text>
+<text name="co_tip_thyrsus">If all projectiles in a single burst hit the hull, in the next burst all projectiles will be fired at once and will deal full damage. Firing with the perk active doesn't charge the perk.</text>
+<text name="co_tip_kaiju">If all projectiles in a single burst hit the hull, every third projectile in the next burst gets 1 additional hull, system and crew damage. Firing with the perk active doesn't charge the perk.</text>
+<text name="co_tip_acari">Projectiles fired from this weapon attach to the hull room, applying a weak erosion to all systemless rooms. If an attached projectile is not stunned, it will explode within 7.5 seconds, dealing 1 hull, 1 system, and 15 crew damage.</text>
 
 <text name="co_tip_trigger">In the final moment of the shot the beam can set hit room on fire and deals 1 damage.</text>
 <text name="co_tip_destructor">In the final moment of the shot the beam inflicts more erosion and deals 2 damage.</text>
+<text name="co_tip_athena">In the final moment of the shot the beam inflicts more erosion and deals 1 damage.</text>
 
 <text name="co_tip_prometheus">Within each burst, each shot has a 10% increased chance to start a fire.</text>
-<text name="co_tip_helios">Enemy's engines are dealt additional damage if all projectiles in a single burst hit the target.</text>
+<text name="co_tip_helios">Enemy's hull and engines are dealt additional damage if all projectiles in a single burst hit the hull.</text>
+<text name="co_tip_helios">With each charge, this weapon decreases its shot radius and increases the projectile's speed. When it reaches its final charge, it overheats, resetting the cooldown, and your weapon control will burst into flames.</text>
+<text name="co_tip_quasar">For each room hit, the charge time of the next shot is reduced by 5%.</text>
+<text name="co_tip_pulsar">For each room hit, the shield piercing of the next shot is increased by 2.5%.</text>
+
+<text name="co_tip_yongwang">While powered, this weapon fires more shots the more engines and shields are powered, powered artillery drastically decreases the bonus.</text>
+
+<text name="co_tip_artemis">Every 7 "Artemis" bolts attached to an enemy's hull apply an effect that increases the damage it takes from most non-beam weapons by 1.</text>

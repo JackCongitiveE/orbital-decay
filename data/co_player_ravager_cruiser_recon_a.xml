@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-59" y="-32" w="646" h="241" />
+<offsets>
+	<floor x="56" y="29" />
+	<cloak x="0" y="0" />
+</offsets>
+<weaponMounts>
+	<mount x="430" y="67" rotate="true" mirror="false" gib="-1" slide="no" />
+	<mount x="430" y="174" rotate="true" mirror="true" gib="-1" slide="no" />
+	<mount x="330" y="24" rotate="true" mirror="true" gib="-1" slide="up" />
+	<mount x="330" y="217" rotate="true" mirror="false" gib="-1" slide="down" />
+</weaponMounts>
+<mv-hullAnims sync="true">
+	<hullAnim y="0" x="63">co_player_ravager_cruiser_a_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

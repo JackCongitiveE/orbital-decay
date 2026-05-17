@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 									RELICS 									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="oc_minelayer_ripper" w="714" h="164" fw="51" fh="164">weapons/oc_minelayer_ripper.png</animSheet>
 <weaponAnim name="oc_minelayer_ripper">
@@ -59,9 +59,9 @@
 </anim>
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!-- 								ПАСХАЛКО									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!-- 					BALLISTA DRONE						-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="co_drone_ballista" w="945" h="245" fw="35" fh="35">people/co_drone_ballista_base.png</animSheet>
 <animSheet name="co_drone_ballista_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
@@ -213,15 +213,15 @@
 
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							(S)CREEEEEEEEEW									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <!-- 
 *********************************************************************************************************
@@ -455,8 +455,246 @@
 *********************************************************************************************************
 -->
 
+<animSheet name="co_rail_acari_bolt" w="35" h="35" fw="35" fh="35">people/co_rail_acari_bolt_base.png</animSheet>
+<anim name="co_rail_acari_bolt_clone">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="co_rail_acari_bolt_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_rail_acari_bolt_death">
+	<sheet>co_rail_acari_bolt_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_walk_down">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_walk_right">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_walk_up">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_walk_left">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_shoot_down">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_shoot_right">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_shoot_up">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_shoot_left">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_fire_down">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_fire_right">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_fire_up">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_fire_left">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_repair">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_punch_up">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_punch_down">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_teleport">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_type_right">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_type_left">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_type_up">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_type_down">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_rail_acari_bolt_portrait">
+	<sheet>co_rail_acari_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
 
-<animSheet name="co_ravager_fatum_aurora" w="140" h="315" fw="35" fh="35">people/co_ravager_fatum_aurora_base.png</animSheet>
+<animSheet name="co_xbow_artemis_bolt" w="35" h="35" fw="35" fh="35">people/co_xbow_artemis_bolt.png</animSheet>
+<anim name="co_xbow_artemis_bolt_clone">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="co_xbow_artemis_bolt_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_xbow_artemis_bolt_death">
+	<sheet>co_xbow_artemis_bolt_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_walk_down">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_walk_right">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_walk_up">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_walk_left">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_shoot_down">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_shoot_right">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_shoot_up">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_shoot_left">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_fire_down">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_fire_right">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_fire_up">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_fire_left">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_repair">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_punch_up">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_punch_down">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_teleport">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_type_right">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_type_left">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_type_up">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_type_down">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_xbow_artemis_bolt_portrait">
+	<sheet>co_xbow_artemis_bolt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+
+
+
+<animSheet name="co_ravager_fatum_aurora" w="280" h="210" fw="35" fh="35">people/co_ravager_fatum_aurora_base.png</animSheet>
 <animSheet name="co_ravager_fatum_aurora_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
 <anim name="co_ravager_fatum_aurora_death_right">
 	<sheet>co_ravager_fatum_aurora_death</sheet>
@@ -470,48 +708,48 @@
 </anim>
 <anim name="co_ravager_fatum_aurora_walk_down">
 	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="4" x="0" y="8"/>
-	<time>0.1</time>
-</anim>
-<anim name="co_ravager_fatum_aurora_walk_right">
-	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="4" x="0" y="7"/>
-	<time>0.1</time>
-</anim>
-<anim name="co_ravager_fatum_aurora_walk_left">
-	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="4" x="0" y="6"/>
+	<desc length="4" x="0" y="5"/>
 	<time>0.1</time>
 </anim>
 <anim name="co_ravager_fatum_aurora_walk_up">
 	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="4" x="0" y="5"/>
+	<desc length="4" x="4" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_right">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_walk_left">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="4" x="4" y="4"/>
 	<time>0.1</time>
 </anim>
 <anim name="co_ravager_fatum_aurora_shoot_down">
 	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="3" x="0" y="4"/>
-	<time>0.1</time>
-</anim>
-<anim name="co_ravager_fatum_aurora_shoot_right">
-	<sheet>co_ravager_fatum_aurora</sheet>
 	<desc length="3" x="0" y="3"/>
-	<time>0.1</time>
-</anim>
-<anim name="co_ravager_fatum_aurora_shoot_left">
-	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="3" x="0" y="2"/>
 	<time>0.1</time>
 </anim>
 <anim name="co_ravager_fatum_aurora_shoot_up">
 	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="3" x="0" y="1"/>
+	<desc length="3" x="4" y="3"/>
 	<time>0.1</time>
 </anim>
-<anim name="co_ravager_fatum_aurora_fly">
+<anim name="co_ravager_fatum_aurora_shoot_right">
 	<sheet>co_ravager_fatum_aurora</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
+	<desc length="3" x="0" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_shoot_left">
+	<sheet>co_ravager_fatum_aurora</sheet>
+	<desc length="3" x="4" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_aurora_teleport">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="8" x="0" y="1"/>
+	<time>0.8</time>
 </anim>
 <anim name="co_ravager_fatum_aurora_portrait">
 	<sheet>co_ravager_fatum_aurora</sheet>
@@ -519,14 +757,141 @@
 	<time>1</time>
 </anim>
 
+<animSheet name="co_ravager_fatum_blockchain" w="280" h="210" fw="35" fh="35">people/co_ravager_fatum_blockchain_base.png</animSheet>
+<animSheet name="co_ravager_fatum_blockchain_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_ravager_fatum_blockchain_death_right">
+	<sheet>co_ravager_fatum_blockchain_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_death_left">
+	<sheet>co_ravager_fatum_blockchain_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_walk_down">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_walk_up">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_walk_right">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_walk_left">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_shoot_down">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_shoot_up">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="3" x="4" y="3"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_shoot_right">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="3" x="0" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_shoot_left">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="3" x="4" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_teleport">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="8" x="0" y="1"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_ravager_fatum_blockchain_portrait">
+	<sheet>co_ravager_fatum_blockchain</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<animSheet name="co_ravager_fatum_flash" w="280" h="210" fw="35" fh="35">people/co_ravager_fatum_flash_base.png</animSheet>
+<animSheet name="co_ravager_fatum_flash_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="co_ravager_fatum_flash_death_right">
+	<sheet>co_ravager_fatum_flash_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_flash_death_left">
+	<sheet>co_ravager_fatum_flash_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="co_ravager_fatum_flash_walk_down">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_walk_up">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_walk_right">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_walk_left">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_shoot_down">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_shoot_up">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="3" x="4" y="3"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_shoot_right">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="3" x="0" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_shoot_left">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="3" x="4" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="co_ravager_fatum_flash_teleport">
+	<sheet>co_human_legion_oper</sheet>
+	<desc length="8" x="0" y="1"/>
+	<time>0.8</time>
+</anim>
+<anim name="co_ravager_fatum_flash_portrait">
+	<sheet>co_ravager_fatum_flash</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							LEGION ARTILLERIES								-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="co_guard_legion_missiles" w="273" h="125" fw="91" fh="125">artillery_eminem/co_guard_legion_missiles.png</animSheet>
 <weaponAnim name="co_guard_legion_missiles">
@@ -552,13 +917,13 @@
 	<time>1</time>
 </anim>
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							LEGION WEAPONS									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="co_zenith_2" w="390" h="89" fw="39" fh="89">newgen_weapon/co_zenith_2.png</animSheet>
 <weaponAnim name="co_zenith_2">
@@ -601,26 +966,13 @@
 </weaponAnim>
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							RAVAGER WEAPONS									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-
-<animSheet name="co_ravager_container_epic" w="56" h="23" fw="56" fh="23">ravager_weapon/co_ravager_container_epic.png</animSheet>
-<anim name="co_ravager_container_epic">
-	<sheet>co_ravager_container_epic</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
-<animSheet name="co_ravager_container_legend" w="56" h="23" fw="56" fh="23">ravager_weapon/co_ravager_container_legend.png</animSheet>
-<anim name="co_ravager_container_legend">
-	<sheet>co_ravager_container_legend</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="co_ravager_container_epic" w="113" h="45" fw="113" fh="45">ravager_weapon/co_ravager_container_epic_new.png</animSheet>
 <anim name="co_ravager_container_epic">
@@ -660,6 +1012,35 @@
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
+<animSheet name="co_acari_proj" w="140" h="10" fw="35" fh="10">ravager_weapon/co_acari_proj.png</animSheet>
+<anim name="co_acari_proj">
+	<sheet>co_acari_proj</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.1</time>
+</anim>
+<animSheet name="co_artemis_proj" w="35" h="3" fw="35" fh="3">ravager_weapon/co_artemis_proj.png</animSheet>
+<anim name="co_artemis_proj">
+	<sheet>co_artemis_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.1</time>
+</anim>
+<animSheet name="co_imugi_proj" w="11" h="11" fw="11" fh="11">ravager_weapon/co_imugi_proj.png</animSheet>
+<anim name="co_imugi_proj">
+	<sheet>co_imugi_proj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.1</time>
+</anim>
+
+<animSheet name="co_xbow_artemis" w="3591" h="118" fw="63" fh="118">ravager_weapon/co_xbow_artemis.png</animSheet>
+<weaponAnim name="co_xbow_artemis">
+	<sheet>co_xbow_artemis</sheet>
+	<desc length="57" x="0" y="0"/>
+	<chargedFrame>22</chargedFrame>
+	<fireFrame>23</fireFrame>
+	<firePoint  x="42" y="32" charge="0"/>
+	<mountPoint x="5" y="60"/>
+	<!--<boost>co_rail_astreaus_charges</boost>-->
+</weaponAnim>
 
 <animSheet name="co_plasma_trigger" w="114" h="76" fw="38" fh="76">ravager_weapon/co_plasma_trigger.png</animSheet>
 <weaponAnim name="co_plasma_trigger">
@@ -690,6 +1071,15 @@
 	<firePoint  x="28" y="5"/>
 	<mountPoint x="3" y="45"/>
 </weaponAnim>
+<animSheet name="co_plasma_athena" w="1242" h="101" fw="54" fh="101">ravager_weapon/co_plasma_athena.png</animSheet>
+<weaponAnim name="co_plasma_athena">
+	<sheet>co_plasma_athena</sheet>
+	<desc length="23" x="0" y="0"/>
+	<chargedFrame>19</chargedFrame>
+	<fireFrame>20</fireFrame>
+	<firePoint  x="40" y="30"/>
+	<mountPoint x="5" y="60"/>
+</weaponAnim>
 
 <animSheet name="co_rail_adapter" w="288" h="100" fw="36" fh="100">ravager_weapon/co_rail_adapter.png</animSheet>
 <weaponAnim name="co_rail_adapter">
@@ -700,6 +1090,33 @@
 	<firePoint  x="26" y="35"/>
 	<mountPoint x="3" y="62"/>
 </weaponAnim>
+
+<animSheet name="co_rail_astreaus_charges" w="295" h="119" fw="59" fh="119">ravager_weapon/co_rail_astreaus_charges.png</animSheet>
+<anim name="co_rail_astreaus_charges">
+	<sheet>co_rail_astreaus_charges</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="co_rail_astreaus" w="10856" h="119" fw="59" fh="119">ravager_weapon/co_rail_astreaus.png</animSheet>
+<weaponAnim name="co_rail_astreaus">
+	<sheet>co_rail_astreaus</sheet>
+	<desc length="184" x="0" y="0"/>
+	<chargedFrame>68</chargedFrame>
+	<fireFrame>81</fireFrame>
+	<firePoint  x="42" y="32" charge="0"/>
+	<mountPoint x="3" y="81"/>
+	<boost>co_rail_astreaus_charges</boost>
+</weaponAnim>
+<!--<animSheet name="co_rail_astreaus" w="5369" h="119" fw="59" fh="119">ravager_weapon/co_rail_astreaus.png</animSheet>
+<weaponAnim name="co_rail_astreaus">
+	<sheet>co_rail_astreaus</sheet>
+	<desc length="91" x="0" y="0"/>
+	<chargedFrame>68</chargedFrame>
+	<fireFrame>81</fireFrame>
+	<firePoint  x="42" y="32" charge="0"/>
+	<mountPoint x="3" y="81"/>
+</weaponAnim>-->
+	<!--<boost>co_rail_astreaus_charges</boost>-->
 
 <animSheet name="co_rail_charon" w="780" h="109" fw="60" fh="109">ravager_weapon/co_rail_charon.png</animSheet>
 <weaponAnim name="co_rail_charon">
@@ -728,6 +1145,16 @@
 	<fireFrame>6</fireFrame>
 	<firePoint  x="44" y="33"/>
 	<mountPoint x="2" y="105"/>
+</weaponAnim>
+
+<animSheet name="co_rail_acari" w="2240" h="100" fw="40" fh="100">ravager_weapon/co_rail_acari.png</animSheet>
+<weaponAnim name="co_rail_acari">
+	<sheet>co_rail_acari</sheet>
+	<desc length="56" x="0" y="0"/>
+	<chargedFrame>47</chargedFrame>
+	<fireFrame>48</fireFrame>
+	<firePoint  x="30" y="40"/>
+	<mountPoint x="3" y="55"/>
 </weaponAnim>
 
 <animSheet name="co_emitter_prometheus" w="792" h="130" fw="44" fh="130">ravager_weapon/co_emitter_prometheus.png</animSheet>
@@ -770,13 +1197,23 @@
 	<mountPoint x="7" y="60"/>
 </weaponAnim>
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<animSheet name="co_grenade_yongwang" w="2016" h="127" fw="48" fh="127">ravager_weapon/co_grenade_yongwang.png</animSheet>
+<weaponAnim name="co_grenade_yongwang">
+	<sheet>co_grenade_yongwang</sheet>
+	<desc length="42" x="0" y="0"/>
+	<chargedFrame>40</chargedFrame>
+	<fireFrame>41</fireFrame>
+	<firePoint  x="38" y="10"/>
+	<mountPoint x="6" y="84"/>
+</weaponAnim>
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							SLAYERS WEAPONS									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <animSheet name="co_slayers_lightmiss_proj" w="25" h="7" fw="25" fh="7">slayer_weapon/co_slayers_lightmiss_proj.png</animSheet>
 <anim name="co_slayers_lightmiss_proj">
@@ -805,13 +1242,42 @@
 	<mountPoint x="3" y="41"/>
 </weaponAnim>
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 								EFFECTS
-👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
+<animSheet name="co_acari_crewproj_lightning" w="140" h="35" fw="35" fh="35">people/co_acari_crewproj_lightning.png</animSheet>
+<anim name="co_acari_crewproj_lightning">
+	<sheet>co_acari_crewproj_lightning</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.1</time>
+</anim>
 <animSheet name="co_ravager_shock" w="352" h="32" fw="32" fh="32">people/co_ravager_shock.png</animSheet>
 <anim name="co_ravager_shock">
 	<sheet>co_ravager_shock</sheet>
 	<desc length="11" x="0" y="0"/>
 	<time>0.7</time>
+</anim>
+<animSheet name="co_ravager_aim" w="35" h="35" fw="35" fh="35">people/co_ravager_aim.png</animSheet>
+<anim name="co_ravager_aim">
+	<sheet>co_ravager_aim</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+								THRUSTERS
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+<animSheet name="co_player_ravager_cruiser_a_hullanim" w="11520" h="241" fw="320" fh="241">thrusters/co_player_ravager_cruiser_a_hullanim.png</animSheet>
+<anim name="co_player_ravager_cruiser_a_hullanim">
+	<sheet>co_player_ravager_cruiser_a_hullanim</sheet>
+	<desc length="36" x="0" y="0"/>
+	<time>3</time>
+</anim>
+<animSheet name="co_ravager_cruiser_hullanim" w="8676" h="320" fw="241" fh="320">thrusters/co_ravager_cruiser_hullanim.png</animSheet>
+<anim name="co_ravager_cruiser_hullanim">
+	<sheet>co_ravager_cruiser_hullanim</sheet>
+	<desc length="36" x="0" y="0"/>
+	<time>3</time>
 </anim>

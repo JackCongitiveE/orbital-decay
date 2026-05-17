@@ -23,29 +23,31 @@
 
 <mod:findLike type="scripts">
     <mod-append:script>data/co_scripts/co_plasma.lua</mod-append:script>
-    <mod-append:script>data/co_scripts/co_rail.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_emitters.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_rail.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_rockets.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_grenades.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_xbows.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_otherperks.lua</mod-append:script>
+	
     <mod-append:script>data/co_scripts/co_smartgunners.lua</mod-append:script>
     <mod-append:script>data/co_scripts/co_augments.lua</mod-append:script>
+    <mod-append:script>data/co_scripts/co_railAcari.lua</mod-append:script>
 </mod:findLike>
 
-<discord enabled="true">
-	<miniships>
-		<miniship>miniship_co_player_ravager_destroyer</miniship>
-	</miniships>
-	<appId>737088144931029032</appId>
-	<icon>logo_50_big</icon>
-</discord>
+<miniships>
+	<miniship>miniship_co_player_ravager_destroyer_assault</miniship>
+	<miniship>miniship_co_player_ravager_cruiser_recon</miniship>
+</miniships>
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							BOSSSS MOLOKOSOSSS								-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 
 
@@ -118,13 +120,13 @@
 <mod:findLike type="crew">
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							(S)CREWWWWWWWWWWWWW								-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 	<mod-append:race name="co_ripper_disk">
 		<maxHealth>45</maxHealth>
@@ -166,18 +168,17 @@
 		<deathSounds>
 			<deathSound>sysExplosion</deathSound>
 		</deathSounds>
-		<droneAI>
-			<fightAI/>
-		</droneAI>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
 	</mod-append:race>
 	
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							DRONESSSSSSSSSSSSSS								-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 
 	<mod-append:race name="co_drone_ballista">
@@ -457,6 +458,7 @@
 			<deathSound>death1</deathSound>
 			<deathSound>death2</deathSound>
 		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 	</mod-append:race>
 
 
@@ -532,6 +534,7 @@
 				</systemPowerScaling>
 			</statBoost>
 		</passiveStatBoosts>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 	</mod-append:race>
 	
 	<mod-append:race name="co_drone_slayersuit_range">
@@ -589,13 +592,106 @@
 				</systemPowerScaling>
 			</statBoost>
 		</passiveStatBoosts>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 	</mod-append:race>
+	
+	
+<!-- 
+*********************************************************************************************************
+                   RAVAGERS ARE REEAAAAAAAAAAAAAL
+*********************************************************************************************************
+-->
+
+	<mod-append:race name="co_rail_acari_bolt">
+		<animSheet>co_rail_acari_bolt</animSheet>
+		<maxHealth>30</maxHealth>
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<noWarning>true</noWarning>
+		<repairSpeed>0</repairSpeed>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<resistsMindControl>true</resistsMindControl>
+		<canTeleport>false</canTeleport>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<noSlot>true</noSlot>
+		<noAI>true</noAI>
+		<controllable>false</controllable>
+		<selectable>false</selectable>
+		<canMove>false</canMove>
+		<snapToSlot>true</snapToSlot>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+		<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+		<damageMultiplier>0.0</damageMultiplier>
+		<damageTakenMultiplier>1.0</damageTakenMultiplier>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<passiveStatBoosts>
+			<statBoost name="deathEffect">
+				<boostType>SET</boostType>
+				<deathEffect>
+					<damage>1</damage>
+					<friendlyFire>true</friendlyFire>
+				</deathEffect>
+				<shipTarget>ALL</shipTarget>
+                <crewTarget>SELF</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<extraConditions type="and">
+					<stunned>false</stunned>
+				</extraConditions>
+			</statBoost>
+		</passiveStatBoosts>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+	</mod-append:race>
+	
+	<mod-append:race name="co_xbow_artemis_bolt">
+		<animSheet>co_xbow_artemis_bolt</animSheet>
+		<maxHealth>10</maxHealth>
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<noWarning>true</noWarning>
+		<repairSpeed>0</repairSpeed>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<resistsMindControl>true</resistsMindControl>
+		<canTeleport>false</canTeleport>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<noSlot>true</noSlot>
+		<noAI>true</noAI>
+		<controllable>false</controllable>
+		<selectable>false</selectable>
+		<canMove>false</canMove>
+		<snapToSlot>false</snapToSlot>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+		<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+		<damageMultiplier>0.0</damageMultiplier>
+		<damageTakenMultiplier>1.0</damageTakenMultiplier>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+	</mod-append:race>
+
+
 
 	<mod-append:race name="co_ravager_fatum_aurora">
 		<animSheet>co_ravager_fatum_aurora</animSheet>
 		<maxHealth>125</maxHealth>
 		<healSpeed>0</healSpeed>
-		<truePassiveHealAmount>3.0</truePassiveHealAmount>
+		<truePassiveHealAmount>4.5</truePassiveHealAmount>
 		<passiveHealDelay>10</passiveHealDelay>
 		<lowHealthThresholdPercentage>0</lowHealthThresholdPercentage>
 		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
@@ -623,14 +719,29 @@
 		<shootingSounds>
 			<shootingSound>co_aurora_shot</shootingSound>
 		</shootingSounds>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
 		<powerEffect>
+			<hideCooldown>true</hideCooldown>
+			<hideCharges>true</hideCharges> 
 			<cooldown>0.1</cooldown>
 			<jumpCooldown>continue</jumpCooldown>
 			<req>
 				<enemyInRoom/>
+				<extraConditions type="or">
+					<fighting>true</fighting>
+					<shooting>true</shooting>
+				</extraConditions>
 			</req>
 			<chargeReq>
 				<enemyInRoom/>
+				<extraConditions type="or">
+					<fighting>true</fighting>
+					<shooting>true</shooting>
+				</extraConditions>
 			</chargeReq>
 			<buttonText>HEAT</buttonText>
 			<tooltip>This ability will activate automatically in combat.</tooltip>
@@ -643,11 +754,233 @@
 					<amount>1.01</amount>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
+					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
-					<priority>0</priority>
-					<boostAnim>unique_dessius_health</boostAnim>
+					<priority>-999999999</priority>
+					<!--<boostAnim>unique_dessius_health</boostAnim>-->
 					<maxStacks>110</maxStacks>
+				</statBoost>
+			</statBoosts>
+		</powerEffect>
+	</mod-append:race>
+
+	<mod-append:race name="co_ravager_fatum_blockchain">
+		<animSheet>co_ravager_fatum_blockchain</animSheet>
+		<maxHealth>125</maxHealth>
+		<healSpeed>0</healSpeed>
+		<truePassiveHealAmount>4.5</truePassiveHealAmount>
+		<passiveHealDelay>10</passiveHealDelay>
+		<lowHealthThresholdPercentage>0</lowHealthThresholdPercentage>
+		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+		<damageMultiplier>2.5</damageMultiplier>
+		<allDamageTakenMultiplier>0.9</allDamageTakenMultiplier>
+		<fireDamageMultiplier>1.1</fireDamageMultiplier>
+		<canRepair>false</canRepair>
+		<canTeleport>true</canTeleport>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<resistsMindControl>true</resistsMindControl>
+		<defaultSkillLevel>0</defaultSkillLevel>
+		<skills>
+			<piloting req="999999"/>
+			<engines req="999999"/>
+			<shields req="999999"/>
+			<weapons req="999999"/>
+			<repair req="999999"/>
+			<combat req="999999"/>
+		</skills>
+		<shootTimer min="2000" max="2000"/>
+		<canFight>true</canFight>
+		<canPunch>false</canPunch>
+		<shootingSounds>
+			<shootingSound>co_blockchain_shot_1</shootingSound>
+			<shootingSound>co_blockchain_shot_2</shootingSound>
+			<shootingSound>co_blockchain_shot_3</shootingSound>
+		</shootingSounds>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+			<statBoosts>
+				<statBoost name="statBoost">
+					<statBoost name="validTarget">
+						<boostType>SET</boostType>
+						<value>false</value>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>SELF</crewTarget>
+						<priority>-999999999</priority>
+						<whiteList>
+							<co_ravager_fatum_blockchain/>
+						</whiteList>
+					</statBoost>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<whiteList>
+						<co_ravager_fatum_aurora/>
+						<co_ravager_fatum_flash/>
+					</whiteList>
+				</statBoost>
+			
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MAX</boostType>
+					<amount>1</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MAX</boostType>
+					<amount>1</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="suffocationModifier">
+					<boostType>MAX</boostType>
+					<amount>1</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MAX</boostType>
+					<amount>1</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="stunMultiplier">
+					<boostType>MAX</boostType>
+					<amount>1</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="canBurn">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+				<statBoost name="canSuffocate">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+				</statBoost>
+			</statBoosts>
+	</mod-append:race>
+
+	<mod-append:race name="co_ravager_fatum_flash">
+		<animSheet>co_ravager_fatum_flash</animSheet>
+		<maxHealth>125</maxHealth>
+		<healSpeed>0</healSpeed>
+		<truePassiveHealAmount>4.5</truePassiveHealAmount>
+		<passiveHealDelay>10</passiveHealDelay>
+		<lowHealthThresholdPercentage>0</lowHealthThresholdPercentage>
+		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+		<damageMultiplier>0.1</damageMultiplier>
+		<allDamageTakenMultiplier>0.9</allDamageTakenMultiplier>
+		<fireDamageMultiplier>1.1</fireDamageMultiplier>
+		<damageEnemiesAmount>1</damageEnemiesAmount>
+		<canRepair>false</canRepair>
+		<canTeleport>true</canTeleport>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<resistsMindControl>true</resistsMindControl>
+		<defaultSkillLevel>0</defaultSkillLevel>
+		<skills>
+			<piloting req="999999"/>
+			<engines req="999999"/>
+			<shields req="999999"/>
+			<weapons req="999999"/>
+			<repair req="999999"/>
+			<combat req="999999"/>
+		</skills>
+		<shootTimer min="100" max="100"/>
+		<canFight>true</canFight>
+		<canPunch>false</canPunch>
+		<shootingSounds>
+			<shootingSound>co_flash_shot_h</shootingSound>
+		</shootingSounds>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<powerEffect>
+			<hideCooldown>true</hideCooldown>
+			<hideCharges>true</hideCharges> 
+			<cooldown>0.1</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<req>
+				<enemyInRoom/>
+				<extraConditions type="or">
+					<fighting>true</fighting>
+					<shooting>true</shooting>
+				</extraConditions>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+				<extraConditions type="or">
+					<fighting>true</fighting>
+					<shooting>true</shooting>
+				</extraConditions>
+			</chargeReq>
+			<buttonText>ZAP</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="203" g="11" b="11"/>
+			<activateWhenReady>true</activateWhenReady>
+			<statBoosts>
+				<statBoost name="damageMultiplier">
+					<duration>15</duration>
+					<boostType>MULT</boostType>
+					<amount>0.9882</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+					<maxStacks>100</maxStacks>
+				</statBoost>
+				<statBoost name="moveSpeedMultiplier">
+					<duration>15</duration>
+					<boostType>MULT</boostType>
+					<amount>0.9882</amount>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
+					<maxStacks>100</maxStacks>
+				</statBoost>
+				<statBoost name="silenced">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>-999999999</priority>
 				</statBoost>
 			</statBoosts>
 		</powerEffect>
@@ -676,13 +1009,13 @@
 </mod:findName>
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							AUGMENTS								AUGMENTS								AUGMENTS									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <mod:findLike type="augments" limit="1">
 	<mod-append:aug name="CO_RAVAGER_SYSOPER">
@@ -710,21 +1043,29 @@
 	</mod-append:aug>
 	<mod-append:aug name="CO_RAVAGER_PROTOCOL">
     	<statBoosts>
+			<statBoost name="isAnaerobic">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<priority>-999999</priority>
+			</statBoost>
 			<statBoost name="canSuffocate">
 				<boostType>SET</boostType>
 				<value>true</value>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<priority>0</priority>
+				<droneTarget>ALL</droneTarget>
+				<priority>-999999</priority>
 			</statBoost>
 			<statBoost name="suffocationModifier">
 				<boostType>FLAT</boostType>
 				<amount>2.0</amount>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<priority>0</priority>
+				<droneTarget>ALL</droneTarget>
+				<priority>-999999</priority>
 			</statBoost>
 			<statBoost name="canSabotage">
 				<boostType>SET</boostType>
@@ -732,7 +1073,7 @@
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<droneTarget>DRONES</droneTarget>
-				<priority>0</priority>
+				<priority>-999999</priority>
 			</statBoost>
 			<statBoost name="canFight">
 				<boostType>SET</boostType>
@@ -740,7 +1081,7 @@
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<droneTarget>DRONES</droneTarget>
-				<priority>0</priority>
+				<priority>-999999</priority>
 			</statBoost>
 			<statBoost name="canMove">
 				<boostType>SET</boostType>
@@ -748,15 +1089,15 @@
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<droneTarget>DRONES</droneTarget>
-				<priority>0</priority>
+				<priority>-999999</priority>
 			</statBoost>
-			<statBoost name="trueHealAmount"> <!--same thing but for drones-->
+			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-10</amount>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<droneTarget>DRONES</droneTarget>
-				<priority>0</priority>
+				<priority>-999999</priority>
 				<boostAnim>co_ravager_shock</boostAnim>
 			</statBoost>
 		</statBoosts>
@@ -786,14 +1127,68 @@
 		<icon>icon_co_ravager_auto</icon>
 		<locked/>
 	</mod-append:aug>
+	
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!-- 							LAB UPGRADES				LAB UPGRADES				LAB UPGRADES				LAB UPGRADES							-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	
+	<mod-append:aug name="CO_LAB_RAVAGER_FOCUSING">
+		<icon>icon_co_ravager_lab_targeting</icon>
+    	<statBoosts>
+			<statBoost name="powerEffect">
+				<boostType>ADD</boostType>
+				<powerEffect>
+					<cooldown>15</cooldown>
+					<jumpCooldown>continue</jumpCooldown>
+					<buttonText>FOCUS</buttonText>
+					<tooltip>[COOLDOWN:15s]
+					Marks the targeted enemy as a priority target.</tooltip>
+					<cooldownColor r="203" g="11" b="11"/>
+					<req>
+						<enemyInRoom/>
+						<extraConditions type="or">
+							<fighting>true</fighting>
+							<shooting>true</shooting>
+						</extraConditions>
+					</req>
+					<statBoosts>
+						<statBoost name="statBoost">
+							<duration>10</duration>
+							<statBoost name="validTarget">
+								<boostType>SET</boostType>
+								<value>false</value>
+								<shipTarget>CURRENT_ROOM</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<affectsSelf>false</affectsSelf>
+							</statBoost>
+							<shipTarget>CREW_TARGET</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>ALL</droneTarget>
+							<affectsSelf>false</affectsSelf>
+							<boostAnim>co_ravager_aim</boostAnim>
+						</statBoost>
+					</statBoosts>
+				</powerEffect>
+				<shipTarget>ALL</shipTarget>
+                <crewTarget>ALLIES</crewTarget>
+				<whiteList load="CO_LIST_CREW_RAVAGER_2STAGE"/>
+			</statBoost>
+		</statBoosts>
+		<locked/>
+	</mod-append:aug>
+	
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!-- 							SIGILS							SIGILS							SIGILS							SIGILS						-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!-- 						SIGILS							SIGILS							SIGILS							SIGILS							-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 	<mod-append:aug name="CO_SIGIL_SCRAP_LR">
 		<function name="SCRAP_COLLECTOR" value="-0.15" useForReqs="false"/>
@@ -918,21 +1313,21 @@
 
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							PLAYER SHIIIIPS																PLAYER SHIIIIPS									-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 
 <mod:findLike type="ships" limit="1">
 
 	<mod:findLike type="shipOrder" limit="1">
 		<!-- -->
-		<mod-append:ship>CO_PLAYER_RAVAGER_DESTROYER</mod-append:ship>
-        <mod-append:empty/>
+		<mod-append:ship>CO_PLAYER_RAVAGER_FRIGATE_ASSAULT</mod-append:ship>
+		<mod-append:ship>CO_PLAYER_RAVAGER_CRUISER_RECON</mod-append:ship>
 		<!-- -->
         <mod-append:empty/>
         <mod-append:empty/>
@@ -946,23 +1341,31 @@
         <mod-append:empty/>
 	</mod:findLike>
 	
-	<mod-append:ship name="CO_PLAYER_RAVAGER_DESTROYER" a="true" b="true" c="true" super="luminal" />
-	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER">
+	<mod-append:ship name="CO_PLAYER_RAVAGER_FRIGATE_ASSAULT" a="true" b="true" c="true" super="luminal" />
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_FRIGATE_ASSAULT">
 		<crewLimit>3</crewLimit>
 		<systemLimit>8</systemLimit>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
 	</mod-append:customShip>
-	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER_2">
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_FRIGATE_ASSAULT_2">
 		<crewLimit>3</crewLimit>
 		<systemLimit>8</systemLimit>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
 		<hiddenAug>UPG_ARTILLERY_TARGETING</hiddenAug>
 	</mod-append:customShip>
-	<mod-append:customShip name="CO_PLAYER_RAVAGER_DESTROYER_3">
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_FRIGATE_ASSAULT_3">
 		<crewLimit>0</crewLimit>
 		<systemLimit>8</systemLimit>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
+	</mod-append:customShip>
+	
+	<mod-append:ship name="CO_PLAYER_RAVAGER_CRUISER_RECON" a="true" b="false" c="false" />
+	<mod-append:customShip name="CO_PLAYER_RAVAGER_CRUISER_RECON">
+		<crewLimit>5</crewLimit>
+		<systemLimit>9</systemLimit>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>CO_RAVAGER_SYSOPER</hiddenAug>
 	</mod-append:customShip>
@@ -970,10 +1373,9 @@
 
 
 
-
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 								SHIP ICONS
-👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <mod:findLike type="ships" limit="1">
 	<mod:findLike type="shipIcons" limit="1">
@@ -999,17 +1401,23 @@ All enemy crew become susceptible to suffocation, while all onboard drones are a
 This enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.
 This Energy Shield regenerates over time while the shield system is active. Enemy crew can no longer return to their ship if they teleport to a ship with this shielding installed.</tooltip>
 		</mod-append:shipIcon>
+		
+		<mod-append:shipIcon>
+			<name>icon_co_ravager_lab_targeting</name>
+			<tooltip>TARGET FOCUSING:
+This enemy's Stage II Ravagers are able to mark a priority target for death, killing your crew members one by one.</tooltip>
+		</mod-append:shipIcon>
 	</mod:findLike>
 </mod:findLike>
 
 
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 <!-- 							EMINEM SHIIIIIIIIPS								-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
-<!--👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁👁-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <mod:findLike type="ships">
 
@@ -1021,11 +1429,23 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 		<noJump/>
 	</mod-append:customShip>
 	
-	<mod-append:customShip name="CO_RAVAGER_PREDATOR"> <!-- frigate-->
+	<mod-append:customShip name="CO_RAVAGER_FRIGATE">
 	</mod-append:customShip>
-	<mod-append:customShip name="CO_RAVAGER_DESTROYER"> <!-- cooler frigate-->
+	<mod-append:customShip name="CO_RAVAGER_FRIGATE_NOMISS">
 	</mod-append:customShip>
-	<mod-append:customShip name="CO_RAVAGER_FRIGATE"> <!-- destroyer-->
+	<mod-append:customShip name="CO_RAVAGER_FRIGATE_ASSAULT">
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_FRIGATE_ASSAULT_NOMISS">
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_DESTROYER">
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_DESTROYER_NOMISS">
+	</mod-append:customShip>
+	<!--<mod-append:customShip name="CO_RAVAGER_DESTROYER_COMMAND"> elite destroyer
+	</mod-append:customShip>-->
+	<mod-append:customShip name="CO_RAVAGER_DESTROYER_TACTICAL">
+	</mod-append:customShip>
+	<mod-append:customShip name="CO_RAVAGER_DESTROYER_TACTICAL_NOMISS">
 	</mod-append:customShip>
 	
 	
@@ -1087,6 +1507,8 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 
 	<bossShip yOffset="0">CO_RAVAGER_MERCHANT</bossShip>
 	
+	<bossShip yOffset="80">CO_SLAYERS_LOGISTICS_CRUISER</bossShip>
+	
 	<bossShip yOffset="100">CO_ANGEL_BATTLESHIP_PURE</bossShip>
 
 
@@ -1094,17 +1516,18 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 	<!-- 				stoopid ass files						-->
 	<eventFile>co_special_angel</eventFile>
 	<eventFile>co_special_slayers</eventFile>
+	<eventFile>co_special_ravagers</eventFile>
 	
 	<!-- 					sector files						-->
 	<eventFile>co_sector_legion</eventFile>
 
 	<!--					sector music						-->
-
 	<metaVariable name="co_juke_legion" op="set" val="0"/>
 	<metaVariable name="co_juke_strays" op="set" val="0"/>
 
 	<!--					legion sector						-->
 	<variable name="coords_co_legion" op="set" val="0"/>
+	
 
 	<req name="CO_REQ_CITADEL_COORDS" type="any">
 		<name>coords_co_legion</name>
@@ -1116,6 +1539,10 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 	<req name="CO_REQ_STRAYS_COORDS" type="any">
 		<name>coords_co_strays</name>
 	</req>
+	
+	
+	<metaVariable name="co_prof_ravagers_meet" op="set" val="0"/>
+	<metaVariable name="co_prof_ravagers_reputation" op="set" val="0"/>
 
 	
 	<!--				RAVAGER CONTAINERS REQS					-->
@@ -1173,3 +1600,101 @@ This Energy Shield regenerates over time while the shield system is active. Enem
 	</req>
 
 </events>
+
+
+<!-- 
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+					STORE
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+-->
+<mod:findLike type="store">
+	<mod-append:customStore id="CO_RAVAGER_MERCHANT_STORE">
+		<resource>
+			<type>fuel</type>
+			<count min="4" max="10"/>
+			<price>-1</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="4" max="7"/>
+			<price>-1</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="4" max="7"/>
+			<price>-1</price>
+		</resource>
+
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+
+		<category type="WEAPONS">
+			<customTitle>EPIC RAIL/PULSE WEAPONS</customTitle>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_RAIL</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_RAIL</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_RAIL</blueprint>
+				<price>-1</price>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<customTitle>EPIC ENERGY WEAPONS</customTitle>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_ENERGY</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_ENERGY</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_WEAPONS_EPIC_ENERGY</blueprint>
+				<price>-1</price>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<customTitle>GAMBA</customTitle>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_CONTAINER_EPIC</blueprint>
+				<price>-1</price>
+			<item>
+			</item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+				<blueprint>CO_RAVAGER_CONTAINER_EPIC</blueprint>
+				<price>-1</price>
+			</item>
+		</category>
+
+		<!--<category type="AUGMENTS">
+			<item>
+				<modifier min="0.8" max="1.2" flat="false"/>
+				<blueprint>LILY_TARGETING_BYPASS</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.2" flat="false"/>
+				<blueprint>LILY_ASB_SCRAMBLER</blueprint>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.2" flat="false"/>
+				<blueprint>LILY_COMBAT_AFTERBURNER</blueprint>
+				<price>-1</price>
+			</item>
+		</category>-->
+	</mod-append:customStore>
+</mod:findLike>

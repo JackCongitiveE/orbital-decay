@@ -1,7 +1,8 @@
 <ship name="CO_SLAYERS_ALL" auto_blueprint="CO_LIST_SHIPS_SLAYERS_ALL">
 	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
-	<!--<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>-->
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
 </ship>
+
 
 <ship name="CO_SLAYERS_DROPSHIP_SMOL_FIRST" auto_blueprint="CO_SLAYERS_DROPSHIP_SMOL_FIRST">
 	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
@@ -19,6 +20,11 @@
 	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
 	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
 </ship>
+<ship name="CO_SLAYERS_LOGISTICS_CRUISER" auto_blueprint="CO_SLAYERS_LOGISTICS_CRUISER">
+	<destroyed load="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT"/>
+	<deadCrew load="CO_SLAYERS_DROPSHIP_SMOL_CREWKILL"/>
+</ship>
+
 
 <event name="CO_SLAYERS_DROPSHIP_SMOL_DEFEAT">
 	<text>"God damn it, that stupid Rene Dekart made everything go to hell... And let's keep it that way."</text>
@@ -166,7 +172,7 @@ We call ourselves the Slayers. Numerous flawlessly executed operations have prov
 						<text>Attack the ship without more questions.</text>
 						<event>
 							<text>"Did you find out everything you wanted? We guess someone else will tell you the rest."
-With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+With that said, the line goes dead, and your opponent, who doesn't seem to pose a serious threat, start charging their weapons.</text>
 							<playSound>mysteriousBeacon</playSound>
 							<ship hostile="true"/>
 							<choice hidden="true">
@@ -217,7 +223,7 @@ We call ourselves the Slayers. Numerous flawlessly executed operations have prov
 						<text>Attack the ship without more questions.</text>
 						<event>
 							<text>"Did you find out everything you wanted? We guess someone else will tell you the rest."
-With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+With that said, the line goes dead, and your opponent, who doesn't seem to pose a serious threat, start charging their weapons.</text>
 							<playSound>mysteriousBeacon</playSound>
 							<ship hostile="true"/>
 							<choice hidden="true">
@@ -239,8 +245,8 @@ With that said, the line goes dead, and your opponent, who doesn’t seem to pos
 			<choice>
 				<text>Attack the ship without question.</text>
 				<event>
-					<text>"That’s pretty rude of you. Fortunately, we're not here to condemn the local altruists."
-With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+					<text>"That's pretty rude of you. Fortunately, we're not here to condemn the local altruists."
+With that said, the line goes dead, and your opponent, who doesn't seem to pose a serious threat, start charging their weapons.</text>
 					<playSound>mysteriousBeacon</playSound>
 					<ship hostile="true"/>
 					<choice hidden="true">
@@ -292,7 +298,7 @@ With that said, the line goes dead, and your opponent, who doesn’t seem to pos
 				<text>Attack the ship without question.</text>
 				<event>
 					<text>"Expected. Fortunately, we're not here to condemn the local altruists."
-With that said, the line goes dead, and your opponent, who doesn’t seem to pose a serious threat, start charging their weapons.</text>
+With that said, the line goes dead, and your opponent, who doesn't seem to pose a serious threat, start charging their weapons.</text>
 					<playSound>mysteriousBeacon</playSound>
 					<ship hostile="true"/>
 					<choice hidden="true">

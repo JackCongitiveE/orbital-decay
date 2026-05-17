@@ -1,4 +1,4 @@
-mods.co = {}
+--[[mods.co = {}
 
 
 local userdata_table = mods.multiverse.userdata_table
@@ -26,4 +26,4 @@ script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE, function
         --print(shieldPower.second)
     end
     return Defines.Chain.CONTINUE, augValue
-end, -100)
+end, -100)]]
