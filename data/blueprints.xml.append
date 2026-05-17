@@ -4,7 +4,7 @@
 <!-- 								TEST STUFF 									-->
 <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
-<droneBlueprint name="DEFENSE_1">
+<droneBlueprint name="DEFENSE_2">
 	<type>DEFENSE</type>
 	<level>1</level>
 	<target>LASERS</target>
